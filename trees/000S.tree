@@ -1,4 +1,4 @@
-\title{Premiers exemples: algorithmes itératifs, tuples et tableaux}
+\title{Premiers exemples: algorithmes itératifs, tableaux, et algorithmes de tri}
 \author{thibautbenjamin}
 \date{2025-10-08T09:33:29Z}
 \import{basemacros}
@@ -7,3 +7,4 @@
 
 \transclude{000T}
 \transclude{001U}
+\transclude{003G}

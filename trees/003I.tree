@@ -1,0 +1,13 @@
+\title{Une fonction}
+\author{thibautbenjamin}
+\taxon{Exemple}
+\date{2025-11-02T12:06:35Z}
+\import{basemacros}
+
+\p{Le code suivant définit une fonction \code{majuscule} prenant une caractère et retournant un caractère
+\cppdisplay{\startverb
+char majuscule (char caractère){
+  /* Le code de la fonction est ici */
+  return caractère
+}\stopverb}
+}

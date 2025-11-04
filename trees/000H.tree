@@ -5,9 +5,5 @@
 
 \p{On pourra définir des algorithmes auxilliaires permettant de nous aider à résoudre un problème concret. L'on écrira ces algorithmes sous forme de fonctions (que l'on appellera aussi sans distinction méthodes ou procédures). On commencera toujours la définition d'une fonction en indiquant son type de retour, son nom, ainsi que ses arguments avec leur type. Si une fonction ne renvoie pas d'argument, on remplacera le type de retour par le mot-clé \code{void}. Pour indiquer la valeur qu'une fonction renvoie, on utilisera le mot clé \code{return}}
 
-\p{L'exemple suivant définit une fonction \code{majuscule} prenant une caractère et retournant un caractère
-\cppdisplay{\startverb
-char majuscule (char caractère){
-  /* Le code de la fonction est ici */
-}\stopverb}
-}
+\transclude{003I}
+\transclude{003H}

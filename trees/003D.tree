@@ -1,0 +1,11 @@
+\title{Le tri par insertion}
+\author{thibautbenjamin}
+\date{2025-11-02T11:42:12Z}
+\import{basemacros}
+
+\p{\ol{
+\li{Ecrire une fonction \code{triInsertion} qui prend en entrée un entier #{n} et un tableau de taille #{n}, et qui effectue le tri par insertion sur ce tableau.}
+\li{Evaluer la complexité de cet algorithme en fonction de #{n}.}
+\li{\mark{TODO} générateur de tableau aléatoires}
+\li{Comparer la courbe obtenue avec la complexité théorique attendue.}
+}}

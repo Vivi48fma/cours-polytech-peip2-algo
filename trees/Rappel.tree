@@ -1,0 +1,20 @@
+\title{Anatomie d'un fichier C++}
+\author{thibautbenjamin}
+\taxon{Rappel}
+\date{2025-11-02T11:47:34Z}
+\import{basemacros}
+
+\p{Pour écrire un fichier \Cpp, on partira toujours de la base suivante
+\cppdisplay{
+#include <iostream>
+using namespace std;
+
+// la définition des fonction se trouve ici
+
+int main (){
+  // le code dans la fonction main est celui
+  // qui sera exécuté par le programme.
+  return 0;
+}
+}
+}

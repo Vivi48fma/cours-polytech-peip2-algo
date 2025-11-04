@@ -1,0 +1,9 @@
+\title{Echange de deux cases dans un tableau}
+\taxon{Exercice}
+\author{thibautbenjamin}
+\date{2025-11-02T10:27:31Z}
+
+\p{\ol{
+\li{Ecrire une fonction qui prend en argument un tableau d'entiers, et deux entiers #{i} et #{j} tout deux strictement inférieurs à la taille du tableau, et qui échange le contenu des positions #{i} et #{j} dans le tableau.}
+\li{Evaluer la complexité de cette fonction.}
+}}

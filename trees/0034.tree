@@ -1,0 +1,6 @@
+\title{Le principe du tri par sélection}
+\author{thibautbenjamin}
+\date{2025-11-02T10:07:20Z}
+\import{basemacros}
+
+\p{Le [tri par sélection](https://fr.wikipedia.org/wiki/Tri_par_sélection) est certainement l'algorithme de tri le plus intuitif. On trie le tableau en d'abord le plus petit élément dans la première case, puis le deuxième plus petit dans la deuxième case, puis le troisième plus petit dans la troisième case etc. Concrètement, à l'étape #{i}, on aura déjà rangé par ordre croissant tous les #{i-1} plus petits éléments du tableau dans les #{i-1} premières cases du tableau. On va alors parcourir toutes les cases restantes dans le tableau, pour trouver l'indice du minimum des cases restante, et échanger la valeur de la case #{i} courante avec la valeur de la case contenant le minimum. A la fin de l'étape #{i}, on aura ainsi placé le #{i^{\textnormal{ème}}} plus petit élément dans la case #{i}.}

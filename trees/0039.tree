@@ -1,0 +1,11 @@
+\title{Tri par insertion}
+\author{thibautbenjamin}
+\taxon{Exercice}
+\date{2025-11-02T11:19:11Z}
+\import{basemacros}
+
+\p{L'objectif de cet exercice est d'implémenter le tri par insertion}
+\transclude{003A}
+\transclude{003B}
+\transclude{003C}
+\transclude{003D}

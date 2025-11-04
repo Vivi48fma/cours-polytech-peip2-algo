@@ -1,0 +1,12 @@
+\title{Tri par sélection}
+\author{thibautbenjamin}
+\taxon{Exercice}
+\date{2025-11-02T10:06:32Z}
+\import{basemacros}
+
+\p{L'objectif de cet exercice est d'implémenter le tri par sélection}
+\transclude{0034}
+\transclude{0035}
+\transclude{0031}
+\transclude{0037}
+\transclude{0038}

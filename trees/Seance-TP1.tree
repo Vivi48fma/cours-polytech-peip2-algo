@@ -1,0 +1,10 @@
+\title{TP 1 : Tri par sélection et tri par insertion}
+\author{thibautbenjamin}
+\date{2025-11-02T10:02:38Z}
+\import{basemacros}
+
+\p{\strong{Objectif:} Le but de ce TP est d'implémenter deux algorithmes de tri classiques sur les tableaux: le tri par sélection et le tri par insertion. Cela permettra de faire une comparaison théorique de complexité entre ces deux algorithmes, et de mesurer la différence en pratique, sur des problèmes de tri concrets.}
+
+\transclude{Rappel}
+\transclude{0033}
+\transclude{0039}
