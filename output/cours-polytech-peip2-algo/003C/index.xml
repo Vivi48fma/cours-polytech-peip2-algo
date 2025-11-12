@@ -141,12 +141,14 @@
                 <fr:display-uri>003D</fr:display-uri>
                 <fr:route>/cours-polytech-peip2-algo/003D/</fr:route>
                 <fr:title text="Le tri par insertion">Le tri par insertion</fr:title>
+                <fr:taxon>Exercice</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:p>
                   <html:ol><html:li>Ecrire une fonction <html:code>triInsertion</html:code> qui prend en entrée un entier <fr:tex display="inline"><![CDATA[n]]></fr:tex> et un tableau de taille <fr:tex display="inline"><![CDATA[n]]></fr:tex>, et qui effectue le tri par insertion sur ce tableau.</html:li>
 <html:li>Evaluer la complexité de cet algorithme en fonction de <fr:tex display="inline"><![CDATA[n]]></fr:tex>.</html:li>
-<html:li><html:mark>TODO</html:mark> générateur de tableau aléatoires</html:li>
+<html:li>En utilisant le <fr:link href="/cours-polytech-peip2-algo/0044/" title="Remplir un tableau avec des valeurs aléatoires" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0044/" display-uri="0044" type="local">générateur de tableau aléatoires</fr:link>, générer un tableau puis le trier et afficher les résultat pour vérifier qu'ils sont effectivement triés.</html:li>
+<html:li>En utilisant le <fr:link href="/cours-polytech-peip2-algo/0044/" title="Remplir un tableau avec des valeurs aléatoires" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0044/" display-uri="0044" type="local">générateur de tableau aléatoires</fr:link>, générer des tableaux de différentes tailles, et <fr:link href="/cours-polytech-peip2-algo/0045/" title="Calculer le temps mis pour exécuter une fonction" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0045/" display-uri="0045" type="local">afficher le temps</fr:link> mis par la fonction de tri, en fonction de la taille du tableau en entrée sur une courbe.</html:li>
 <html:li>Comparer la courbe obtenue avec la complexité théorique attendue.</html:li></html:ol>
                 </html:p>
               </fr:mainmatter>

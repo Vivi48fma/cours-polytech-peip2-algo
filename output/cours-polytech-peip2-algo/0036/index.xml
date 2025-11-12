@@ -54,6 +54,27 @@
             <fr:date>
               <fr:year>2025</fr:year>
               <fr:month>11</fr:month>
+              <fr:day>12</fr:day>
+            </fr:date>
+            <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0042/</fr:uri>
+            <fr:display-uri>0042</fr:display-uri>
+            <fr:route>/cours-polytech-peip2-algo/0042/</fr:route>
+            <fr:title text="Illustrations du tri par sélection">Illustrations du tri par sélection</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Les animations suivantes peuvent aider à comprendre le tri par sélection. La première est tirée de la page wikipedia, la seconde a été réalisée à l'aide du logiciel <fr:link href="/cours-polytech-peip2-algo/0036/" title="Sound of sorting" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0036/" display-uri="0036" type="local">sound of sorting</fr:link> <html:mark>TODO</html:mark></html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>11</fr:month>
               <fr:day>2</fr:day>
             </fr:date>
             <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/003B/</fr:uri>

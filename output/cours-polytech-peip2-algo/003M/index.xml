@@ -46,6 +46,79 @@
         <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
           <fr:frontmatter>
             <fr:authors>
+              <fr:contributor>
+                <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+              </fr:contributor>
+            </fr:authors>
+            <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/index.sync-conflict-20251111-153310-I54U3RZ</fr:uri>
+            <fr:display-uri>index.sync-conflict-20251111-153310-I54U3RZ</fr:display-uri>
+            <fr:route>/cours-polytech-peip2-algo/index.sync-conflict-20251111-153310-I54U3RZ</fr:route>
+            <fr:title text="Cours d'algorithmique et complexité">Cours d'algorithmique et complexité</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>11</fr:month>
+                  <fr:day>4</fr:day>
+                </fr:date>
+                <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/003K/</fr:uri>
+                <fr:display-uri>003K</fr:display-uri>
+                <fr:route>/cours-polytech-peip2-algo/003K/</fr:route>
+                <fr:title text="Structure du cours">Structure du cours</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>
+Ce document est un cours d'algorithmique pour la deuxième année de prépa intégrée à l'école d'ingénieur Polytech Paris-Saclay. Il est conçu à l'aide de l'outil <fr:link href="https://www.forester-notes.org/index/index.xml" type="external">forester</fr:link>, et a une structure qui peut sembler atypique. Il est en effet constitué de nombreuses "notes atomiques" (c'est-à-dire des notes présentant chacune une seule idée), constituant l'ensemble des connaissances attendues. Le document que vous lisez regroupe toutes ces notes, qui servent à la fois de cours et de base de données de connaissances. Il est donc attendu que le lecteur puisse lire le cours en sautant d'une note à l'autre, en suivant les liens contenus dans ces dernières, lorsque cela semble pertinent ou nécessaire. Le dernier chapitre de ce document constitue une référence sur les notions importantes que nous allons étudier et utiliser tout au long du cours. Il n'a pas vocation à être lu de bout-en-bout, mais à servir de point d'ancrage auquel se référer tout au long de ce cours. Il ne faudra donc pas hésiter à sauter à ce chapitre au cours de la lecture autant que nécessaire.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>11</fr:month>
+                      <fr:day>4</fr:day>
+                    </fr:date>
+                    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/003L/</fr:uri>
+                    <fr:display-uri>003L</fr:display-uri>
+                    <fr:route>/cours-polytech-peip2-algo/003L/</fr:route>
+                    <fr:title text="Contribuer">Contribuer</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>Les contributions sont bienvenues, de la part de tout le monde! Le cours entier est en ligne sur <fr:link href="https://github.com/thibautbenjamin/cours-polytech-peip2-algo" type="external">github</fr:link>, et il suffit d'ouvrir une merge request pour proposer un changement. Si vous ne savez pas comment faire, vous pouvez contacter <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link></html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>
+              <html:strong>
+                <fr:link href="/cours-polytech-peip2-algo/Cours/" title="Cours d'algorithmique PEIP2" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Cours/" display-uri="Cours" type="local">La page du cours</fr:link>
+              </html:strong>
+            </html:p>
+            <html:p>
+              <html:strong>
+                <fr:link href="/cours-polytech-peip2-algo/001V/" title="Recueil des TD/TP" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/001V/" display-uri="001V" type="local">La page des TD/TP</fr:link>
+              </html:strong>
+            </html:p>
+            <html:p>
+              <html:strong>
+                <fr:link href="/cours-polytech-peip2-algo/003M/" title="Les diapositives de cours" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/003M/" display-uri="003M" type="local">Les slides de cours</fr:link>
+              </html:strong>
+            </html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
               <fr:author>
                 <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
               </fr:author>

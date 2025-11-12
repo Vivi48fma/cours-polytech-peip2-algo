@@ -1,0 +1,6 @@
+\title{Le principe du tri à bulles}
+\author{thibautbenjamin}
+\date{2025-11-12T08:20:55Z}
+\import{basemacros}
+
+\p{Le [tri à bulles](https://fr.wikipedia.org/wiki/Tri_à_bulles) consiste à parcourir le tableau en faisant "remonter" les valeur les plus grandes du tableau au fur et à mesure. A chaque étape du parcours, on compare la case courante à la case suivante, et si la case courante est plus grande que la case suivante, on échange les deux, puis on passe à la case suivante et on recommence l'opération. On peut se convaincre qu'après un parcours complet du tableau, la plus grande valeur se trouvera toujours en dernière position. On effectue ensuite autant de parcours que nécessaire pour que le tableau soit trié.}

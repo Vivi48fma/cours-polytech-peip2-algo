@@ -441,6 +441,29 @@ Remarquez qu'il est beaucoup plus difficile de comprendre un algorithme lorsqu'o
             </html:p>
           </fr:mainmatter>
         </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>10</fr:month>
+              <fr:day>27</fr:day>
+            </fr:date>
+            <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/001V.sync-conflict-20251111-153300-I54U3RZ</fr:uri>
+            <fr:display-uri>001V.sync-conflict-20251111-153300-I54U3RZ</fr:display-uri>
+            <fr:route>/cours-polytech-peip2-algo/001V.sync-conflict-20251111-153300-I54U3RZ</fr:route>
+            <fr:title text="Recueil des TD/TP">Recueil des TD/TP</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p><html:ul><html:li><fr:link href="/cours-polytech-peip2-algo/Seance-TD1/" title="TD 1" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TD1/" display-uri="Seance-TD1" type="local">TD 1</fr:link></html:li>
+<html:li><fr:link href="/cours-polytech-peip2-algo/Seance-TD2/" title="TD 2" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TD2/" display-uri="Seance-TD2" type="local">TD 2</fr:link></html:li></html:ul>
+<html:ul><html:li><fr:link href="/cours-polytech-peip2-algo/Seance-TP1/" title="TP 1 : Tri par sélection et tri par insertion" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TP1/" display-uri="Seance-TP1" type="local">TP 1</fr:link></html:li></html:ul></html:p>
+          </fr:mainmatter>
+        </fr:tree>
       </fr:mainmatter>
     </fr:tree>
     <fr:tree show-metadata="false" hidden-when-empty="true">

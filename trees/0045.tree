@@ -1,0 +1,21 @@
+\title{Calculer le temps mis pour exécuter une fonction}
+\author{thibautbenjamin}
+\date{2025-11-12T08:51:51Z}
+\import{basemacros}
+
+
+\p{
+Pour mesurer le temps mis par une fonction, on commencera par ajouter les lignes suivantes à l'entête du fichier
+\cppdisplay{\startverb
+#include <chrono>
+using namespace std::chrono;
+\stopverb}
+Puis, pour mesurer le temps pris par la fonction \code{f} sur une entrée \code{x}, on écrira:
+\cppdisplay{\startverb
+auto start = high_resolution_clock::now();
+f(x);
+auto stop = high_resolution_clock::now();
+auto duree = duration_cast<microseconds>(stop - start);
+cout << "la fonction f a pris " << duree.count() << " ms";
+\stopverb}
+}

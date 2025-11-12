@@ -1,0 +1,10 @@
+\title{Le tri a bulles}
+\author{thibautbenjamin}
+\taxon{Exercice}
+\date{2025-11-12T08:15:09Z}
+\import{basemacros}
+
+\p{L'objectif de cet exercice est d'implémenter le tri à bulles}
+\transclude{0041}
+\transclude{0042}
+\transclude{0043}

@@ -1,0 +1,17 @@
+\title{Remplir un tableau avec des valeurs aléatoires}
+\author{thibautbenjamin}
+\date{2025-11-12T08:25:33Z}
+\import{basemacros}
+
+\p{
+Pour remplir un tableau de taille #{n} avec des valeurs générées aléatoirement, on utilisera le code suivant. Notez que pour utiliser ce code, il faut recopier la ligne \code{#include<cstdlib>} dans la partie entête de vôtre fichier.
+
+\cppdisplay{\startverb
+#include <cstdlib>
+
+void generateur_tableau (int n, int tab[]){
+  for (int i = 0; i < n; i++){
+    tab[i] = rand();
+  }
+ }
+\stopverb}}

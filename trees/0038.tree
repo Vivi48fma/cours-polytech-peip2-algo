@@ -7,6 +7,7 @@
 \p{\ol{
 \li{Ecrire une fonction \code{triselection} prenant en entrée un entier #{n} et un tableau d'entier de taille #{n}, et effectuant le tri par sélection de ce tableau.}
 \li{Evaluer la complexité de cette fonction, en fonction de #{n}.}
-\li{\mark{TODO}: générateur de tableaux aléatoires et timing.}
+\li{En utilisant le [générateur de tableau aléatoires](0044), générer un tableau puis le trier et afficher les résultat pour vérifier qu'ils sont effectivement triés.}
+\li{En utilisant le [générateur de tableau aléatoires](0044), générer des tableaux de différentes tailles, et [afficher le temps](0045) mis par la fonction de tri, en fonction de la taille du tableau en entrée sur une courbe.}
 \li{Comparer la courbe obtenue avec la complexité théorique attendue.}
 }}

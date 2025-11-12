@@ -22,7 +22,8 @@
     <html:p>
       <html:ol><html:li>Ecrire une fonction <html:code>triselection</html:code> prenant en entrée un entier <fr:tex display="inline"><![CDATA[n]]></fr:tex> et un tableau d'entier de taille <fr:tex display="inline"><![CDATA[n]]></fr:tex>, et effectuant le tri par sélection de ce tableau.</html:li>
 <html:li>Evaluer la complexité de cette fonction, en fonction de <fr:tex display="inline"><![CDATA[n]]></fr:tex>.</html:li>
-<html:li><html:mark>TODO</html:mark>: générateur de tableaux aléatoires et timing.</html:li>
+<html:li>En utilisant le <fr:link href="/cours-polytech-peip2-algo/0044/" title="Remplir un tableau avec des valeurs aléatoires" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0044/" display-uri="0044" type="local">générateur de tableau aléatoires</fr:link>, générer un tableau puis le trier et afficher les résultat pour vérifier qu'ils sont effectivement triés.</html:li>
+<html:li>En utilisant le <fr:link href="/cours-polytech-peip2-algo/0044/" title="Remplir un tableau avec des valeurs aléatoires" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0044/" display-uri="0044" type="local">générateur de tableau aléatoires</fr:link>, générer des tableaux de différentes tailles, et <fr:link href="/cours-polytech-peip2-algo/0045/" title="Calculer le temps mis pour exécuter une fonction" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0045/" display-uri="0045" type="local">afficher le temps</fr:link> mis par la fonction de tri, en fonction de la taille du tableau en entrée sur une courbe.</html:li>
 <html:li>Comparer la courbe obtenue avec la complexité théorique attendue.</html:li></html:ol>
     </html:p>
   </fr:mainmatter>
@@ -176,7 +177,8 @@
                 <html:p>
                   <html:ol><html:li>Ecrire une fonction <html:code>triselection</html:code> prenant en entrée un entier <fr:tex display="inline"><![CDATA[n]]></fr:tex> et un tableau d'entier de taille <fr:tex display="inline"><![CDATA[n]]></fr:tex>, et effectuant le tri par sélection de ce tableau.</html:li>
 <html:li>Evaluer la complexité de cette fonction, en fonction de <fr:tex display="inline"><![CDATA[n]]></fr:tex>.</html:li>
-<html:li><html:mark>TODO</html:mark>: générateur de tableaux aléatoires et timing.</html:li>
+<html:li>En utilisant le <fr:link href="/cours-polytech-peip2-algo/0044/" title="Remplir un tableau avec des valeurs aléatoires" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0044/" display-uri="0044" type="local">générateur de tableau aléatoires</fr:link>, générer un tableau puis le trier et afficher les résultat pour vérifier qu'ils sont effectivement triés.</html:li>
+<html:li>En utilisant le <fr:link href="/cours-polytech-peip2-algo/0044/" title="Remplir un tableau avec des valeurs aléatoires" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0044/" display-uri="0044" type="local">générateur de tableau aléatoires</fr:link>, générer des tableaux de différentes tailles, et <fr:link href="/cours-polytech-peip2-algo/0045/" title="Calculer le temps mis pour exécuter une fonction" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0045/" display-uri="0045" type="local">afficher le temps</fr:link> mis par la fonction de tri, en fonction de la taille du tableau en entrée sur une courbe.</html:li>
 <html:li>Comparer la courbe obtenue avec la complexité théorique attendue.</html:li></html:ol>
                 </html:p>
               </fr:mainmatter>
@@ -197,7 +199,128 @@
         <fr:authors />
         <fr:title text="Related">Related</fr:title>
       </fr:frontmatter>
-      <fr:mainmatter />
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>11</fr:month>
+              <fr:day>12</fr:day>
+            </fr:date>
+            <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0045/</fr:uri>
+            <fr:display-uri>0045</fr:display-uri>
+            <fr:route>/cours-polytech-peip2-algo/0045/</fr:route>
+            <fr:title text="Calculer le temps mis pour exécuter une fonction">Calculer le temps mis pour exécuter une fonction</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+Pour mesurer le temps mis par une fonction, on commencera par ajouter les lignes suivantes à l'entête du fichier
+
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+        <html:script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                        "remove-trailing": true,
+                        "remove-indent": true,
+                        "left-trim": true,
+                        "right-trim": true,
+                });</html:script>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[#include <chrono>
+using namespace std::chrono;]]></html:code></html:pre>
+Puis, pour mesurer le temps pris par la fonction <html:code>f</html:code> sur une entrée <html:code>x</html:code>, on écrira:
+
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+        <html:script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                        "remove-trailing": true,
+                        "remove-indent": true,
+                        "left-trim": true,
+                        "right-trim": true,
+                });</html:script>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[auto start = high_resolution_clock::now();
+f(x);
+auto stop = high_resolution_clock::now();
+auto duree = duration_cast<microseconds>(stop - start);
+cout << "la fonction f a pris " << duree.count() << " ms";]]></html:code></html:pre></html:p>
+          </fr:mainmatter>
+        </fr:tree>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>11</fr:month>
+              <fr:day>12</fr:day>
+            </fr:date>
+            <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0044/</fr:uri>
+            <fr:display-uri>0044</fr:display-uri>
+            <fr:route>/cours-polytech-peip2-algo/0044/</fr:route>
+            <fr:title text="Remplir un tableau avec des valeurs aléatoires">Remplir un tableau avec des valeurs aléatoires</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+Pour remplir un tableau de taille <fr:tex display="inline"><![CDATA[n]]></fr:tex> avec des valeurs générées aléatoirement, on utilisera le code suivant. Notez que pour utiliser ce code, il faut recopier la ligne <html:code>#include&lt;cstdlib&gt;</html:code> dans la partie entête de vôtre fichier.
+
+
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+        <html:script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                        "remove-trailing": true,
+                        "remove-indent": true,
+                        "left-trim": true,
+                        "right-trim": true,
+                });</html:script>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[#include <cstdlib>
+
+void generateur_tableau (int n, int tab[]){
+  for (int i = 0; i < n; i++){
+    tab[i] = rand();
+  }
+ }]]></html:code></html:pre></html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
     </fr:tree>
     <fr:tree show-metadata="false" hidden-when-empty="true">
       <fr:frontmatter>

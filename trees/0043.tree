@@ -1,0 +1,15 @@
+\title{Le tri à bulles}
+\author{thibautbenjamin}
+\taxon{Exercice}
+\date{2025-11-12T08:25:30Z}
+\import{basemacros}
+
+\p{\ol{
+\li{Ecrire une fonction \code{triBulles1} qui prend en entrée un entier #{n} et un tableau de taille #{n}, et qui effectue le tri à bulles, en parcourant le tableau entier #{n} fois.}
+\li{Améliorer l'algorithme précédent, et écrire une fonction \code{triBulles2}: Après la #{k^e} itération, les #{k} plus grands éléments de ce tableau sont à la bonne position, on peut donc arrêter le parcours à la position #{k}}
+\li{Ecrire une dernière amélioration \code{triBulles3} qui s'arrête dès que l'on fait un parcours qui ne fait aucun échange, même si l'on n'a pas fait #{n} itérations.}
+\li{Evaluer la complexité de ces 3 algorithmes en fonction de #{n}.}
+\li{En utilisant le [générateur de tableau aléatoires](0044), générer un tableau puis le trier avec chacunes des 3 fonctions et et afficher les résultat pour vérifier qu'ils sont effectivement triés.}
+\li{En utilisant le [générateur de tableau aléatoires](0044), générer des tableaux de différentes tailles, et [afficher le temps](0045) mis par les fonctions \code{triBulles1}, \code{triBulles2} et \code{triBulles3} en fonction de la taille des tableaux en entrée sur une courbe.}
+\li{Comparer les courbes obtenues entre elles, et  avec la complexité théorique attendue.}
+}}
