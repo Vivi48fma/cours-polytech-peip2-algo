@@ -300,6 +300,33 @@ Chercher une autre relation mathématique satisfaite par la fonction puissance. 
                   <fr:month>11</fr:month>
                   <fr:day>13</fr:day>
                 </fr:date>
+                <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004F/</fr:uri>
+                <fr:display-uri>004F</fr:display-uri>
+                <fr:route>/cours-polytech-peip2-algo/004F/</fr:route>
+                <fr:title text="Enumération des permutations d'un tableau">Enumération des permutations d'un tableau</fr:title>
+                <fr:taxon>Exercice</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>L'objectif de cet exercice est d'énumérer toutes les permutations possibles d'un tableau. Pour cela on va procéder de manière récursives: On fixe le premier élément du tableau, et on remaque qu'énumérer toutes les permutations qui commencent par ce premier élément revient à énumérer toutes les permutations du tableau initial, dans lequel on a enlevé l'élément que l'on a placé en première position. Pour obtenir une énumération du tableau original, on procède à cette énumération avec tous les choix possibles d'élements à placer en première position. Pour cet exercice, on souhaite juste afficher l'énumération, et on supposera que l'on dispose d'une fonction magique <html:code>afficherTableau</html:code> qui affiche le tableau en temps constant (une telle fonction n'existe pas en vrai, mais on veut se concentrer sur la logique associée à l'énumération uniquement).</html:p>
+                <html:p>
+                  <html:ol><html:li>Traduire l'idée informelle précédente en une fonction <html:code>permutations(int n, int j, int tab[])</html:code> qui prend entrée un entier <fr:tex display="inline"><![CDATA[n]]></fr:tex>, un entier <fr:tex display="inline"><![CDATA[j\le  n]]></fr:tex> et un tableau de taille <fr:tex display="inline"><![CDATA[n]]></fr:tex>, et qui liste toutes les permutations du tableau tels que les {j} premiers éléments du tableau sont fixes.</html:li>
+<html:li>Evaluer la complexité de cette fonction.</html:li>
+<html:li>Comment pensez-vous que la complexité de cette fonction grandit, en comparaîson avec les complexités usuelles?</html:li></html:ol>
+                </html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>11</fr:month>
+                  <fr:day>13</fr:day>
+                </fr:date>
                 <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004B/</fr:uri>
                 <fr:display-uri>004B</fr:display-uri>
                 <fr:route>/cours-polytech-peip2-algo/004B/</fr:route>

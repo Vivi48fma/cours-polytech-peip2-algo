@@ -1,0 +1,13 @@
+\title{Enumération des permutations d'un tableau}
+\author{thibautbenjamin}
+\taxon{Exercice}
+\date{2025-11-13T15:35:11Z}
+\import{basemacros}
+
+\p{L'objectif de cet exercice est d'énumérer toutes les permutations possibles d'un tableau. Pour cela on va procéder de manière récursives: On fixe le premier élément du tableau, et on remaque qu'énumérer toutes les permutations qui commencent par ce premier élément revient à énumérer toutes les permutations du tableau initial, dans lequel on a enlevé l'élément que l'on a placé en première position. Pour obtenir une énumération du tableau original, on procède à cette énumération avec tous les choix possibles d'élements à placer en première position. Pour cet exercice, on souhaite juste afficher l'énumération, et on supposera que l'on dispose d'une fonction magique \code{afficherTableau} qui affiche le tableau en temps constant (une telle fonction n'existe pas en vrai, mais on veut se concentrer sur la logique associée à l'énumération uniquement).}
+
+\p{\ol{
+\li{Traduire l'idée informelle précédente en une fonction \code{permutations(int n, int j, int tab[])} qui prend entrée un entier #{n}, un entier #{j\le n} et un tableau de taille #{n}, et qui liste toutes les permutations du tableau tels que les {j} premiers éléments du tableau sont fixes.}
+\li{Evaluer la complexité de cette fonction.}
+\li{Comment pensez-vous que la complexité de cette fonction grandit, en comparaîson avec les complexités usuelles?}
+}}

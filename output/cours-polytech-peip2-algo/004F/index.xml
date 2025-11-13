@@ -12,17 +12,18 @@
       <fr:month>11</fr:month>
       <fr:day>13</fr:day>
     </fr:date>
-    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004E/</fr:uri>
-    <fr:display-uri>004E</fr:display-uri>
-    <fr:route>/cours-polytech-peip2-algo/004E/</fr:route>
-    <fr:title text="Recherche dichotomique">Recherche dichotomique</fr:title>
+    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004F/</fr:uri>
+    <fr:display-uri>004F</fr:display-uri>
+    <fr:route>/cours-polytech-peip2-algo/004F/</fr:route>
+    <fr:title text="Enumération des permutations d'un tableau">Enumération des permutations d'un tableau</fr:title>
     <fr:taxon>Exercice</fr:taxon>
   </fr:frontmatter>
   <fr:mainmatter>
-    <html:p>L'objectif ce cet exercice est de rechercher un élément dans un tableau trié de manière efficace. Pour cela on utilise la recherche dichotomique, consistant à regarder si l'élément que l'on recherche est supérieur ou inférieur à l'élément se situant au milieu du tableau. Puis on ne garde que la moitié du tableau correspondant à l'endroit où se trouve l'élément, et on recommence la même procédure. Il s'agit donc d'une fonction récursive. C'est la meilleure fonction que l'on puisse faire, car elle élimine à chaque coup la moitié du tableau.</html:p>
+    <html:p>L'objectif de cet exercice est d'énumérer toutes les permutations possibles d'un tableau. Pour cela on va procéder de manière récursives: On fixe le premier élément du tableau, et on remaque qu'énumérer toutes les permutations qui commencent par ce premier élément revient à énumérer toutes les permutations du tableau initial, dans lequel on a enlevé l'élément que l'on a placé en première position. Pour obtenir une énumération du tableau original, on procède à cette énumération avec tous les choix possibles d'élements à placer en première position. Pour cet exercice, on souhaite juste afficher l'énumération, et on supposera que l'on dispose d'une fonction magique <html:code>afficherTableau</html:code> qui affiche le tableau en temps constant (une telle fonction n'existe pas en vrai, mais on veut se concentrer sur la logique associée à l'énumération uniquement).</html:p>
     <html:p>
-      <html:ol><html:li>Ecrire une fonction récursive <html:code>rechercheDichotomique</html:code> qui prend en entrée un entier <fr:tex display="inline"><![CDATA[n]]></fr:tex>, un entier <fr:tex display="inline"><![CDATA[k]]></fr:tex> et un tableau d'entiers de taille <fr:tex display="inline"><![CDATA[n]]></fr:tex> et contenant <fr:tex display="inline"><![CDATA[k]]></fr:tex> et qui renvoie la position du tableau à laquelle se trouve l'entier <fr:tex display="inline"><![CDATA[k]]></fr:tex>.</html:li>
-<html:li>Quelle est la complexité de cette fonction?</html:li></html:ol>
+      <html:ol><html:li>Traduire l'idée informelle précédente en une fonction <html:code>permutations(int n, int j, int tab[])</html:code> qui prend entrée un entier <fr:tex display="inline"><![CDATA[n]]></fr:tex>, un entier <fr:tex display="inline"><![CDATA[j\le  n]]></fr:tex> et un tableau de taille <fr:tex display="inline"><![CDATA[n]]></fr:tex>, et qui liste toutes les permutations du tableau tels que les {j} premiers éléments du tableau sont fixes.</html:li>
+<html:li>Evaluer la complexité de cette fonction.</html:li>
+<html:li>Comment pensez-vous que la complexité de cette fonction grandit, en comparaîson avec les complexités usuelles?</html:li></html:ol>
     </html:p>
   </fr:mainmatter>
   <fr:backmatter>
