@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/cours-polytech-peip2-algo/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/cours-polytech-peip2-algo/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2025</fr:year>
+      <fr:month>11</fr:month>
+      <fr:day>15</fr:day>
+    </fr:date>
+    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004I/</fr:uri>
+    <fr:display-uri>004I</fr:display-uri>
+    <fr:route>/cours-polytech-peip2-algo/004I/</fr:route>
+    <fr:title text="Algorithme naïf de recherche de sous-chaînes">Algorithme naïf de recherche de sous-chaînes</fr:title>
+    <fr:taxon>Exercice</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p><html:strong>Objectif</html:strong>: Le but de cet exercice est d'implémenter un algorithme naïf de recherche de sous-chaînes, consistant à tester toutes les positions possibles, jusqu'à en trouver une qui fonctionne.</html:p>
+    <html:p>
+      <html:ol><html:li>Ecrire une fonction <html:code>matchPosition</html:code> qui prend en entrée une chaîne de caractères <html:code>motif</html:code>, une chaîne de caractères <html:code>s</html:code> et un entier <fr:tex display="inline"><![CDATA[i]]></fr:tex>, et qui renvoie <html:code>true</html:code> si le motif apparaît en position <fr:tex display="inline"><![CDATA[i]]></fr:tex> dans la chaîne <html:code>s</html:code> et <html:code>false</html:code> sinon. On pourra supposer que <fr:tex display="inline"><![CDATA[i]]></fr:tex> est plus petit que la différence entre la longueur de <html:code>s</html:code> et celle de <html:code>motif</html:code>.</html:li>
+<html:li>Ecrire une fonction <html:code>rechercheSousChaines</html:code> qui prend en entrée une chaîne de caractères <html:code>motif</html:code>, une chaîne de caractères <html:code>s</html:code> et qui affiche à l'écran toutes les positions de la chaîne <html:code>s</html:code> à laquelle le motif apparaît.</html:li>
+<html:li>Télécharger les fichiers de test suivants dans le répertoire de travail.
+  <html:ul><html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmia4efjfaw4eu56ga7cgaokqgf6psyiqrrjrx6dzmzact7ux2pjtpy.txt">fichier1</html:a></html:span></html:li>
+    <html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmifin4uod3gxmqr7y4dqro7mvrfiv6zozx7uyrxozj5uowdivh37ey.txt">fichier2</html:a></html:span></html:li>
+    <html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmihazwz6evrhb2ahb6oh4pkup7itckoubvmiyh5ewwwjjeckimfd4i.txt">fichier3</html:a></html:span></html:li></html:ul>
+A l'aide de la <fr:link href="/cours-polytech-peip2-algo/004K/" title="Lire un fichier dans une chaîne de caractère" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004K/" display-uri="004K" type="local">fonction de lecture dans un fichier</fr:link>, rechercher toutes les occurrences du mot "algorithme" dans chacun de ces fichiers.</html:li>
+<html:li>Quelle est la complexité de cette fonction?
+<html:details>
+<html:summary><html:strong>[Indice]</html:strong></html:summary>
+Pensez à trouver le pire des cas, pour chacune des deux fonctions ci-dessus, et à comment les combiner.
+</html:details></html:li></html:ol>
+    </html:p>
+    <html:p>Cet algorithme est en pratique peu optimal: en effet, dans l'éventualité où la première lettre du motif correspond à la première lettre de la position courante, on va comparer la seconde lettre du motif et la seconde lettre de la position courante. Puis, à l'itération suivante, à l'étape suivante, cette même lettre sera à nouveau comparée, mais cette fois avec la première lettre du motif. Cela fait plus de comparaisons que nécessaire. Autrement dit: il n'y a pas de propagation d'information d'une itération à l'autre.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>11</fr:month>
+              <fr:day>15</fr:day>
+            </fr:date>
+            <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TP2/</fr:uri>
+            <fr:display-uri>Seance-TP2</fr:display-uri>
+            <fr:route>/cours-polytech-peip2-algo/Seance-TP2/</fr:route>
+            <fr:title text="TP2 : Algorithmes de recherche de sous-chaîne">TP2 : Algorithmes de recherche de sous-chaîne</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>11</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004H/</fr:uri>
+                <fr:display-uri>004H</fr:display-uri>
+                <fr:route>/cours-polytech-peip2-algo/004H/</fr:route>
+                <fr:title text="Le problème de la recherche de sous-chaînes">Le problème de la recherche de sous-chaînes</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Un problème de <fr:link href="https://fr.wikipedia.org/wiki/Algorithme_de_recherche_de_sous-chaîne" type="external">recherche de sous-chaîne</fr:link> (ou en anglais <html:em>string-matching problem</html:em>) est un problème dans lequel on dispose une chaîne de charactère que l'on appellera le <html:em>motif</html:em>, et l'on donne une chaîne de chacactères <fr:tex display="inline"><![CDATA[s]]></fr:tex> en entrée. Le problème consiste à trouver toutes les occurrences (ou parfois simplement la première occurrence) du motif dans la chaîne de charactère <fr:tex display="inline"><![CDATA[s]]></fr:tex>.</html:p>
+                <html:p>Par exemple, supposons que le motif soit la chaîne de charactère "ille" et que la chaîne donnée en entrée soit "La vieille maison dans la ville." alors le motif apparaît aux deux positions affichées en gras: "La vie<html:strong>ille</html:strong> maison dans la v<html:strong>ille</html:strong>". Un algorithme de recherche de sous-chaîne devra alors renvoyer les positions de début des deux sous-chaînes en gras, (ou alors seulement la position de la première)</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>11</fr:month>
+                  <fr:day>2</fr:day>
+                </fr:date>
+                <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Rappel/</fr:uri>
+                <fr:display-uri>Rappel</fr:display-uri>
+                <fr:route>/cours-polytech-peip2-algo/Rappel/</fr:route>
+                <fr:title text="Anatomie d'un fichier C++">Anatomie d'un fichier C++</fr:title>
+                <fr:taxon>Rappel</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Pour écrire un fichier <fr:resource hash="9fd1e57f01dc7c94ca6f284db6e1aabb"><fr:resource-content><html:img src="/cours-polytech-peip2-algo/9fd1e57f01dc7c94ca6f284db6e1aabb.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[\newcommand {\CC }{C\nolinebreak \hspace {-.05em}\raisebox {.4ex}{\tiny \bf  +}\nolinebreak \hspace {-.10em}\raisebox {.4ex}{\tiny \bf  +}}]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[\CC ]]></fr:resource-source></fr:resource>, on partira toujours de la base suivante
+
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+        <html:script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                        "remove-trailing": true,
+                        "remove-indent": true,
+                        "left-trim": true,
+                        "right-trim": true,
+                });</html:script>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié">
+#include &lt;iostream&gt;
+using namespace std;
+
+// la définition des fonction se trouve ici
+
+int main (){
+  // le code dans la fonction main est celui
+  // qui sera exécuté par le programme.
+  return 0;
+}
+</html:code></html:pre></html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>11</fr:month>
+                      <fr:day>12</fr:day>
+                    </fr:date>
+                    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0044/</fr:uri>
+                    <fr:display-uri>0044</fr:display-uri>
+                    <fr:route>/cours-polytech-peip2-algo/0044/</fr:route>
+                    <fr:title text="Remplir un tableau avec des valeurs aléatoires">Remplir un tableau avec des valeurs aléatoires</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+Pour remplir un tableau de taille <fr:tex display="inline"><![CDATA[n]]></fr:tex> avec des valeurs générées aléatoirement, on utilisera le code suivant. Notez que pour utiliser ce code, il faut recopier la ligne <html:code>#include&lt;cstdlib&gt;</html:code> dans la partie entête de vôtre fichier.
+
+
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+        <html:script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                        "remove-trailing": true,
+                        "remove-indent": true,
+                        "left-trim": true,
+                        "right-trim": true,
+                });</html:script>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[#include <cstdlib>
+
+void generateur_tableau (int n, int tab[]){
+  for (int i = 0; i < n; i++){
+    tab[i] = rand();
+  }
+ }]]></html:code></html:pre></html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>11</fr:month>
+                      <fr:day>12</fr:day>
+                    </fr:date>
+                    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0045/</fr:uri>
+                    <fr:display-uri>0045</fr:display-uri>
+                    <fr:route>/cours-polytech-peip2-algo/0045/</fr:route>
+                    <fr:title text="Calculer le temps mis pour exécuter une fonction">Calculer le temps mis pour exécuter une fonction</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+Pour mesurer le temps mis par une fonction, on commencera par ajouter les lignes suivantes à l'entête du fichier
+
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+        <html:script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                        "remove-trailing": true,
+                        "remove-indent": true,
+                        "left-trim": true,
+                        "right-trim": true,
+                });</html:script>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[#include <chrono>
+using namespace std::chrono;]]></html:code></html:pre>
+Puis, pour mesurer le temps pris par la fonction <html:code>f</html:code> sur une entrée <html:code>x</html:code>, on écrira:
+
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+        <html:script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                        "remove-trailing": true,
+                        "remove-indent": true,
+                        "left-trim": true,
+                        "right-trim": true,
+                });</html:script>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[auto start = high_resolution_clock::now();
+f(x);
+auto stop = high_resolution_clock::now();
+auto duree = duration_cast<microseconds>(stop - start);
+cout << "la fonction f a pris " << duree.count() << " ms";]]></html:code></html:pre></html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>11</fr:month>
+                      <fr:day>15</fr:day>
+                    </fr:date>
+                    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004L/</fr:uri>
+                    <fr:display-uri>004L</fr:display-uri>
+                    <fr:route>/cours-polytech-peip2-algo/004L/</fr:route>
+                    <fr:title text="Longueur d'une chaîne de caractères">Longueur d'une chaîne de caractères</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>On rappelle que pour les chaînes de caractères, on peut ajouter <html:code><![CDATA[ #include<string.h>]]></html:code> en tête du fichier, et ensuite  utiliser la fonction <html:code>strlen</html:code> pour récupérer la longueur d'une chaîne de caractères</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>11</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004I/</fr:uri>
+                <fr:display-uri>004I</fr:display-uri>
+                <fr:route>/cours-polytech-peip2-algo/004I/</fr:route>
+                <fr:title text="Algorithme naïf de recherche de sous-chaînes">Algorithme naïf de recherche de sous-chaînes</fr:title>
+                <fr:taxon>Exercice</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p><html:strong>Objectif</html:strong>: Le but de cet exercice est d'implémenter un algorithme naïf de recherche de sous-chaînes, consistant à tester toutes les positions possibles, jusqu'à en trouver une qui fonctionne.</html:p>
+                <html:p>
+                  <html:ol><html:li>Ecrire une fonction <html:code>matchPosition</html:code> qui prend en entrée une chaîne de caractères <html:code>motif</html:code>, une chaîne de caractères <html:code>s</html:code> et un entier <fr:tex display="inline"><![CDATA[i]]></fr:tex>, et qui renvoie <html:code>true</html:code> si le motif apparaît en position <fr:tex display="inline"><![CDATA[i]]></fr:tex> dans la chaîne <html:code>s</html:code> et <html:code>false</html:code> sinon. On pourra supposer que <fr:tex display="inline"><![CDATA[i]]></fr:tex> est plus petit que la différence entre la longueur de <html:code>s</html:code> et celle de <html:code>motif</html:code>.</html:li>
+<html:li>Ecrire une fonction <html:code>rechercheSousChaines</html:code> qui prend en entrée une chaîne de caractères <html:code>motif</html:code>, une chaîne de caractères <html:code>s</html:code> et qui affiche à l'écran toutes les positions de la chaîne <html:code>s</html:code> à laquelle le motif apparaît.</html:li>
+<html:li>Télécharger les fichiers de test suivants dans le répertoire de travail.
+  <html:ul><html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmia4efjfaw4eu56ga7cgaokqgf6psyiqrrjrx6dzmzact7ux2pjtpy.txt">fichier1</html:a></html:span></html:li>
+    <html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmifin4uod3gxmqr7y4dqro7mvrfiv6zozx7uyrxozj5uowdivh37ey.txt">fichier2</html:a></html:span></html:li>
+    <html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmihazwz6evrhb2ahb6oh4pkup7itckoubvmiyh5ewwwjjeckimfd4i.txt">fichier3</html:a></html:span></html:li></html:ul>
+A l'aide de la <fr:link href="/cours-polytech-peip2-algo/004K/" title="Lire un fichier dans une chaîne de caractère" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004K/" display-uri="004K" type="local">fonction de lecture dans un fichier</fr:link>, rechercher toutes les occurrences du mot "algorithme" dans chacun de ces fichiers.</html:li>
+<html:li>Quelle est la complexité de cette fonction?
+<html:details>
+<html:summary><html:strong>[Indice]</html:strong></html:summary>
+Pensez à trouver le pire des cas, pour chacune des deux fonctions ci-dessus, et à comment les combiner.
+</html:details></html:li></html:ol>
+                </html:p>
+                <html:p>Cet algorithme est en pratique peu optimal: en effet, dans l'éventualité où la première lettre du motif correspond à la première lettre de la position courante, on va comparer la seconde lettre du motif et la seconde lettre de la position courante. Puis, à l'itération suivante, à l'étape suivante, cette même lettre sera à nouveau comparée, mais cette fois avec la première lettre du motif. Cela fait plus de comparaisons que nécessaire. Autrement dit: il n'y a pas de propagation d'information d'une itération à l'autre.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>11</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004J/</fr:uri>
+                <fr:display-uri>004J</fr:display-uri>
+                <fr:route>/cours-polytech-peip2-algo/004J/</fr:route>
+                <fr:title text="Algorithme de Rabin-Karp">Algorithme de Rabin-Karp</fr:title>
+                <fr:taxon>Exercice</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>L'algorithme de Rabin-Karp est un algorithme pour résoudre le problème de la recherche de sous-chaîne qui améliore <fr:link href="/cours-polytech-peip2-algo/004I/" title="Algorithme naïf de recherche de sous-chaînes" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004I/" display-uri="004I" type="local">l'algorithme naïf</fr:link> en introduisant une heuristique pour éviter de faire certaines comparaisons. Pour que cette algorithme soit efficace, il faut que le calcule de cette heuristique soit plus rapide que la comparaison des chaînes de caractères. Pour cela, on va introduire une notion de signature (appelée <html:em>hach</html:em>) associée à une chaîne de caractère, et avant de comparer deux chaînes de caractères, on va calculer leur hach et les comparer entre eux. Si les haches sont différents, on sait que les chaînes de caractères seront différentes sans même avoir besoin de les comparer. Si les haches sont les mêmes, alors il faudra comparer les chaînes de caractères pour savoir si elles sont les mêmes. Toute l'astuce de cet algorithme est de choisir une <html:em>fonction de hachage</html:em> (c'est à dire une manière de calculer le hach) qui soit efficace à calculer à partir du hach associé à l'étape précédente.</html:p>
+                <html:p>
+On commence par écrire la logique de l'algorithme sans se préoccuper du choix de la fonction de hachage. Pour cela on écrit les fonctions de hachage suivantes:
+
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+        <html:script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                        "remove-trailing": true,
+                        "remove-indent": true,
+                        "left-trim": true,
+                        "right-trim": true,
+                });</html:script>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié">
+<![CDATA[#include <iostream>
+#include <string.h>
+using namespace std;
+
+int hachage (string s){
+  return 0;
+}
+
+int nouveauHach (int ancientHach, string s, int ancientDebut, int nouvelleFin){
+  return 0;
+}]]>
+</html:code></html:pre>
+<html:ol><html:li>Ecrire une fonction <html:code>matchPosition</html:code> qui prend en entrée une chaîne de caractère <html:code>motif</html:code>, un entier <html:code>hachMotif</html:code> qui est le hach de <html:code>motif</html:code>, une chaîne de caractère <html:code>s</html:code>, un entier <fr:tex display="inline"><![CDATA[i]]></fr:tex> et un entier <html:code>hachCandidat</html:code> qui est le hach de la sous-chaîne de <html:code>s</html:code> de la même longueur que <html:code>motif</html:code> démarrant à la position <fr:tex display="inline"><![CDATA[i]]></fr:tex>.
+</html:li>
+<html:li>Ecrire une fonction <html:code>rabinKarp</html:code> qui prend en entrée une chaîne de caractères <html:code>motif</html:code>, une chaîne de caractères <html:code>s</html:code> et qui affiche à l'écran toutes les positions de la chaîne <html:code>s</html:code> à laquelle le motif apparaît, à l'aide de l'algorithme de Rabin-Karp. Attention à bien penser à recalculer le hache lorsque cela est nécessaire, même si avec la fonction courante le calcul est inutile.</html:li></html:ol>
+On souhaite travailler sur la fonction de hachage: Avec la fonction renvoyant toujours <html:code>0</html:code>, l'algorithme fonctionne, mais à aucun moment il ne détecte des haches différents. Pour coder la fonction de hachage, on va s'appuyer sur le fait que les caractères en <fr:resource hash="9fd1e57f01dc7c94ca6f284db6e1aabb"><fr:resource-content><html:img src="/cours-polytech-peip2-algo/9fd1e57f01dc7c94ca6f284db6e1aabb.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[\newcommand {\CC }{C\nolinebreak \hspace {-.05em}\raisebox {.4ex}{\tiny \bf  +}\nolinebreak \hspace {-.10em}\raisebox {.4ex}{\tiny \bf  +}}]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[\CC ]]></fr:resource-source></fr:resource> sont aussi des entiers, et on va donc faire des opérations avec.
+<html:ol><html:li>La première fonction de hachage que l'on va considérer est la fonction consistant à faire la somme de tous les caractères d'une chaîne de caractères.
+<html:ol><html:li>Remplir la fonction <html:code>hachage</html:code> de manière à calculer le hach d'une chaîne de caractères.</html:li>
+<html:li>Remplir la fonction <html:code>nouveahHach</html:code> de manière à recalculer le hach de la chaîne <fr:tex display="inline"><![CDATA[s{i+1,\ldots ,j}]]></fr:tex> à partir du hach de la chaîne <fr:tex display="inline"><![CDATA[s[i,\ldots ,j-1]]]></fr:tex>, de <fr:tex display="inline"><![CDATA[i]]></fr:tex> et de <fr:tex display="inline"><![CDATA[j]]></fr:tex>. Attention à le recalculer de manière efficace, et donc à ne pas simplement utiliser la fonction <html:code>hachage</html:code>.</html:li>
+<html:li>Télécharger les fichiers de test suivants dans le répertoire de travail.
+  <html:ul><html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmia4efjfaw4eu56ga7cgaokqgf6psyiqrrjrx6dzmzact7ux2pjtpy.txt">fichier1</html:a></html:span></html:li>
+    <html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmifin4uod3gxmqr7y4dqro7mvrfiv6zozx7uyrxozj5uowdivh37ey.txt">fichier2</html:a></html:span></html:li>
+    <html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmihazwz6evrhb2ahb6oh4pkup7itckoubvmiyh5ewwwjjeckimfd4i.txt">fichier3</html:a></html:span></html:li></html:ul>
+A l'aide de la <fr:link href="/cours-polytech-peip2-algo/004K/" title="Lire un fichier dans une chaîne de caractère" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004K/" display-uri="004K" type="local">fonction de lecture dans un fichier</fr:link>, rechercher toutes les occurrences du mot "algorithme" dans chacun de ces fichiers.</html:li></html:ol></html:li>
+<html:li>La seconde fonction de hachage consiste à représenter chacun des caractères comme un chiffre en base <fr:tex display="inline"><![CDATA[256]]></fr:tex> ( le nombre de symboles que l'on peut encoder dans un <html:code>char</html:code>), et à prendre l'ensemble modulo une constante, que l'on fixera à <fr:tex display="inline"><![CDATA[17]]></fr:tex>.
+<html:ol><html:li>Remplir la fonction <html:code>hachage</html:code> de manière à calculer le hach d'une chaîne de caractères.</html:li>
+<html:li>Remplir la fonction <html:code>nouveahHach</html:code> de manière à recalculer le hach de la chaîne <fr:tex display="inline"><![CDATA[s[i+1,\ldots ,j]]]></fr:tex> à partir du hach de la chaîne <fr:tex display="inline"><![CDATA[s[i,\ldots ,j-1]]]></fr:tex>, de <fr:tex display="inline"><![CDATA[i]]></fr:tex> et de <fr:tex display="inline"><![CDATA[j]]></fr:tex>. Attention à le recalculer de manière efficace, et donc à ne pas simplement utiliser la fonction <html:code>hachage</html:code>.</html:li>
+<html:li>Télécharger les fichiers de test suivants dans le répertoire de travail.
+  <html:ul><html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmia4efjfaw4eu56ga7cgaokqgf6psyiqrrjrx6dzmzact7ux2pjtpy.txt">fichier1</html:a></html:span></html:li>
+    <html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmifin4uod3gxmqr7y4dqro7mvrfiv6zozx7uyrxozj5uowdivh37ey.txt">fichier2</html:a></html:span></html:li>
+    <html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmihazwz6evrhb2ahb6oh4pkup7itckoubvmiyh5ewwwjjeckimfd4i.txt">fichier3</html:a></html:span></html:li></html:ul>
+A l'aide de la <fr:link href="/cours-polytech-peip2-algo/004K/" title="Lire un fichier dans une chaîne de caractère" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004K/" display-uri="004K" type="local">fonction de lecture dans un fichier</fr:link>, rechercher toutes les occurrences du mot "algorithme" dans chacun de ces fichiers.</html:li></html:ol></html:li></html:ol>
+On termine cette exercice par quelques questions concernant la complexité pratique de cet algorithme
+<html:ol><html:li>Quelle est la complexité de cet algorithme?</html:li>
+<html:li>Cet algorithme est-il plus ou moins rapide que l'algorithme naïf en pratique?</html:li>
+<html:li>On a considéré l'algorithme avec deux fonctions de hach différentes, qu'est-ce qui fait qu'une fonction de hach est meilleure qu'une autre en pratique?</html:li></html:ol></html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>11</fr:month>
+                  <fr:day>15</fr:day>
+                </fr:date>
+                <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004M/</fr:uri>
+                <fr:display-uri>004M</fr:display-uri>
+                <fr:route>/cours-polytech-peip2-algo/004M/</fr:route>
+                <fr:title text="Algorithme de Knuth-Morris-Pratt">Algorithme de Knuth-Morris-Pratt</fr:title>
+                <fr:taxon>Exercice</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p><html:strong>Principe</html:strong>: L'algorithme de Knuth-Morris-Pratt améliore l'algorithme naïf de la recherche de sous-chaînes en utilisant une idée simple. Si l'on a trouvé une correspondance entre les deux premières lettres du motif et une position, mais que la troisième lettre du motif ne correspond pas, et que par ailleurs les deux premières lettres sont différentes, alors plutôt que de décaler de <fr:tex display="inline"><![CDATA[1]]></fr:tex>, l'on directement décaler de <fr:tex display="inline"><![CDATA[2]]></fr:tex>. En effet, on sait déjà que la position suivante ne va pas contenir le motif, puisque sa première lettre est la deuxième lettre du motif, qui est différente de la première lettre. L'idée de cet algorithme est de généraliser cette observation, et de toujours décaler le motif au maximum lorsqu'on trouve des morceaux de correspondance. Pour cela, on commence par faire une analyse sur le motif, avant de rechercher les sous-chaînes, pour savoir de combien décaler en fonction de la taille du match. Pour cela on utilise une notion de plus grand préfixe-suffixe. On dit qu'un mot <fr:tex display="inline"><![CDATA[p]]></fr:tex> est un préfixe-suffixe d'un autre mot <fr:tex display="inline"><![CDATA[m]]></fr:tex>, s'il est à la fois un préfixe et un suffixe, c'est à dire que <fr:tex display="inline"><![CDATA[m]]></fr:tex> commence et termine par <fr:tex display="inline"><![CDATA[p]]></fr:tex>.</html:p>
+                <html:p>
+                  <html:ol><html:li>Construire une fonction <html:code>prefixeSuffixe</html:code> qui prend en entrée une chaîne de caractères <html:code>motif</html:code>, et un tableau d'entiers <html:code>prefixe</html:code> de même longueur que la chaîne de caractères, et qui remplit le tableau avec, en position <fr:tex display="inline"><![CDATA[i]]></fr:tex> la longueur du plus long préfixe-suffixe du préfixe de <html:code>motif</html:code> de longueur <fr:tex display="inline"><![CDATA[i]]></fr:tex>.</html:li>
+<html:li>Ecrire une fonction <html:code>matchPositionPrefixe</html:code> qui prend en entrée deux chaînes de caractères <html:code>motif</html:code> et <html:code>texte</html:code> et un entier <fr:tex display="inline"><![CDATA[i]]></fr:tex> et qui renvoie la longueur du plus grand préfixe de <html:code>motif</html:code> qui matche avec <html:code>texte</html:code> à partir de la position <fr:tex display="inline"><![CDATA[j]]></fr:tex>.</html:li>
+<html:li>Ecrire une fonction <html:code>kmp</html:code> qui prend en entrée deux chaînes de caractères <html:code>motif</html:code> et <html:code>texte</html:code> et effectue l'algorithme de Knuth-Morris-Pratt. Pour cela, on commencera par remplir un tableau <html:code>prefixe</html:code> grâce à la fonction <html:code>prefixeSuffixe</html:code>, pour connaître la longueur du plus grand préfixe-suffixe associé à tous les matchs potentiels du motif. On appellera la fonction <html:code>matchPositionPrefixe</html:code>, et on fera les choses suivantes en fonction du résultat.
+<html:ul><html:li>Si le résultat est <fr:tex display="inline"><![CDATA[0]]></fr:tex>, cela signifie que les deux premières lettres ne coincident pas, on décalera donc le motif de <fr:tex display="inline"><![CDATA[1]]></fr:tex>.</html:li>
+<html:li>Si le résultat est la longueur du motif, cela signifie que l'on a eu un match complet, et on affichera ce match, puis on décalera le motif, comme indiqué au point suivant.</html:li>
+<html:li>Si le résultat <fr:tex display="inline"><![CDATA[\ell ]]></fr:tex> est de longueur non-nul, on a eu un match partiel, et on souhaite donc décaler le motif. Idéalement on vooudrait décaler le motif de <fr:tex display="inline"><![CDATA[1+\ell ]]></fr:tex>, pour directement continuer de chercher des matchs dans la fin du texte. Cependent, on risque de sauter des matchs si l'on fait cela, car il est possible qu'un match débute entre la position courante et la position décalée de <fr:tex display="inline"><![CDATA[1+\ell ]]></fr:tex>. Pour y remédier, on décale seulement de <fr:tex display="inline"><![CDATA[1+\ell -p]]></fr:tex> où <fr:tex display="inline"><![CDATA[p]]></fr:tex> est la longueur du plus grand préfixe-suffixe du préfixe du motif qui a eu un match. Cette valeur se trouve en position <fr:tex display="inline"><![CDATA[\ell ]]></fr:tex> dans le tableau <html:code>prefixe</html:code>.</html:li></html:ul></html:li>
+<html:li>Télécharger les fichiers de test suivants dans le répertoire de travail.
+  <html:ul><html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmia4efjfaw4eu56ga7cgaokqgf6psyiqrrjrx6dzmzact7ux2pjtpy.txt">fichier1</html:a></html:span></html:li>
+    <html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmifin4uod3gxmqr7y4dqro7mvrfiv6zozx7uyrxozj5uowdivh37ey.txt">fichier2</html:a></html:span></html:li>
+    <html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmihazwz6evrhb2ahb6oh4pkup7itckoubvmiyh5ewwwjjeckimfd4i.txt">fichier3</html:a></html:span></html:li></html:ul>
+A l'aide de la <fr:link href="/cours-polytech-peip2-algo/004K/" title="Lire un fichier dans une chaîne de caractère" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004K/" display-uri="004K" type="local">fonction de lecture dans un fichier</fr:link>, rechercher toutes les occurrences du mot "algorithme" dans chacun de ces fichiers.</html:li>
+<html:li>La fonction précédente peut encore être améliorée: Dans le cas d'un match partiel avec la version actuelle, on revient au début du plus grand préfixe-suffixe, car on sait que l'on a eu un début de match à cet endroit, mais on teste à nouveau les premiers caractères, dont on sait qu'ils matchent. Pour éviter cela, écrire une amélioration où l'on maintient deux curseurs indépendants, l'un pour le texte et l'autre pour le motif.</html:li></html:ol>
+                </html:p>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>11</fr:month>
+              <fr:day>15</fr:day>
+            </fr:date>
+            <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004J/</fr:uri>
+            <fr:display-uri>004J</fr:display-uri>
+            <fr:route>/cours-polytech-peip2-algo/004J/</fr:route>
+            <fr:title text="Algorithme de Rabin-Karp">Algorithme de Rabin-Karp</fr:title>
+            <fr:taxon>Exercice</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>L'algorithme de Rabin-Karp est un algorithme pour résoudre le problème de la recherche de sous-chaîne qui améliore <fr:link href="/cours-polytech-peip2-algo/004I/" title="Algorithme naïf de recherche de sous-chaînes" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004I/" display-uri="004I" type="local">l'algorithme naïf</fr:link> en introduisant une heuristique pour éviter de faire certaines comparaisons. Pour que cette algorithme soit efficace, il faut que le calcule de cette heuristique soit plus rapide que la comparaison des chaînes de caractères. Pour cela, on va introduire une notion de signature (appelée <html:em>hach</html:em>) associée à une chaîne de caractère, et avant de comparer deux chaînes de caractères, on va calculer leur hach et les comparer entre eux. Si les haches sont différents, on sait que les chaînes de caractères seront différentes sans même avoir besoin de les comparer. Si les haches sont les mêmes, alors il faudra comparer les chaînes de caractères pour savoir si elles sont les mêmes. Toute l'astuce de cet algorithme est de choisir une <html:em>fonction de hachage</html:em> (c'est à dire une manière de calculer le hach) qui soit efficace à calculer à partir du hach associé à l'étape précédente.</html:p>
+            <html:p>
+On commence par écrire la logique de l'algorithme sans se préoccuper du choix de la fonction de hachage. Pour cela on écrit les fonctions de hachage suivantes:
+
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+        <html:script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                        "remove-trailing": true,
+                        "remove-indent": true,
+                        "left-trim": true,
+                        "right-trim": true,
+                });</html:script>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié">
+<![CDATA[#include <iostream>
+#include <string.h>
+using namespace std;
+
+int hachage (string s){
+  return 0;
+}
+
+int nouveauHach (int ancientHach, string s, int ancientDebut, int nouvelleFin){
+  return 0;
+}]]>
+</html:code></html:pre>
+<html:ol><html:li>Ecrire une fonction <html:code>matchPosition</html:code> qui prend en entrée une chaîne de caractère <html:code>motif</html:code>, un entier <html:code>hachMotif</html:code> qui est le hach de <html:code>motif</html:code>, une chaîne de caractère <html:code>s</html:code>, un entier <fr:tex display="inline"><![CDATA[i]]></fr:tex> et un entier <html:code>hachCandidat</html:code> qui est le hach de la sous-chaîne de <html:code>s</html:code> de la même longueur que <html:code>motif</html:code> démarrant à la position <fr:tex display="inline"><![CDATA[i]]></fr:tex>.
+</html:li>
+<html:li>Ecrire une fonction <html:code>rabinKarp</html:code> qui prend en entrée une chaîne de caractères <html:code>motif</html:code>, une chaîne de caractères <html:code>s</html:code> et qui affiche à l'écran toutes les positions de la chaîne <html:code>s</html:code> à laquelle le motif apparaît, à l'aide de l'algorithme de Rabin-Karp. Attention à bien penser à recalculer le hache lorsque cela est nécessaire, même si avec la fonction courante le calcul est inutile.</html:li></html:ol>
+On souhaite travailler sur la fonction de hachage: Avec la fonction renvoyant toujours <html:code>0</html:code>, l'algorithme fonctionne, mais à aucun moment il ne détecte des haches différents. Pour coder la fonction de hachage, on va s'appuyer sur le fait que les caractères en <fr:resource hash="9fd1e57f01dc7c94ca6f284db6e1aabb"><fr:resource-content><html:img src="/cours-polytech-peip2-algo/9fd1e57f01dc7c94ca6f284db6e1aabb.svg" /></fr:resource-content><fr:resource-source type="latex" part="preamble"><![CDATA[\newcommand {\CC }{C\nolinebreak \hspace {-.05em}\raisebox {.4ex}{\tiny \bf  +}\nolinebreak \hspace {-.10em}\raisebox {.4ex}{\tiny \bf  +}}]]></fr:resource-source><fr:resource-source type="latex" part="body"><![CDATA[\CC ]]></fr:resource-source></fr:resource> sont aussi des entiers, et on va donc faire des opérations avec.
+<html:ol><html:li>La première fonction de hachage que l'on va considérer est la fonction consistant à faire la somme de tous les caractères d'une chaîne de caractères.
+<html:ol><html:li>Remplir la fonction <html:code>hachage</html:code> de manière à calculer le hach d'une chaîne de caractères.</html:li>
+<html:li>Remplir la fonction <html:code>nouveahHach</html:code> de manière à recalculer le hach de la chaîne <fr:tex display="inline"><![CDATA[s{i+1,\ldots ,j}]]></fr:tex> à partir du hach de la chaîne <fr:tex display="inline"><![CDATA[s[i,\ldots ,j-1]]]></fr:tex>, de <fr:tex display="inline"><![CDATA[i]]></fr:tex> et de <fr:tex display="inline"><![CDATA[j]]></fr:tex>. Attention à le recalculer de manière efficace, et donc à ne pas simplement utiliser la fonction <html:code>hachage</html:code>.</html:li>
+<html:li>Télécharger les fichiers de test suivants dans le répertoire de travail.
+  <html:ul><html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmia4efjfaw4eu56ga7cgaokqgf6psyiqrrjrx6dzmzact7ux2pjtpy.txt">fichier1</html:a></html:span></html:li>
+    <html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmifin4uod3gxmqr7y4dqro7mvrfiv6zozx7uyrxozj5uowdivh37ey.txt">fichier2</html:a></html:span></html:li>
+    <html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmihazwz6evrhb2ahb6oh4pkup7itckoubvmiyh5ewwwjjeckimfd4i.txt">fichier3</html:a></html:span></html:li></html:ul>
+A l'aide de la <fr:link href="/cours-polytech-peip2-algo/004K/" title="Lire un fichier dans une chaîne de caractère" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004K/" display-uri="004K" type="local">fonction de lecture dans un fichier</fr:link>, rechercher toutes les occurrences du mot "algorithme" dans chacun de ces fichiers.</html:li></html:ol></html:li>
+<html:li>La seconde fonction de hachage consiste à représenter chacun des caractères comme un chiffre en base <fr:tex display="inline"><![CDATA[256]]></fr:tex> ( le nombre de symboles que l'on peut encoder dans un <html:code>char</html:code>), et à prendre l'ensemble modulo une constante, que l'on fixera à <fr:tex display="inline"><![CDATA[17]]></fr:tex>.
+<html:ol><html:li>Remplir la fonction <html:code>hachage</html:code> de manière à calculer le hach d'une chaîne de caractères.</html:li>
+<html:li>Remplir la fonction <html:code>nouveahHach</html:code> de manière à recalculer le hach de la chaîne <fr:tex display="inline"><![CDATA[s[i+1,\ldots ,j]]]></fr:tex> à partir du hach de la chaîne <fr:tex display="inline"><![CDATA[s[i,\ldots ,j-1]]]></fr:tex>, de <fr:tex display="inline"><![CDATA[i]]></fr:tex> et de <fr:tex display="inline"><![CDATA[j]]></fr:tex>. Attention à le recalculer de manière efficace, et donc à ne pas simplement utiliser la fonction <html:code>hachage</html:code>.</html:li>
+<html:li>Télécharger les fichiers de test suivants dans le répertoire de travail.
+  <html:ul><html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmia4efjfaw4eu56ga7cgaokqgf6psyiqrrjrx6dzmzact7ux2pjtpy.txt">fichier1</html:a></html:span></html:li>
+    <html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmifin4uod3gxmqr7y4dqro7mvrfiv6zozx7uyrxozj5uowdivh37ey.txt">fichier2</html:a></html:span></html:li>
+    <html:li><html:span class="link local"><html:a href="/cours-polytech-peip2-algo/bafkrmihazwz6evrhb2ahb6oh4pkup7itckoubvmiyh5ewwwjjeckimfd4i.txt">fichier3</html:a></html:span></html:li></html:ul>
+A l'aide de la <fr:link href="/cours-polytech-peip2-algo/004K/" title="Lire un fichier dans une chaîne de caractère" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004K/" display-uri="004K" type="local">fonction de lecture dans un fichier</fr:link>, rechercher toutes les occurrences du mot "algorithme" dans chacun de ces fichiers.</html:li></html:ol></html:li></html:ol>
+On termine cette exercice par quelques questions concernant la complexité pratique de cet algorithme
+<html:ol><html:li>Quelle est la complexité de cet algorithme?</html:li>
+<html:li>Cet algorithme est-il plus ou moins rapide que l'algorithme naïf en pratique?</html:li>
+<html:li>On a considéré l'algorithme avec deux fonctions de hach différentes, qu'est-ce qui fait qu'une fonction de hach est meilleure qu'une autre en pratique?</html:li></html:ol></html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>11</fr:month>
+              <fr:day>15</fr:day>
+            </fr:date>
+            <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004K/</fr:uri>
+            <fr:display-uri>004K</fr:display-uri>
+            <fr:route>/cours-polytech-peip2-algo/004K/</fr:route>
+            <fr:title text="Lire un fichier dans une chaîne de caractère">Lire un fichier dans une chaîne de caractère</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>
+Pour lire un fichier s'appelant <html:code>nomFichier</html:code> que l'on place dans le même dossier que l'exécutable, on utilisera la fonction suivante:
+
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+        <html:script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                        "remove-trailing": true,
+                        "remove-indent": true,
+                        "left-trim": true,
+                        "right-trim": true,
+                });</html:script>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié">
+#include &lt;string&gt;
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;iterator&gt;
+using namespace std;
+
+string lireFichier (string nomFichier){
+  ifstream f(nomFichier);
+  if (!f.is_open()){
+    cerr &lt;&lt; "Erreur dans l'ouverture du fichier " &lt;&lt; nomFichier &lt;&lt; endl;
+  }
+  string file = string(istreambuf_iterator&lt;char&gt;(f), istreambuf_iterator&lt;char&gt;());
+  f.close();
+  return file;
+}
+</html:code></html:pre></html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

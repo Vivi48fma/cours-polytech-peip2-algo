@@ -100,11 +100,8 @@
               </fr:frontmatter>
               <fr:mainmatter>
                 <html:p>
-                  <html:ul>
-                    <html:li>
-                      <fr:link href="/cours-polytech-peip2-algo/Seance-TP1/" title="TP 1 : Tri par sélection et tri par insertion" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TP1/" display-uri="Seance-TP1" type="local">TP 1</fr:link>
-                    </html:li>
-                  </html:ul>
+                  <html:ul><html:li><fr:link href="/cours-polytech-peip2-algo/Seance-TP1/" title="TP 1 : Tri par sélection et tri par insertion" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TP1/" display-uri="Seance-TP1" type="local">TP 1</fr:link></html:li>
+<html:li><fr:link href="/cours-polytech-peip2-algo/Seance-TP2/" title="TP2 : Algorithmes de recherche de sous-chaîne" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TP2/" display-uri="Seance-TP2" type="local">TP 2</fr:link></html:li></html:ul>
                 </html:p>
               </fr:mainmatter>
             </fr:tree>

@@ -348,6 +348,27 @@ auto duree = duration_cast<microseconds>(stop - start);
 cout << "la fonction f a pris " << duree.count() << " ms";]]></html:code></html:pre></html:p>
                   </fr:mainmatter>
                 </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>11</fr:month>
+                      <fr:day>15</fr:day>
+                    </fr:date>
+                    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004L/</fr:uri>
+                    <fr:display-uri>004L</fr:display-uri>
+                    <fr:route>/cours-polytech-peip2-algo/004L/</fr:route>
+                    <fr:title text="Longueur d'une chaîne de caractères">Longueur d'une chaîne de caractères</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>On rappelle que pour les chaînes de caractères, on peut ajouter <html:code><![CDATA[ #include<string.h>]]></html:code> en tête du fichier, et ensuite  utiliser la fonction <html:code>strlen</html:code> pour récupérer la longueur d'une chaîne de caractères</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">

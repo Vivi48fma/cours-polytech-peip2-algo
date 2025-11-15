@@ -1,0 +1,7 @@
+\title{Le problème de la recherche de sous-chaînes}
+\author{thibautbenjamin}
+\date{2025-11-15T11:05:35Z}
+
+\p{Un problème de [recherche de sous-chaîne](https://fr.wikipedia.org/wiki/Algorithme_de_recherche_de_sous-chaîne) (ou en anglais \em{string-matching problem}) est un problème dans lequel on dispose une chaîne de charactère que l'on appellera le \em{motif}, et l'on donne une chaîne de chacactères #{s} en entrée. Le problème consiste à trouver toutes les occurrences (ou parfois simplement la première occurrence) du motif dans la chaîne de charactère #{s}.}
+
+\p{Par exemple, supposons que le motif soit la chaîne de charactère "ille" et que la chaîne donnée en entrée soit "La vieille maison dans la ville." alors le motif apparaît aux deux positions affichées en gras: "La vie\strong{ille} maison dans la v\strong{ille}". Un algorithme de recherche de sous-chaîne devra alors renvoyer les positions de début des deux sous-chaînes en gras, (ou alors seulement la position de la première)}
