@@ -6,6 +6,9 @@
       <fr:author>
         <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
       </fr:author>
+      <fr:contributor>
+        <fr:link href="/cours-polytech-peip2-algo/violettechateau/" title="Violette Chateau" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/violettechateau/" display-uri="violettechateau" type="local">Violette Chateau</fr:link>
+      </fr:contributor>
     </fr:authors>
     <fr:date>
       <fr:year>2025</fr:year>
@@ -237,6 +240,9 @@ td { padding-top: 10px;
           <fr:author>
             <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
           </fr:author>
+          <fr:contributor>
+            <fr:link href="/cours-polytech-peip2-algo/violettechateau/" title="Violette Chateau" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/violettechateau/" display-uri="violettechateau" type="local">Violette Chateau</fr:link>
+          </fr:contributor>
         </fr:authors>
         <fr:date>
           <fr:year>2025</fr:year>
@@ -284,6 +290,9 @@ td { padding-top: 10px;
               <fr:author>
                 <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
               </fr:author>
+              <fr:author>
+                <fr:link href="/cours-polytech-peip2-algo/violettechateau/" title="Violette Chateau" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/violettechateau/" display-uri="violettechateau" type="local">Violette Chateau</fr:link>
+              </fr:author>
             </fr:authors>
             <fr:date>
               <fr:year>2025</fr:year>
@@ -300,7 +309,7 @@ td { padding-top: 10px;
             <html:p>La notation <fr:tex display="inline"><![CDATA[\Theta ]]></fr:tex> satisfait les propriétés suivantes
 <html:ul><html:li><html:strong>Lien avec <fr:tex display="inline"><![CDATA[\mathcal {O}]]></fr:tex> et <fr:tex display="inline"><![CDATA[\Omega ]]></fr:tex>:</html:strong> On a <fr:tex display="inline"><![CDATA[f(n) = \Theta (g(n))]]></fr:tex> si et seulement si <fr:tex display="inline"><![CDATA[f(n) = \mathcal {O}(g(n))]]></fr:tex> et <fr:tex display="inline"><![CDATA[f(n) = \Omega (g(n))]]></fr:tex></html:li>
 <html:li><html:strong>Réflexivité:</html:strong> Toute fonction <fr:tex display="inline"><![CDATA[f]]></fr:tex> satisfait <fr:tex display="inline"><![CDATA[f(n) = \Theta (f(n))]]></fr:tex></html:li>
-<html:li><html:strong>Transitivité:</html:strong> Si <fr:tex display="inline"><![CDATA[f(n) = \mathcal {O}(g(n))]]></fr:tex> et <fr:tex display="inline"><![CDATA[g(n) = \Theta (h(n))]]></fr:tex> alors <fr:tex display="inline"><![CDATA[f(n) = \Theta (h(n))]]></fr:tex></html:li>
+<html:li><html:strong>Transitivité:</html:strong> Si <fr:tex display="inline"><![CDATA[f(n) = \Theta (g(n))]]></fr:tex> et <fr:tex display="inline"><![CDATA[g(n) = \Theta (h(n))]]></fr:tex> alors <fr:tex display="inline"><![CDATA[f(n) = \Theta (h(n))]]></fr:tex></html:li>
 <html:li><html:strong>Multiplication par une constante:</html:strong> Si <fr:tex display="inline"><![CDATA[f(n) = \Theta (g(n))]]></fr:tex> et <fr:tex display="inline"><![CDATA[k > 0]]></fr:tex> alors <fr:tex display="inline"><![CDATA[f(n) = \Theta (kg(n))]]></fr:tex></html:li></html:ul></html:p>
           </fr:mainmatter>
         </fr:tree>
@@ -312,6 +321,9 @@ td { padding-top: 10px;
           <fr:author>
             <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
           </fr:author>
+          <fr:contributor>
+            <fr:link href="/cours-polytech-peip2-algo/violettechateau/" title="Violette Chateau" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/violettechateau/" display-uri="violettechateau" type="local">Violette Chateau</fr:link>
+          </fr:contributor>
         </fr:authors>
         <fr:date>
           <fr:year>2025</fr:year>
@@ -426,6 +438,9 @@ td { padding-top: 10px;
               <fr:author>
                 <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
               </fr:author>
+              <fr:contributor>
+                <fr:link href="/cours-polytech-peip2-algo/violettechateau/" title="Violette Chateau" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/violettechateau/" display-uri="violettechateau" type="local">Violette Chateau</fr:link>
+              </fr:contributor>
             </fr:authors>
             <fr:date>
               <fr:year>2025</fr:year>
@@ -446,6 +461,9 @@ td { padding-top: 10px;
                   <fr:author>
                     <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
                   </fr:author>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/violettechateau/" title="Violette Chateau" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/violettechateau/" display-uri="violettechateau" type="local">Violette Chateau</fr:link>
+                  </fr:author>
                 </fr:authors>
                 <fr:date>
                   <fr:year>2025</fr:year>
@@ -462,7 +480,7 @@ td { padding-top: 10px;
                 <html:p>La notation <fr:tex display="inline"><![CDATA[\Theta ]]></fr:tex> satisfait les propriétés suivantes
 <html:ul><html:li><html:strong>Lien avec <fr:tex display="inline"><![CDATA[\mathcal {O}]]></fr:tex> et <fr:tex display="inline"><![CDATA[\Omega ]]></fr:tex>:</html:strong> On a <fr:tex display="inline"><![CDATA[f(n) = \Theta (g(n))]]></fr:tex> si et seulement si <fr:tex display="inline"><![CDATA[f(n) = \mathcal {O}(g(n))]]></fr:tex> et <fr:tex display="inline"><![CDATA[f(n) = \Omega (g(n))]]></fr:tex></html:li>
 <html:li><html:strong>Réflexivité:</html:strong> Toute fonction <fr:tex display="inline"><![CDATA[f]]></fr:tex> satisfait <fr:tex display="inline"><![CDATA[f(n) = \Theta (f(n))]]></fr:tex></html:li>
-<html:li><html:strong>Transitivité:</html:strong> Si <fr:tex display="inline"><![CDATA[f(n) = \mathcal {O}(g(n))]]></fr:tex> et <fr:tex display="inline"><![CDATA[g(n) = \Theta (h(n))]]></fr:tex> alors <fr:tex display="inline"><![CDATA[f(n) = \Theta (h(n))]]></fr:tex></html:li>
+<html:li><html:strong>Transitivité:</html:strong> Si <fr:tex display="inline"><![CDATA[f(n) = \Theta (g(n))]]></fr:tex> et <fr:tex display="inline"><![CDATA[g(n) = \Theta (h(n))]]></fr:tex> alors <fr:tex display="inline"><![CDATA[f(n) = \Theta (h(n))]]></fr:tex></html:li>
 <html:li><html:strong>Multiplication par une constante:</html:strong> Si <fr:tex display="inline"><![CDATA[f(n) = \Theta (g(n))]]></fr:tex> et <fr:tex display="inline"><![CDATA[k > 0]]></fr:tex> alors <fr:tex display="inline"><![CDATA[f(n) = \Theta (kg(n))]]></fr:tex></html:li></html:ul></html:p>
               </fr:mainmatter>
             </fr:tree>
@@ -764,6 +782,9 @@ On cherche maintenant à généraliser ce résultat:
               <fr:author>
                 <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
               </fr:author>
+              <fr:contributor>
+                <fr:link href="/cours-polytech-peip2-algo/violettechateau/" title="Violette Chateau" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/violettechateau/" display-uri="violettechateau" type="local">Violette Chateau</fr:link>
+              </fr:contributor>
             </fr:authors>
             <fr:date>
               <fr:year>2025</fr:year>
@@ -2068,6 +2089,9 @@ int main (){
                   <fr:author>
                     <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
                   </fr:author>
+                  <fr:contributor>
+                    <fr:link href="/cours-polytech-peip2-algo/violettechateau/" title="Violette Chateau" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/violettechateau/" display-uri="violettechateau" type="local">Violette Chateau</fr:link>
+                  </fr:contributor>
                 </fr:authors>
                 <fr:date>
                   <fr:year>2025</fr:year>
@@ -2299,6 +2323,9 @@ td { padding-top: 10px;
                       <fr:author>
                         <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
                       </fr:author>
+                      <fr:contributor>
+                        <fr:link href="/cours-polytech-peip2-algo/violettechateau/" title="Violette Chateau" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/violettechateau/" display-uri="violettechateau" type="local">Violette Chateau</fr:link>
+                      </fr:contributor>
                     </fr:authors>
                     <fr:date>
                       <fr:year>2025</fr:year>
@@ -2346,6 +2373,9 @@ td { padding-top: 10px;
                           <fr:author>
                             <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
                           </fr:author>
+                          <fr:author>
+                            <fr:link href="/cours-polytech-peip2-algo/violettechateau/" title="Violette Chateau" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/violettechateau/" display-uri="violettechateau" type="local">Violette Chateau</fr:link>
+                          </fr:author>
                         </fr:authors>
                         <fr:date>
                           <fr:year>2025</fr:year>
@@ -2362,7 +2392,7 @@ td { padding-top: 10px;
                         <html:p>La notation <fr:tex display="inline"><![CDATA[\Theta ]]></fr:tex> satisfait les propriétés suivantes
 <html:ul><html:li><html:strong>Lien avec <fr:tex display="inline"><![CDATA[\mathcal {O}]]></fr:tex> et <fr:tex display="inline"><![CDATA[\Omega ]]></fr:tex>:</html:strong> On a <fr:tex display="inline"><![CDATA[f(n) = \Theta (g(n))]]></fr:tex> si et seulement si <fr:tex display="inline"><![CDATA[f(n) = \mathcal {O}(g(n))]]></fr:tex> et <fr:tex display="inline"><![CDATA[f(n) = \Omega (g(n))]]></fr:tex></html:li>
 <html:li><html:strong>Réflexivité:</html:strong> Toute fonction <fr:tex display="inline"><![CDATA[f]]></fr:tex> satisfait <fr:tex display="inline"><![CDATA[f(n) = \Theta (f(n))]]></fr:tex></html:li>
-<html:li><html:strong>Transitivité:</html:strong> Si <fr:tex display="inline"><![CDATA[f(n) = \mathcal {O}(g(n))]]></fr:tex> et <fr:tex display="inline"><![CDATA[g(n) = \Theta (h(n))]]></fr:tex> alors <fr:tex display="inline"><![CDATA[f(n) = \Theta (h(n))]]></fr:tex></html:li>
+<html:li><html:strong>Transitivité:</html:strong> Si <fr:tex display="inline"><![CDATA[f(n) = \Theta (g(n))]]></fr:tex> et <fr:tex display="inline"><![CDATA[g(n) = \Theta (h(n))]]></fr:tex> alors <fr:tex display="inline"><![CDATA[f(n) = \Theta (h(n))]]></fr:tex></html:li>
 <html:li><html:strong>Multiplication par une constante:</html:strong> Si <fr:tex display="inline"><![CDATA[f(n) = \Theta (g(n))]]></fr:tex> et <fr:tex display="inline"><![CDATA[k > 0]]></fr:tex> alors <fr:tex display="inline"><![CDATA[f(n) = \Theta (kg(n))]]></fr:tex></html:li></html:ul></html:p>
                       </fr:mainmatter>
                     </fr:tree>
@@ -2374,6 +2404,9 @@ td { padding-top: 10px;
                       <fr:author>
                         <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
                       </fr:author>
+                      <fr:contributor>
+                        <fr:link href="/cours-polytech-peip2-algo/violettechateau/" title="Violette Chateau" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/violettechateau/" display-uri="violettechateau" type="local">Violette Chateau</fr:link>
+                      </fr:contributor>
                     </fr:authors>
                     <fr:date>
                       <fr:year>2025</fr:year>
@@ -2488,6 +2521,9 @@ td { padding-top: 10px;
                           <fr:author>
                             <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
                           </fr:author>
+                          <fr:contributor>
+                            <fr:link href="/cours-polytech-peip2-algo/violettechateau/" title="Violette Chateau" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/violettechateau/" display-uri="violettechateau" type="local">Violette Chateau</fr:link>
+                          </fr:contributor>
                         </fr:authors>
                         <fr:date>
                           <fr:year>2025</fr:year>
@@ -2508,6 +2544,9 @@ td { padding-top: 10px;
                               <fr:author>
                                 <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
                               </fr:author>
+                              <fr:author>
+                                <fr:link href="/cours-polytech-peip2-algo/violettechateau/" title="Violette Chateau" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/violettechateau/" display-uri="violettechateau" type="local">Violette Chateau</fr:link>
+                              </fr:author>
                             </fr:authors>
                             <fr:date>
                               <fr:year>2025</fr:year>
@@ -2524,7 +2563,7 @@ td { padding-top: 10px;
                             <html:p>La notation <fr:tex display="inline"><![CDATA[\Theta ]]></fr:tex> satisfait les propriétés suivantes
 <html:ul><html:li><html:strong>Lien avec <fr:tex display="inline"><![CDATA[\mathcal {O}]]></fr:tex> et <fr:tex display="inline"><![CDATA[\Omega ]]></fr:tex>:</html:strong> On a <fr:tex display="inline"><![CDATA[f(n) = \Theta (g(n))]]></fr:tex> si et seulement si <fr:tex display="inline"><![CDATA[f(n) = \mathcal {O}(g(n))]]></fr:tex> et <fr:tex display="inline"><![CDATA[f(n) = \Omega (g(n))]]></fr:tex></html:li>
 <html:li><html:strong>Réflexivité:</html:strong> Toute fonction <fr:tex display="inline"><![CDATA[f]]></fr:tex> satisfait <fr:tex display="inline"><![CDATA[f(n) = \Theta (f(n))]]></fr:tex></html:li>
-<html:li><html:strong>Transitivité:</html:strong> Si <fr:tex display="inline"><![CDATA[f(n) = \mathcal {O}(g(n))]]></fr:tex> et <fr:tex display="inline"><![CDATA[g(n) = \Theta (h(n))]]></fr:tex> alors <fr:tex display="inline"><![CDATA[f(n) = \Theta (h(n))]]></fr:tex></html:li>
+<html:li><html:strong>Transitivité:</html:strong> Si <fr:tex display="inline"><![CDATA[f(n) = \Theta (g(n))]]></fr:tex> et <fr:tex display="inline"><![CDATA[g(n) = \Theta (h(n))]]></fr:tex> alors <fr:tex display="inline"><![CDATA[f(n) = \Theta (h(n))]]></fr:tex></html:li>
 <html:li><html:strong>Multiplication par une constante:</html:strong> Si <fr:tex display="inline"><![CDATA[f(n) = \Theta (g(n))]]></fr:tex> et <fr:tex display="inline"><![CDATA[k > 0]]></fr:tex> alors <fr:tex display="inline"><![CDATA[f(n) = \Theta (kg(n))]]></fr:tex></html:li></html:ul></html:p>
                           </fr:mainmatter>
                         </fr:tree>

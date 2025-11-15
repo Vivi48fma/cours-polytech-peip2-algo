@@ -1,5 +1,6 @@
 \title{Grand Theta}
 \author{thibautbenjamin}
+\author{violettechateau}
 \taxon{Propriétés}
 \date{2025-10-27T10:08:14Z}
 \import{basemacros}
@@ -8,7 +9,7 @@
 \ul{
 \li{\strong{Lien avec \O et #{\Omega}:} On a #{f(n) = \Theta(g(n))} si et seulement si #{f(n) = \O(g(n))} et #{f(n) = \Omega(g(n))}}
 \li{\strong{Réflexivité:} Toute fonction #{f} satisfait #{f(n) = \Theta(f(n))}}
-\li{\strong{Transitivité:} Si #{f(n) = \O(g(n))} et #{g(n) = \Theta(h(n))} alors #{f(n) = \Theta(h(n))}}
+\li{\strong{Transitivité:} Si #{f(n) = \Theta(g(n))} et #{g(n) = \Theta(h(n))} alors #{f(n) = \Theta(h(n))}}
 \li{\strong{Multiplication par une constante:} Si #{f(n) = \Theta(g(n))} et #{k > 0} alors #{f(n) = \Theta(kg(n))}}
 }
 }
