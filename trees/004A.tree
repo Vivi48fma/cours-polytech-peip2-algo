@@ -7,7 +7,7 @@
 \p{L'objectif de cet exercice est de calculer la fonction puissance sur les nombres entiers de manière efficace. On n'utilisera bien sur pas la fonction puissance de \Cpp!}
 
 \p{\ol{
-\li{Ecrire une fonction itérative \code{puissance(int x, int n)} qui renvoie le nombre #{x^n}.}
+\li{Ecrire une fonction itérative \code{puissance(int x, int n)} qui renvoie le nombre #{x^n}, en supposant que #{n > 0}.}
 \li{Quelle est la complexité de cette fonction?}
 \li{Traduire la fonction précédente en fonction récursive. \indice{Remarquer que l'on a la formule #{x^{n+1} = x^n \times x}.}}
 \li{Quelle est la complexité de cette fonction?}
