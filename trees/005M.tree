@@ -1,0 +1,14 @@
+\title{Tri par comptage, stable}
+\author{thibautbenjamin}
+\taxon{Exercice}
+\import{basemacros}
+\date{2025-11-23T14:22:36Z}
+
+\p{L'algorithme de [tri par comptage](005L) présenté précédement n'est pas un algorithme de tri [stable](005N). L'objectif de cet exercice est de remédier à cela en créant un algorithme de tri par comptage stable. Pour cela on supposera qu'on a déjà la fonction \code{compter} du [tri par comptage](005L).
+\ol{
+\li{Ecrire une fonction \code{calculPrefixes} qui prend en entrée un entier \code{l} et un tableau \code{compte} de taille \code{l}, et un tableau \code{debuts} de taille \code{l}, et qui remplit le tableau de la manière suivante: A supposer que  \code{compte[i]} contienne le compte des occurrences de \code{i} dans un tableau, \code{debuts[i]} contient l'indice où la première occurrence de \code{i} dans le tableau trié se situera. \indice{Pour calculer \code{debut[i]}, il faut faire la somme de tous les  \code{compte[j]}, pour \code{j<i}.}}
+\li{Quelle est la complexité de la fonction \code{calculPrefixes}?}
+\li{Ecrire une fonction \code{triComptage} qui effectue le tri par comptage stable sur le tableau.}
+\li{Quelle est la complexité de cette fonction?}
+}
+}

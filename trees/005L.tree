@@ -1,0 +1,14 @@
+\title{Tri par comptage}
+\author{thibautbenjamin}
+\taxon{Exercice}
+\date{2025-11-23T14:22:03Z}
+
+\p{Le tri par comptage est un algorithme de tri adapté si l'on sait à l'avance que tous les tableaux que l'on souhaite trié contiennent des entiers positifs plus petits qu'une certaine valeur #{M}. On appellera \code{max} la variable représentant l'entier #{M}. L'idée du tri par comptage est de faire un parcourt du tableau que l'on souhaite trier, en comptant le nombre d'occurrence de chacunes des valeurs entre #{0} et #{M} dans un tableau auxilliaire. A partir du tableau de comptage, il est possible de déduire le tableau trié rapidement.
+
+\ol{
+\li{Ecrire une fonction \code{compter} qui prend en entrée un entier \code{n}, un entier \code{max}, un tableau \code{tab} de taille \code{n} contenant que des nombres compris entre \code{0} et \code{max} et un tableau \code{compte} de longueur \code{max+1} initialisé à \code{0}, et qui rempli de tableau \code{compte} de manière à ce que pour tout \code{i}, l'élément \code{compte[i]} représente le nombre de fois où l'entier \code{i} apparaît dans le tableau \code{tab}.}
+\li{Ecrire un algorithme \code{remplirTableau}, qui prend en entrée un entier \code{n}, un tableau \code{tab} de longueur \code{n}, un entier \code{l} et un tableau \code{compte} de longueur \code{l} contenant des nombres tous positifs dont la somme est \code{n}, et qui remplit le tableau \code{tab} tel qu'à la fin le tableau soit trié, et que tout entier \code{i} apparaît dans \code{tab} exactement \code{compte[i]} fois.}
+\li{Ecrire une fonction \code{triComptage} qui prend un entier \code{n}, une borne \code{max} et un tableau \code{tab} de taille \code{n} contenant que des nombres compris entre \code{0} et  \code{max}, et qui effectue le tri pas comptage sur ces nombres.}
+\li{Quelle est la complexité de cet algorithme?}
+}
+}

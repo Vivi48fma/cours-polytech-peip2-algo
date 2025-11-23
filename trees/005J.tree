@@ -1,0 +1,15 @@
+\title{Calcul du PGCD par récursion}
+\author{thibautbenjamin}
+\taxon{Exercice}
+\import{basemacros}
+\date{2025-11-21T14:13:46Z}
+
+\p{L'objectif de cet exercice est de calculer le PGCD de deux nombres entiers positifs grâce à l'algorithme d'Euclide, implémenté comme une fonction récursive. On rappelle que l'algorithme d'Euclide consiste s'appuye sur la formule, pour #{a \ge b}
+##{\mathrm{pgcd}(a,b) = \mathrm{pgcd}(b,a-b)}
+\ol{
+\li{Ecrire une fonction récursive \code{pgcd} permettant de calculer le pgcd de #{a} et #{b} par l'algorithme d'Euclide. Pensez au cas de base, lorsque #{b = 0}, et notez que si #{a < b}, il faudra d'abord inverser le rôle de #{a} et #{b}.}
+\li{On appelle \code{pgcd(66,24)}, écrire manuellement la série d'appels récursifs permettant d'atteindre le résultat.}
+\li{Quelle suite définie par récurrence faudrait-il résoudre pour calculer la complexité de cet algorithme?}
+}
+
+}

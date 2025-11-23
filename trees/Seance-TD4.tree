@@ -1,0 +1,10 @@
+\title{TD 4}
+\author{thibautbenjamin}
+\import{basemacros}
+\date{2025-11-21T14:07:47Z}
+
+\p{\strong{Objectif}: L'objectif de cette séance est de combiner les différentes notions vues lors de ce cours en des exercices plus avancés, et de présenter quelques notions pour aller plus loin. Cette séance contient des exercices plus difficiles, et a pour but de vous montrer qu'il existe des problèmes intéressants au dela de ceux que l'on a vu en cours. Ne soyez pas intimidés par la difficulté, il n'est pas attendu que vous maitrisiez parfaitement les concepts plus avancés.}
+
+\transclude{005J}
+\transclude{005Q}
+\transclude{005K}

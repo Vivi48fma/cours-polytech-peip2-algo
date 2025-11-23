@@ -1,0 +1,8 @@
+\title{Stabilité des algorithmes de tri}
+\author{thibautbenjamin}
+\import{basemacros}
+\date{2025-11-23T14:37:29Z}
+
+\p{On dit qu'un algorithme de tri est stable si, lorsque l'on a deux éléments dans notre tableau qui sont égaux pour l'ordre par rapport auquel on les compare, l'ordre dans lequel ces deux éléments apparaîssent est le même dans le tableau trié que dans le tableau initial. Les algorithmes de tri stables sont pertinent lorsque l'on cherche à trier des données complexes par rapport à une métrique simple.}
+
+\transclude{005O}

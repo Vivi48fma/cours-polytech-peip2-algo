@@ -1,0 +1,11 @@
+\title{Des algorithmes de tris meilleurs que l'optimal?}
+\author{thibautbenjamin}
+\taxon{Receuil d'exercices}
+\import{basemacros}
+\date{2025-11-23T14:19:29Z}
+
+\p{L'objectif de ces exercices est d'aborder des algorithmes de tri meilleurs que l'optimal théorique vu en cours, mais qui ne s'appliquent que dans ces cas spécifiques.}
+
+\transclude{005L}
+\transclude{005M}
+\transclude{005P}

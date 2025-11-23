@@ -4628,7 +4628,8 @@ On cherche maintenant à généraliser ce résultat:
                 <html:p>
                   <html:ul><html:li><fr:link href="/cours-polytech-peip2-algo/Seance-TD1/" title="TD 1" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TD1/" display-uri="Seance-TD1" type="local">TD 1</fr:link></html:li>
 <html:li><fr:link href="/cours-polytech-peip2-algo/Seance-TD2/" title="TD 2" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TD2/" display-uri="Seance-TD2" type="local">TD 2</fr:link></html:li>
-<html:li><fr:link href="/cours-polytech-peip2-algo/Seance-TD3/" title="TD 3" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TD3/" display-uri="Seance-TD3" type="local">TD 3</fr:link></html:li></html:ul>
+<html:li><fr:link href="/cours-polytech-peip2-algo/Seance-TD3/" title="TD 3" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TD3/" display-uri="Seance-TD3" type="local">TD 3</fr:link></html:li>
+<html:li><fr:link href="/cours-polytech-peip2-algo/Seance-TD4/" title="TD 4" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TD4/" display-uri="Seance-TD4" type="local">TD 4</fr:link></html:li></html:ul>
                 </html:p>
               </fr:mainmatter>
             </fr:tree>

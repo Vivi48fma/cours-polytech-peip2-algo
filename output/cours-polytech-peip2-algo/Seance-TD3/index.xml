@@ -208,7 +208,7 @@ Chercher une autre relation mathématique satisfaite par la fonction puissance. 
       <fr:mainmatter>
         <html:p>L'objectif de cet exercice est d'énumérer toutes les permutations possibles d'un tableau. Pour cela on va procéder de manière récursives: On fixe le premier élément du tableau, et on remaque qu'énumérer toutes les permutations qui commencent par ce premier élément revient à énumérer toutes les permutations du tableau initial, dans lequel on a enlevé l'élément que l'on a placé en première position. Pour obtenir une énumération du tableau original, on procède à cette énumération avec tous les choix possibles d'élements à placer en première position. Pour cet exercice, on souhaite juste afficher l'énumération, et on supposera que l'on dispose d'une fonction magique <html:code>afficherTableau</html:code> qui affiche le tableau en temps constant (une telle fonction n'existe pas en vrai, mais on veut se concentrer sur la logique associée à l'énumération uniquement).</html:p>
         <html:p>
-          <html:ol><html:li>Traduire l'idée informelle précédente en une fonction <html:code>permutations(int n, int j, int tab[])</html:code> qui prend entrée un entier <fr:tex display="inline"><![CDATA[n]]></fr:tex>, un entier <fr:tex display="inline"><![CDATA[j\le  n]]></fr:tex> et un tableau de taille <fr:tex display="inline"><![CDATA[n]]></fr:tex>, et qui liste toutes les permutations du tableau tels que les {j} premiers éléments du tableau sont fixes.</html:li>
+          <html:ol><html:li>Traduire l'idée informelle précédente en une fonction <html:code>permutations(int n, int j, int tab[])</html:code> qui prend entrée un entier <fr:tex display="inline"><![CDATA[n]]></fr:tex>, un entier <fr:tex display="inline"><![CDATA[j\le  n]]></fr:tex> et un tableau de taille <fr:tex display="inline"><![CDATA[n]]></fr:tex>, et qui liste toutes les permutations du tableau tels que les <fr:tex display="inline"><![CDATA[j]]></fr:tex> premiers éléments du tableau sont fixes.</html:li>
 <html:li>Evaluer la complexité de cette fonction.</html:li>
 <html:li>Comment pensez-vous que la complexité de cette fonction grandit, en comparaîson avec les complexités usuelles?</html:li></html:ol>
         </html:p>
@@ -278,7 +278,7 @@ Commencer en déterminant le degré du polynôme résultant, et déterminer avec
             <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004D/</fr:uri>
             <fr:display-uri>004D</fr:display-uri>
             <fr:route>/cours-polytech-peip2-algo/004D/</fr:route>
-            <fr:title text="Multiplication des polynômes rapide avec l'algorithme de Karatsuba">Multiplication des polynômes rapide avec l'algorithme de Karatsuba</fr:title>
+            <fr:title text="Multiplication des polynômes rapide avec l'algorithme de Karatsuba (Difficile)">Multiplication des polynômes rapide avec l'algorithme de Karatsuba (Difficile)</fr:title>
             <fr:taxon>Exercice</fr:taxon>
           </fr:frontmatter>
           <fr:mainmatter>
@@ -345,7 +345,8 @@ Commencer en déterminant le degré du polynôme résultant, et déterminer avec
             <html:p>
               <html:ul><html:li><fr:link href="/cours-polytech-peip2-algo/Seance-TD1/" title="TD 1" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TD1/" display-uri="Seance-TD1" type="local">TD 1</fr:link></html:li>
 <html:li><fr:link href="/cours-polytech-peip2-algo/Seance-TD2/" title="TD 2" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TD2/" display-uri="Seance-TD2" type="local">TD 2</fr:link></html:li>
-<html:li><fr:link href="/cours-polytech-peip2-algo/Seance-TD3/" title="TD 3" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TD3/" display-uri="Seance-TD3" type="local">TD 3</fr:link></html:li></html:ul>
+<html:li><fr:link href="/cours-polytech-peip2-algo/Seance-TD3/" title="TD 3" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TD3/" display-uri="Seance-TD3" type="local">TD 3</fr:link></html:li>
+<html:li><fr:link href="/cours-polytech-peip2-algo/Seance-TD4/" title="TD 4" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TD4/" display-uri="Seance-TD4" type="local">TD 4</fr:link></html:li></html:ul>
             </html:p>
           </fr:mainmatter>
         </fr:tree>

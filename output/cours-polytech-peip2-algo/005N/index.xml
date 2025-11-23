@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/cours-polytech-peip2-algo/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/cours-polytech-peip2-algo/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2025</fr:year>
+      <fr:month>11</fr:month>
+      <fr:day>23</fr:day>
+    </fr:date>
+    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005N/</fr:uri>
+    <fr:display-uri>005N</fr:display-uri>
+    <fr:route>/cours-polytech-peip2-algo/005N/</fr:route>
+    <fr:title text="Stabilité des algorithmes de tri">Stabilité des algorithmes de tri</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>On dit qu'un algorithme de tri est stable si, lorsque l'on a deux éléments dans notre tableau qui sont égaux pour l'ordre par rapport auquel on les compare, l'ordre dans lequel ces deux éléments apparaîssent est le même dans le tableau trié que dans le tableau initial. Les algorithmes de tri stables sont pertinent lorsque l'on cherche à trier des données complexes par rapport à une métrique simple.</html:p>
+    <fr:tree show-metadata="false">
+      <fr:frontmatter>
+        <fr:authors>
+          <fr:author>
+            <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+          </fr:author>
+        </fr:authors>
+        <fr:date>
+          <fr:year>2025</fr:year>
+          <fr:month>11</fr:month>
+          <fr:day>23</fr:day>
+        </fr:date>
+        <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005O/</fr:uri>
+        <fr:display-uri>005O</fr:display-uri>
+        <fr:route>/cours-polytech-peip2-algo/005O/</fr:route>
+        <fr:title text="Stabilité des tris">Stabilité des tris</fr:title>
+        <fr:taxon>Exemple</fr:taxon>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <html:p>Imaginons que l'on ait des structures représentant des personnes, contenant des champs <html:code>nom</html:code> et <html:code>age</html:code>, et que l'on souhaite trier des personnes selon leur age. On donne le tableau suivant:</html:p>
+        <html:p>
+          <fr:resource hash="04064c25886cf3b20cf986c281996833">
+            <fr:resource-content>
+              <html:img src="/cours-polytech-peip2-algo/04064c25886cf3b20cf986c281996833.svg" />
+            </fr:resource-content>
+            <fr:resource-source type="latex" part="preamble"><![CDATA[]]></fr:resource-source>
+            <fr:resource-source type="latex" part="body"><![CDATA[
+\begin{tabular}{|c|c|c|}
+\hline
+Alice & Bob & Charlie \\
+20 ans & 22 ans & 20 ans \\
+\hline
+\end{tabular}
+]]></fr:resource-source>
+          </fr:resource>
+        </html:p>
+        <html:p>Avec un algorithme de tri stable, on garantit que le résultat sera:</html:p>
+        <html:p>
+          <fr:resource hash="fbaeda04cc16671485d5837168eb192e">
+            <fr:resource-content>
+              <html:img src="/cours-polytech-peip2-algo/fbaeda04cc16671485d5837168eb192e.svg" />
+            </fr:resource-content>
+            <fr:resource-source type="latex" part="preamble"><![CDATA[]]></fr:resource-source>
+            <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {tabular}{|c|c|c|}
+\hline 
+Alice & Charlie & Bob \\
+20 ans & 20 ans & 22 ans \\
+\hline 
+\end {tabular}
+]]></fr:resource-source>
+          </fr:resource>
+        </html:p>
+        <html:p>
+Si l'algorithme de tri n'est pas stable, on ne donne pas de garantie, et le résultat peut être n'importe lequel des deux tableaux suivants:</html:p>
+        <html:p>
+          <fr:resource hash="0dcc8c4e554f157ec7982df51ca7441a">
+            <fr:resource-content>
+              <html:img src="/cours-polytech-peip2-algo/0dcc8c4e554f157ec7982df51ca7441a.svg" />
+            </fr:resource-content>
+            <fr:resource-source type="latex" part="preamble"><![CDATA[]]></fr:resource-source>
+            <fr:resource-source type="latex" part="body"><![CDATA[
+\begin {tabular}{|c|c|c|}
+\hline 
+Alice & Charlie & Bob \\
+20 ans & 20 ans & 22 ans \\
+\hline 
+\end {tabular}
+\qquad 
+\begin {tabular}{|c|c|c|}
+\hline 
+Charlie & Alice & Bob \\
+20 ans & 20 ans & 22 ans \\
+\hline 
+\end {tabular}
+]]></fr:resource-source>
+          </fr:resource>
+        </html:p>
+      </fr:mainmatter>
+    </fr:tree>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>11</fr:month>
+              <fr:day>23</fr:day>
+            </fr:date>
+            <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005M/</fr:uri>
+            <fr:display-uri>005M</fr:display-uri>
+            <fr:route>/cours-polytech-peip2-algo/005M/</fr:route>
+            <fr:title text="Tri par comptage, stable">Tri par comptage, stable</fr:title>
+            <fr:taxon>Exercice</fr:taxon>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>L'algorithme de <fr:link href="/cours-polytech-peip2-algo/005L/" title="Tri par comptage" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005L/" display-uri="005L" type="local">tri par comptage</fr:link> présenté précédement n'est pas un algorithme de tri <fr:link href="/cours-polytech-peip2-algo/005N/" title="Stabilité des algorithmes de tri" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005N/" display-uri="005N" type="local">stable</fr:link>. L'objectif de cet exercice est de remédier à cela en créant un algorithme de tri par comptage stable. Pour cela on supposera qu'on a déjà la fonction <html:code>compter</html:code> du <fr:link href="/cours-polytech-peip2-algo/005L/" title="Tri par comptage" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005L/" display-uri="005L" type="local">tri par comptage</fr:link>.
+<html:ol><html:li>Ecrire une fonction <html:code>calculPrefixes</html:code> qui prend en entrée un entier <html:code>l</html:code> et un tableau <html:code>compte</html:code> de taille <html:code>l</html:code>, et un tableau <html:code>debuts</html:code> de taille <html:code>l</html:code>, et qui remplit le tableau de la manière suivante: A supposer que  <html:code>compte[i]</html:code> contienne le compte des occurrences de <html:code>i</html:code> dans un tableau, <html:code>debuts[i]</html:code> contient l'indice où la première occurrence de <html:code>i</html:code> dans le tableau trié se situera. <html:details>
+<html:summary><html:strong>[Indice]</html:strong></html:summary>
+Pour calculer <html:code>debut[i]</html:code>, il faut faire la somme de tous les  <html:code>compte[j]</html:code>, pour <html:code>j&lt;i</html:code>.
+</html:details></html:li>
+<html:li>Quelle est la complexité de la fonction <html:code>calculPrefixes</html:code>?</html:li>
+<html:li>Ecrire une fonction <html:code>triComptage</html:code> qui effectue le tri par comptage stable sur le tableau.</html:li>
+<html:li>Quelle est la complexité de cette fonction?</html:li></html:ol></html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/cours-polytech-peip2-algo/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/cours-polytech-peip2-algo/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2025</fr:year>
+      <fr:month>11</fr:month>
+      <fr:day>23</fr:day>
+    </fr:date>
+    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005Q/</fr:uri>
+    <fr:display-uri>005Q</fr:display-uri>
+    <fr:route>/cours-polytech-peip2-algo/005Q/</fr:route>
+    <fr:title text="Recherche dans un tableau trié circulaire">Recherche dans un tableau trié circulaire</fr:title>
+    <fr:taxon>Exercice</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>L'objectif de cet exercice est de trouver rapidement la position d'un élément dans un tableau trié circulaire. C'est à dire que les éléments sont triés par ordre croissants, mais à partir d'une position qui n'est pas nécessaireemnt la première position dans le tableau. Par exemple dans le cas d'un tableau de longueur <fr:tex display="inline"><![CDATA[10]]></fr:tex> dont le plus petit élément est suitué en position <fr:tex display="inline"><![CDATA[2]]></fr:tex>, les positions <fr:tex display="inline"><![CDATA[2]]></fr:tex> à <fr:tex display="inline"><![CDATA[9]]></fr:tex> contiennent les <fr:tex display="inline"><![CDATA[8]]></fr:tex> plus petits éléments dans l'ordre croissant, et les positions <fr:tex display="inline"><![CDATA[0]]></fr:tex> et <fr:tex display="inline"><![CDATA[1]]></fr:tex> contiennent les <fr:tex display="inline"><![CDATA[2]]></fr:tex> plus grands éléments dans l'ordre croissant.
+<html:li>Ecrire un algorithme permettant de trouver un élément donné dans un tableau trié circulaire en parcourant le tableau une case pas une case. Quelle est la complexité de cette algorithme?</html:li>
+<html:li>Ecrire un algorithme permettant de trouver un élément donné dans un tableau trié circulaire de manière plus efficace, en faisant tout d'abord une recherche dichotomique pour trouver l'indice du plus pétit élément, et ensuite une deuxième recherche dichotomique pour trouver l'élément recherché. Quelle est la complexité de cette algorithme?</html:li>
+<html:li>Ecrire un algorithme permettant de trouver un élément donné dans un tableau trié circulaire, en s'appuyant et en adaptant la recherche dichotomique. Quelle est la complexité de cette algorithme?</html:li></html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>11</fr:month>
+              <fr:day>21</fr:day>
+            </fr:date>
+            <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/Seance-TD4/</fr:uri>
+            <fr:display-uri>Seance-TD4</fr:display-uri>
+            <fr:route>/cours-polytech-peip2-algo/Seance-TD4/</fr:route>
+            <fr:title text="TD 4">TD 4</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p><html:strong>Objectif</html:strong>: L'objectif de cette séance est de combiner les différentes notions vues lors de ce cours en des exercices plus avancés, et de présenter quelques notions pour aller plus loin. Cette séance contient des exercices plus difficiles, et a pour but de vous montrer qu'il existe des problèmes intéressants au dela de ceux que l'on a vu en cours. Ne soyez pas intimidés par la difficulté, il n'est pas attendu que vous maitrisiez parfaitement les concepts plus avancés.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>11</fr:month>
+                  <fr:day>21</fr:day>
+                </fr:date>
+                <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005J/</fr:uri>
+                <fr:display-uri>005J</fr:display-uri>
+                <fr:route>/cours-polytech-peip2-algo/005J/</fr:route>
+                <fr:title text="Calcul du PGCD par récursion">Calcul du PGCD par récursion</fr:title>
+                <fr:taxon>Exercice</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>L'objectif de cet exercice est de calculer le PGCD de deux nombres entiers positifs grâce à l'algorithme d'Euclide, implémenté comme une fonction récursive. On rappelle que l'algorithme d'Euclide consiste s'appuye sur la formule, pour <fr:tex display="inline"><![CDATA[a \ge  b]]></fr:tex>
+<fr:tex display="block"><![CDATA[\mathrm {pgcd}(a,b) = \mathrm {pgcd}(b,a-b)]]></fr:tex>
+<html:ol><html:li>Ecrire une fonction récursive <html:code>pgcd</html:code> permettant de calculer le pgcd de <fr:tex display="inline"><![CDATA[a]]></fr:tex> et <fr:tex display="inline"><![CDATA[b]]></fr:tex> par l'algorithme d'Euclide. Pensez au cas de base, lorsque <fr:tex display="inline"><![CDATA[b = 0]]></fr:tex>, et notez que si <fr:tex display="inline"><![CDATA[a < b]]></fr:tex>, il faudra d'abord inverser le rôle de <fr:tex display="inline"><![CDATA[a]]></fr:tex> et <fr:tex display="inline"><![CDATA[b]]></fr:tex>.</html:li>
+<html:li>On appelle <html:code>pgcd(66,24)</html:code>, écrire manuellement la série d'appels récursifs permettant d'atteindre le résultat.</html:li>
+<html:li>Quelle suite définie par récurrence faudrait-il résoudre pour calculer la complexité de cet algorithme?</html:li></html:ol></html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>11</fr:month>
+                  <fr:day>23</fr:day>
+                </fr:date>
+                <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005Q/</fr:uri>
+                <fr:display-uri>005Q</fr:display-uri>
+                <fr:route>/cours-polytech-peip2-algo/005Q/</fr:route>
+                <fr:title text="Recherche dans un tableau trié circulaire">Recherche dans un tableau trié circulaire</fr:title>
+                <fr:taxon>Exercice</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>L'objectif de cet exercice est de trouver rapidement la position d'un élément dans un tableau trié circulaire. C'est à dire que les éléments sont triés par ordre croissants, mais à partir d'une position qui n'est pas nécessaireemnt la première position dans le tableau. Par exemple dans le cas d'un tableau de longueur <fr:tex display="inline"><![CDATA[10]]></fr:tex> dont le plus petit élément est suitué en position <fr:tex display="inline"><![CDATA[2]]></fr:tex>, les positions <fr:tex display="inline"><![CDATA[2]]></fr:tex> à <fr:tex display="inline"><![CDATA[9]]></fr:tex> contiennent les <fr:tex display="inline"><![CDATA[8]]></fr:tex> plus petits éléments dans l'ordre croissant, et les positions <fr:tex display="inline"><![CDATA[0]]></fr:tex> et <fr:tex display="inline"><![CDATA[1]]></fr:tex> contiennent les <fr:tex display="inline"><![CDATA[2]]></fr:tex> plus grands éléments dans l'ordre croissant.
+<html:li>Ecrire un algorithme permettant de trouver un élément donné dans un tableau trié circulaire en parcourant le tableau une case pas une case. Quelle est la complexité de cette algorithme?</html:li>
+<html:li>Ecrire un algorithme permettant de trouver un élément donné dans un tableau trié circulaire de manière plus efficace, en faisant tout d'abord une recherche dichotomique pour trouver l'indice du plus pétit élément, et ensuite une deuxième recherche dichotomique pour trouver l'élément recherché. Quelle est la complexité de cette algorithme?</html:li>
+<html:li>Ecrire un algorithme permettant de trouver un élément donné dans un tableau trié circulaire, en s'appuyant et en adaptant la recherche dichotomique. Quelle est la complexité de cette algorithme?</html:li></html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>11</fr:month>
+                  <fr:day>23</fr:day>
+                </fr:date>
+                <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005K/</fr:uri>
+                <fr:display-uri>005K</fr:display-uri>
+                <fr:route>/cours-polytech-peip2-algo/005K/</fr:route>
+                <fr:title text="Des algorithmes de tris meilleurs que l'optimal?">Des algorithmes de tris meilleurs que l'optimal?</fr:title>
+                <fr:taxon>Receuil d'exercices</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>L'objectif de ces exercices est d'aborder des algorithmes de tri meilleurs que l'optimal théorique vu en cours, mais qui ne s'appliquent que dans ces cas spécifiques.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>11</fr:month>
+                      <fr:day>23</fr:day>
+                    </fr:date>
+                    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005L/</fr:uri>
+                    <fr:display-uri>005L</fr:display-uri>
+                    <fr:route>/cours-polytech-peip2-algo/005L/</fr:route>
+                    <fr:title text="Tri par comptage">Tri par comptage</fr:title>
+                    <fr:taxon>Exercice</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>Le tri par comptage est un algorithme de tri adapté si l'on sait à l'avance que tous les tableaux que l'on souhaite trié contiennent des entiers positifs plus petits qu'une certaine valeur <fr:tex display="inline"><![CDATA[M]]></fr:tex>. On appellera <html:code>max</html:code> la variable représentant l'entier <fr:tex display="inline"><![CDATA[M]]></fr:tex>. L'idée du tri par comptage est de faire un parcourt du tableau que l'on souhaite trier, en comptant le nombre d'occurrence de chacunes des valeurs entre <fr:tex display="inline"><![CDATA[0]]></fr:tex> et <fr:tex display="inline"><![CDATA[M]]></fr:tex> dans un tableau auxilliaire. A partir du tableau de comptage, il est possible de déduire le tableau trié rapidement.
+
+<html:ol><html:li>Ecrire une fonction <html:code>compter</html:code> qui prend en entrée un entier <html:code>n</html:code>, un entier <html:code>max</html:code>, un tableau <html:code>tab</html:code> de taille <html:code>n</html:code> contenant que des nombres compris entre <html:code>0</html:code> et <html:code>max</html:code> et un tableau <html:code>compte</html:code> de longueur <html:code>max+1</html:code> initialisé à <html:code>0</html:code>, et qui rempli de tableau <html:code>compte</html:code> de manière à ce que pour tout <html:code>i</html:code>, l'élément <html:code>compte[i]</html:code> représente le nombre de fois où l'entier <html:code>i</html:code> apparaît dans le tableau <html:code>tab</html:code>.</html:li>
+<html:li>Ecrire un algorithme <html:code>remplirTableau</html:code>, qui prend en entrée un entier <html:code>n</html:code>, un tableau <html:code>tab</html:code> de longueur <html:code>n</html:code>, un entier <html:code>l</html:code> et un tableau <html:code>compte</html:code> de longueur <html:code>l</html:code> contenant des nombres tous positifs dont la somme est <html:code>n</html:code>, et qui remplit le tableau <html:code>tab</html:code> tel qu'à la fin le tableau soit trié, et que tout entier <html:code>i</html:code> apparaît dans <html:code>tab</html:code> exactement <html:code>compte[i]</html:code> fois.</html:li>
+<html:li>Ecrire une fonction <html:code>triComptage</html:code> qui prend un entier <html:code>n</html:code>, une borne <html:code>max</html:code> et un tableau <html:code>tab</html:code> de taille <html:code>n</html:code> contenant que des nombres compris entre <html:code>0</html:code> et  <html:code>max</html:code>, et qui effectue le tri pas comptage sur ces nombres.</html:li>
+<html:li>Quelle est la complexité de cet algorithme?</html:li></html:ol></html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>11</fr:month>
+                      <fr:day>23</fr:day>
+                    </fr:date>
+                    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005M/</fr:uri>
+                    <fr:display-uri>005M</fr:display-uri>
+                    <fr:route>/cours-polytech-peip2-algo/005M/</fr:route>
+                    <fr:title text="Tri par comptage, stable">Tri par comptage, stable</fr:title>
+                    <fr:taxon>Exercice</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>L'algorithme de <fr:link href="/cours-polytech-peip2-algo/005L/" title="Tri par comptage" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005L/" display-uri="005L" type="local">tri par comptage</fr:link> présenté précédement n'est pas un algorithme de tri <fr:link href="/cours-polytech-peip2-algo/005N/" title="Stabilité des algorithmes de tri" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005N/" display-uri="005N" type="local">stable</fr:link>. L'objectif de cet exercice est de remédier à cela en créant un algorithme de tri par comptage stable. Pour cela on supposera qu'on a déjà la fonction <html:code>compter</html:code> du <fr:link href="/cours-polytech-peip2-algo/005L/" title="Tri par comptage" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005L/" display-uri="005L" type="local">tri par comptage</fr:link>.
+<html:ol><html:li>Ecrire une fonction <html:code>calculPrefixes</html:code> qui prend en entrée un entier <html:code>l</html:code> et un tableau <html:code>compte</html:code> de taille <html:code>l</html:code>, et un tableau <html:code>debuts</html:code> de taille <html:code>l</html:code>, et qui remplit le tableau de la manière suivante: A supposer que  <html:code>compte[i]</html:code> contienne le compte des occurrences de <html:code>i</html:code> dans un tableau, <html:code>debuts[i]</html:code> contient l'indice où la première occurrence de <html:code>i</html:code> dans le tableau trié se situera. <html:details>
+<html:summary><html:strong>[Indice]</html:strong></html:summary>
+Pour calculer <html:code>debut[i]</html:code>, il faut faire la somme de tous les  <html:code>compte[j]</html:code>, pour <html:code>j&lt;i</html:code>.
+</html:details></html:li>
+<html:li>Quelle est la complexité de la fonction <html:code>calculPrefixes</html:code>?</html:li>
+<html:li>Ecrire une fonction <html:code>triComptage</html:code> qui effectue le tri par comptage stable sur le tableau.</html:li>
+<html:li>Quelle est la complexité de cette fonction?</html:li></html:ol></html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>11</fr:month>
+                      <fr:day>23</fr:day>
+                    </fr:date>
+                    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005P/</fr:uri>
+                    <fr:display-uri>005P</fr:display-uri>
+                    <fr:route>/cours-polytech-peip2-algo/005P/</fr:route>
+                    <fr:title text="Tri par base ou tri radix">Tri par base ou tri radix</fr:title>
+                    <fr:taxon>Exercice</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>Le tri par base est un algorithme de tri permettant spécifiquement de trier des tableaux d'entiers. Il consiste à effectuer successivement plusieurs passes de tri par comptage stable, sur chacun des chiffres. des entiers que l'on considère. Il repose sur le fait que si l'on a deux nombres à trois chiffres <fr:tex display="inline"><![CDATA[abc]]></fr:tex> et <fr:tex display="inline"><![CDATA[def]]></fr:tex> alors on a <fr:tex display="inline"><![CDATA[cde > def]]></fr:tex> exactement lorsque <fr:tex display="inline"><![CDATA[d > a]]></fr:tex> ou lorsque <fr:tex display="inline"><![CDATA[a=d]]></fr:tex> et <fr:tex display="inline"><![CDATA[e > b]]></fr:tex> ou lorsque <fr:tex display="inline"><![CDATA[a = d]]></fr:tex> et <fr:tex display="inline"><![CDATA[e=b]]></fr:tex> et <fr:tex display="inline"><![CDATA[f > c]]></fr:tex>. Pour effectuer le tri par base, on va commencer par trier les nombres par ordre croissant suivant le chiffre des unités en utilisant le tri par comptage stable, puis on trie le tableau par ordre croissant suivant le chiffre des dizaines, en utilisant à nouveau le comptage stable, etcetera jusqu'à avoir trié selon tous les chiffres.
+<html:li>Ecrire l'algorithme de tri par base.</html:li>
+<html:li>Justifier l'algorihtme, pourquoi est-ce bien un algorithme de tri?</html:li>
+<html:li>Quelle est la complexité de cet algorithme?</html:li></html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

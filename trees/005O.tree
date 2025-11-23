@@ -1,0 +1,47 @@
+\title{Stabilité des tris}
+\author{thibautbenjamin}
+\taxon{Exemple}
+\import{basemacros}
+\date{2025-11-23T14:49:44Z}
+
+\p{Imaginons que l'on ait des structures représentant des personnes, contenant des champs \code{nom} et \code{age}, et que l'on souhaite trier des personnes selon leur age. On donne le tableau suivant:}
+\p{
+\tex{}{
+\startverb
+\begin{tabular}{|c|c|c|}
+\hline
+Alice & Bob & Charlie \\
+20 ans & 22 ans & 20 ans \\
+\hline
+\end{tabular}
+\stopverb
+}}
+\p{Avec un algorithme de tri stable, on garantit que le résultat sera:}
+\p{
+\tex{}{
+\begin{tabular}{|c|c|c|}
+\hline
+Alice & Charlie & Bob \\
+20 ans & 20 ans & 22 ans \\
+\hline
+\end{tabular}
+}}
+\p{
+Si l'algorithme de tri n'est pas stable, on ne donne pas de garantie, et le résultat peut être n'importe lequel des deux tableaux suivants:}
+\p{
+\tex{}{
+\begin{tabular}{|c|c|c|}
+\hline
+Alice & Charlie & Bob \\
+20 ans & 20 ans & 22 ans \\
+\hline
+\end{tabular}
+\qquad
+\begin{tabular}{|c|c|c|}
+\hline
+Charlie & Alice & Bob \\
+20 ans & 20 ans & 22 ans \\
+\hline
+\end{tabular}
+}
+}

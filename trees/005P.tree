@@ -1,0 +1,10 @@
+\title{Tri par base ou tri radix}
+\author{thibautbenjamin}
+\taxon{Exercice}
+\date{2025-11-23T15:00:19Z}
+
+\p{Le tri par base est un algorithme de tri permettant spécifiquement de trier des tableaux d'entiers. Il consiste à effectuer successivement plusieurs passes de tri par comptage stable, sur chacun des chiffres. des entiers que l'on considère. Il repose sur le fait que si l'on a deux nombres à trois chiffres #{abc} et #{def} alors on a #{cde > def} exactement lorsque #{d > a} ou lorsque #{a=d} et #{e > b} ou lorsque #{a = d} et #{e=b} et #{f > c}. Pour effectuer le tri par base, on va commencer par trier les nombres par ordre croissant suivant le chiffre des unités en utilisant le tri par comptage stable, puis on trie le tableau par ordre croissant suivant le chiffre des dizaines, en utilisant à nouveau le comptage stable, etcetera jusqu'à avoir trié selon tous les chiffres.
+\li{Ecrire l'algorithme de tri par base.}
+\li{Justifier l'algorihtme, pourquoi est-ce bien un algorithme de tri?}
+\li{Quelle est la complexité de cet algorithme?}
+}

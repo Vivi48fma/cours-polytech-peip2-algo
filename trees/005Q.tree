@@ -1,0 +1,11 @@
+\title{Recherche dans un tableau trié circulaire}
+\author{thibautbenjamin}
+\taxon{Exercice}
+\import{basemacros}
+\date{2025-11-23T15:11:44Z}
+
+\p{L'objectif de cet exercice est de trouver rapidement la position d'un élément dans un tableau trié circulaire. C'est à dire que les éléments sont triés par ordre croissants, mais à partir d'une position qui n'est pas nécessaireemnt la première position dans le tableau. Par exemple dans le cas d'un tableau de longueur #{10} dont le plus petit élément est suitué en position #{2}, les positions #{2} à #{9} contiennent les #{8} plus petits éléments dans l'ordre croissant, et les positions #{0} et #{1} contiennent les #{2} plus grands éléments dans l'ordre croissant.
+\li{Ecrire un algorithme permettant de trouver un élément donné dans un tableau trié circulaire en parcourant le tableau une case pas une case. Quelle est la complexité de cette algorithme?}
+\li{Ecrire un algorithme permettant de trouver un élément donné dans un tableau trié circulaire de manière plus efficace, en faisant tout d'abord une recherche dichotomique pour trouver l'indice du plus pétit élément, et ensuite une deuxième recherche dichotomique pour trouver l'élément recherché. Quelle est la complexité de cette algorithme?}
+\li{Ecrire un algorithme permettant de trouver un élément donné dans un tableau trié circulaire, en s'appuyant et en adaptant la recherche dichotomique. Quelle est la complexité de cette algorithme?}
+}

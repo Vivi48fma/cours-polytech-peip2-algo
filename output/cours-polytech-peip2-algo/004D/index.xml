@@ -15,7 +15,7 @@
     <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004D/</fr:uri>
     <fr:display-uri>004D</fr:display-uri>
     <fr:route>/cours-polytech-peip2-algo/004D/</fr:route>
-    <fr:title text="Multiplication des polynômes rapide avec l'algorithme de Karatsuba">Multiplication des polynômes rapide avec l'algorithme de Karatsuba</fr:title>
+    <fr:title text="Multiplication des polynômes rapide avec l'algorithme de Karatsuba (Difficile)">Multiplication des polynômes rapide avec l'algorithme de Karatsuba (Difficile)</fr:title>
     <fr:taxon>Exercice</fr:taxon>
   </fr:frontmatter>
   <fr:mainmatter>
@@ -114,7 +114,7 @@ Commencer en déterminant le degré du polynôme résultant, et déterminer avec
                 <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/004D/</fr:uri>
                 <fr:display-uri>004D</fr:display-uri>
                 <fr:route>/cours-polytech-peip2-algo/004D/</fr:route>
-                <fr:title text="Multiplication des polynômes rapide avec l'algorithme de Karatsuba">Multiplication des polynômes rapide avec l'algorithme de Karatsuba</fr:title>
+                <fr:title text="Multiplication des polynômes rapide avec l'algorithme de Karatsuba (Difficile)">Multiplication des polynômes rapide avec l'algorithme de Karatsuba (Difficile)</fr:title>
                 <fr:taxon>Exercice</fr:taxon>
               </fr:frontmatter>
               <fr:mainmatter>
