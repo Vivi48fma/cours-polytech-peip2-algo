@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/cours-polytech-peip2-algo/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/cours-polytech-peip2-algo/">
+ <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+      </fr:author>
+      <fr:contributor>
+        <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+      </fr:contributor>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2025</fr:year>
+      <fr:month>11</fr:month>
+      <fr:day>26</fr:day>
+    </fr:date>
+    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/006V/</fr:uri>
+    <fr:display-uri>006V</fr:display-uri>
+    <fr:route>/cours-polytech-peip2-algo/006V/</fr:route>
+    <fr:title text="Généralités sur la correction totale">Généralités sur la correction totale</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>En pratique :</html:p>
+    <html:ul>
+        <html:li>Il est très facile de démontrer la <fr:link href="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/006A/" type="local">terminaison</fr:link> d'un algorithme.</html:li>
+        <html:li>Si le codes est très simple (opérations, éventuellement boucles <html:code>for</html:code>), la <fr:link href="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/006M/" type="local">correction partielle</fr:link> est facile à déterminer.</html:li>
+        <html:li>Après avoir prouvé sa correction totale, on passe à une analyse de la <fr:link href="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0006/" type="local">complexité</fr:link> de l'algorithme.</html:li>
+    </html:ul>
+  </fr:mainmatter>
+  <fr:backmatter>
+
+  </fr:backmatter>
+</fr:tree>
