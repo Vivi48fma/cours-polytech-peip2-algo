@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/cours-polytech-peip2-algo/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/cours-polytech-peip2-algo/">
+ <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+      </fr:author>
+      <fr:contributor>
+        <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+      </fr:contributor>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2025</fr:year>
+      <fr:month>11</fr:month>
+      <fr:day>26</fr:day>
+    </fr:date>
+    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/006Z/</fr:uri>
+    <fr:display-uri>006Z</fr:display-uri>
+    <fr:route>/cours-polytech-peip2-algo/006Z/</fr:route>
+    <fr:title text="Définition d'un variant de boucle">Définition d'un variant de boucle</fr:title>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>Un <html:em>variant de boucle</html:em> est un nombre positif dont la valeur change à chaque itération d'une boucle. Si le nombre devient négatif (ou nul), cela signifie que la boucle s'arrête.</html:p>
+    <html:p><html:em>Remarque : </html:em>Souvent, le variant de boucle est une variable du programme.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+
+  </fr:backmatter>
+</fr:tree>
