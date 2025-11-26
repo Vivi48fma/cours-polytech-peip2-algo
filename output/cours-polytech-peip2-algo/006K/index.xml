@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/cours-polytech-peip2-algo/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/cours-polytech-peip2-algo/">
+ <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+      </fr:author>
+      <fr:contributor>
+        <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+      </fr:contributor>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2025</fr:year>
+      <fr:month>11</fr:month>
+      <fr:day>26</fr:day>
+    </fr:date>
+    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/006K/</fr:uri>
+    <fr:display-uri>006K</fr:display-uri>
+    <fr:route>/cours-polytech-peip2-algo/006K/</fr:route>
+    <fr:title text="Application de la méthode du variant de boucle 2">Application de la méthode du variant de boucle 2</fr:title>
+    <fr:taxon>Exemple</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <fr:tree show-metadata="false">
+        <fr:frontmatter>
+            <fr:authors>
+            <fr:author>
+                <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+            </fr:author>
+            <fr:contributor>
+                <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+            </fr:contributor>
+            </fr:authors>
+            <fr:date>
+            <fr:year>2025</fr:year>
+            <fr:month>11</fr:month>
+            <fr:day>26</fr:day>
+            </fr:date>
+            <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0061/</fr:uri>
+            <fr:display-uri>0061</fr:display-uri>
+            <fr:route>/cours-polytech-peip2-algo/0061/</fr:route>
+            <fr:title text="Boucle while (décrémentation)">Boucle while (décrémentation)</fr:title>
+        </fr:frontmatter>
+        <fr:mainmatter>
+                <html:p>  
+                        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+                        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+                        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+                        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+                        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+                        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+                        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+                        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+                        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+                        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+                        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+                        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+                        <html:script>
+                                Prism.plugins.NormalizeWhitespace.setDefaults({
+                                        "remove-trailing": true,
+                                        "remove-indent": true,
+                                        "left-trim": true,
+                                        "right-trim": true,
+                                });</html:script>
+                        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[#include <iostream>
+        using namespace std;
+
+        int main(){
+            // Affiche beaucoup de nombres, à l'infini !
+            int i=0;
+            while(i<=10){
+                cout << i << endl;
+                i--;
+            }
+            return 0;
+        }]]>
+                    </html:code></html:pre>
+                </html:p>
+        </fr:mainmatter>
+    </fr:tree>
+    <html:p>On a affaire à une boucle <html:code>while</html:code> : on doit trouver un variant de boucle. On peut prendre le variant <html:code>10-i</html:code> et on suit son évolution au cours de la boucle :</html:p>
+    <html:ul>
+        <html:li>À la première itération, on a <html:code>i=0</html:code> donc notre variant vaut <fr:tex>10-0=10</fr:tex></fr:li>
+        <html:li>À la deuxième itération, on a <html:code>i=-1</html:code> donc notre variant vaut <fr:tex>10-(-1)=11</fr:tex></fr:li>
+        <html:li>À la troisième itération, on a <html:code>i=-2</html:code> donc notre variant vaut <fr:tex>10-(-2)=12</fr:tex></fr:li>
+        <html:li>À la n-ième itération, on a <html:code>i=-(n+1)</html:code> donc notre variant vaut <fr:tex>10-(-(n+1))=n+11</fr:tex> qui est strictement positif. Donc la boucle ne s'arrêtera jamais</fr:li>
+    </html:ul>
+    <html:p>On vient de prouver que notre algorithme ne se terminera jamais. La terminaison n'est pas validée (c'est un mauvais algorithme).</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+
+  </fr:backmatter>
+</fr:tree>
