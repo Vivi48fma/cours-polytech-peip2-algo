@@ -4,4 +4,4 @@
 \date{2025-11-04T14:09:52Z}
 \import{basemacros}
 
-\p{Attention à ne pas confondre passage par valeur d'un pointeur et passage par référence! Il est possible de simuler un passage par référence à l'aide d'un passage par valeur de pointeur, mais ce sont deux concepts différents. L'exemple suivant illustre la différence:}
+\p{Attention à ne pas confondre passage par valeur d'un pointeur et passage par référence! Il est possible de simuler un passage par référence à l'aide d'un passage par valeur de pointeur, mais ce sont deux concepts différents. L'exemple suivant illustre la différence: \mark{TODO}}}
