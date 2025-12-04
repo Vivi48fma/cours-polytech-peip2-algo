@@ -11,6 +11,6 @@
 
 \transclude{004O}
 
-\p{Au moment de la déclaration, le système réserve une zone de la bonne taille, constitué de cases contigues en mémoire. Cela permet de rapidement accéder à n'importe laquelle des cases du tableau. En effet, connaissant la valeur de \code{a}, pointant vers l'adresse mémoire correspondant au début du tableau, accéder à une autre positioin dans le tableau se fait grâce à un simple décalage, une opération arithmétique. Cela justifie que les tableaux ont un accès en [temps constant](001J).}
+\p{Au moment de la déclaration, le système réserve une zone de la bonne taille, constitué de cases contigues en mémoire. Cela permet de rapidement accéder à n'importe laquelle des cases du tableau. En effet, connaissant la valeur de \code{a}, pointant vers l'adresse mémoire correspondant au début du tableau, accéder à une autre position dans le tableau se fait grâce à un simple décalage, une opération arithmétique. Cela justifie que les tableaux ont un accès en [temps constant](001J).}
 
 \transclude{003X}
