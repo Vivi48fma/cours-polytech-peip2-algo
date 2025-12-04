@@ -4,6 +4,6 @@
 \import{basemacros}
 \date{2025-11-20T10:19:28Z}
 
-\p{Une conséquence de la [représentation en mémoire des tableaux](003F) est que si une fonction effectue une modification sur un tableau via un accès à la zonne mémoire contenant les données, cette modification sera visible à l'extérieure de la fonction également.}
+\p{Une conséquence de la [représentation en mémoire des tableaux](003F) est que si une fonction effectue une modification sur un tableau via un accès à la zone mémoire contenant les données, cette modification sera visible à l'extérieure de la fonction également.}
 \transclude{004P}
 \transclude{004Q}
