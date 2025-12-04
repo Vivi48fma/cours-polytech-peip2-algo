@@ -5,6 +5,6 @@
 \import{basemacros}
 
 \p{\ol{
-\li{Ecrire une fonction \code{inserer} qui prend en entrée un entier {n}, un tableau de taille #{\ge n} dont les #{n} premières entrées sont triées, et qui insère le contenu de la position #{n} à la bonne position, de manière à ce qu'neusite les #{n+1} prmières entrées du tableau soient triées}
+\li{Ecrire une fonction \code{inserer} qui prend en entrée un entier #{n}, un tableau de taille #{\ge n} dont les #{n} premières entrées sont triées, et qui insère le contenu de la position #{n} à la bonne position, de manière à ce qu'neusite les #{n+1} prmières entrées du tableau soient triées}
 \li{Evaluer la complexité de cette fonction.}
 }}
