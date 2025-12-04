@@ -3,4 +3,4 @@
 \taxon{Remarque}
 \date{2025-11-01T14:23:24Z}
 
-\p{Si l'on a déclaré un tableau \code{monTableau} de taille #{24}, l'on pourra accéder et affecter sans problème toutes les positions de #{0} à #{23} dans ce tableau. En revanche, on considerera qu'essayer d'accéder u d'affecter toute position supérieure ou égale à #{24} est une erreur (même si parfois le programme ne détecte pas cette erreur).}
+\p{Si l'on a déclaré un tableau \code{monTableau} de taille #{24}, l'on pourra accéder et affecter sans problème toutes les positions de #{0} à #{23} dans ce tableau. En revanche, on considerera qu'essayer d'accéder ou d'affecter toute position supérieure ou égale à #{24} est une erreur (même si parfois le programme ne détecte pas cette erreur).}
