@@ -8,7 +8,7 @@
   int monTableau[9];
 \stopverb
 }
-Bien sur, on peut adapter cet exemple, en changeant le type \code{int} en un autre primitif, et en changeant la taille et le nom du tableau. On peut également initialiser un tableau en même qu'on le déclare. Par exemple, le code suivant déclare le tableau \code{monTableau}, et initialise sa valeur à #{
+Bien sur, on peut adapter cet exemple, en changeant le type \code{int} en un autre primitif, et en changeant la taille et le nom du tableau. On peut également initialiser un tableau en même temps qu'on le déclare. Par exemple, le code suivant déclare le tableau \code{monTableau}, et initialise sa valeur à #{
 \begin{array}{|c|c|c|c|c|c|c|c|c|}
 \hline
 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1\\
