@@ -3,7 +3,7 @@
 \date{2025-10-08T09:33:29Z}
 \import{basemacros}
 
-\p{Cette section introduit les premiers exemples d'algorithmes, et les utilise comme exemple pour présenter les premières analyses de complexité. Pour bien comprendre cette section, il ne faudra hésiter à se référer aux [notions mathématiques](000U) utilisées pour l'analyse de complexité. On passe ensuite aux tableaux, pour lesquels on présente la syntaxe, quelques programmes pour lesquels on profite pour faire des analyses de complexité. Finalement, on présente quelqes algorithmes de tris, qui sont un très bon exemple pour s'entraîner aux calculs de complexité.}
+\p{Cette section introduit les premiers exemples d'algorithmes, et les utilise comme exemple pour présenter les premières analyses de complexité. Pour bien comprendre cette section, il ne faudra hésiter à se référer aux [notions mathématiques](000U) utilisées pour l'analyse de complexité. On passe ensuite aux tableaux, pour lesquels on présente la syntaxe, quelques programmes pour lesquels on profite pour faire des analyses de complexité. Finalement, on présente quelques algorithmes de tris, qui sont un très bon exemple pour s'entraîner aux calculs de complexité.}
 
 \transclude{000T}
 \transclude{001U}
