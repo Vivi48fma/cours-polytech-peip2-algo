@@ -6,7 +6,7 @@
 
 \p{
 \ol{
-\li{Ecrire un algorithme qui prend en entrée deux nombres entiers #{b,n} avec #{n > 1} et qui retourne la partie entière de #{\log_b(x)} à l'aide d'une boucle.}
+\li{Ecrire un algorithme qui prend en entrée deux nombres entiers #{b,n} avec #{n > 1} et qui retourne la partie entière de #{\log_b(n)} à l'aide d'une boucle.}
 \strong{Indice:} On rappelle que c'est le plus grand entier #{q} tel que #{b ^ q \leq n}.
 \li{Quelle est la complexité de cet algorithme?}
 }
