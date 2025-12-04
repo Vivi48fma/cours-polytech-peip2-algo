@@ -5,7 +5,7 @@
 
 \p{Pour initialiser un tableau, par exemple un tableau d'élements de type \code{int} de taille #{9} s'appelant \code{monTableau}, on utilisera la syntaxe suivante
 \cppdisplay{\startverb
-  int[9] monTableau;
+  int monTableau[9];
 \stopverb
 }
 Bien sur, on peut adapter cet exemple, en changeant le type \code{int} en un autre primitif, et en changeant la taille et le nom du tableau. On peut également initialiser un tableau en même qu'on le déclare. Par exemple, le code suivant déclare le tableau \code{monTableau}, et initialise sa valeur à #{
@@ -16,6 +16,6 @@ Bien sur, on peut adapter cet exemple, en changeant le type \code{int} en un aut
 \end{array}
 }
 \cppdisplay{\startverb
-   int[9] monTableau = {9,8,7,6,5,4,3,2,1};
+   int monTableau[9] = {9,8,7,6,5,4,3,2,1};
 \stopverb}
 }
