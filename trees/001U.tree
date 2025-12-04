@@ -4,7 +4,7 @@
 \import{basemacros}
 
 
-\p{Les tableaux sont un [type de données composé](000F) permettant de représenter des ensembles ordonnées d'éléments, tous de même type. D'un point de vue des données représentées, ils ressemblent aux listes (\mark{TODO}), mais ils diffèrent par le coût de des différentes opérations que l'on peut faire dessus. La remarque suivante \mark{TODO} donne une comparaison détaillée entre les tableaux et les listes.}
+\p{Les tableaux sont un [type de données composé](000F) permettant de représenter des ensembles ordonnées d'éléments, tous de même type. D'un point de vue des données représentées, ils ressemblent aux listes (\mark{TODO}), mais ils diffèrent par le coût des différentes opérations que l'on peut faire dessus. La remarque suivante \mark{TODO} donne une comparaison détaillée entre les tableaux et les listes.}
 
 \transclude{0023}
 \transclude{0022}
