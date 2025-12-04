@@ -4,4 +4,4 @@
 \import{basemacros}
 
 
-\p{Dans la réalité, toutes les opérations élémentaires ne prennent pas nécessairement le même temps exactement. Avec un peu d'habitude, vous verrez qu'il est souvent plus pertinent de définir quelles vous être les opérations coûteuses et limitantes, et de se concentrer à compter ces opérations, plutôt que de compter absolument toutes les opérations. Cela va de paire avec le fait que l'on ne s'intéresse pas en général au compte exact des opérations, mais on souhaite en avoir un [ordre de grandeur](000U)}
+\p{Dans la réalité, toutes les opérations élémentaires ne prennent pas nécessairement le même temps exactement. Avec un peu d'habitude, vous verrez qu'il est souvent plus pertinent de définir quelles vont être les opérations coûteuses et limitantes, et de se concentrer à compter ces opérations, plutôt que de compter absolument toutes les opérations. Cela va de paire avec le fait que l'on ne s'intéresse pas en général au compte exact des opérations, mais on souhaite en avoir un [ordre de grandeur](000U)}
