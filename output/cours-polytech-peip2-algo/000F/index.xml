@@ -152,7 +152,7 @@
             <fr:title text="Tableaux">Tableaux</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>Les tableaux sont un <fr:link href="/cours-polytech-peip2-algo/000F/" title="Les types de données composés" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/000F/" display-uri="000F" type="local">type de données composé</fr:link> permettant de représenter des ensembles ordonnées d'éléments, tous de même type. D'un point de vue des données représentées, ils ressemblent aux listes (<html:mark>TODO</html:mark>), mais ils diffèrent par le coût de des différentes opérations que l'on peut faire dessus. La remarque suivante <html:mark>TODO</html:mark> donne une comparaison détaillée entre les tableaux et les listes.</html:p>
+            <html:p>Les tableaux sont un <fr:link href="/cours-polytech-peip2-algo/000F/" title="Les types de données composés" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/000F/" display-uri="000F" type="local">type de données composé</fr:link> permettant de représenter des ensembles ordonnées d'éléments, tous de même type. D'un point de vue des données représentées, ils ressemblent aux listes (<html:mark>TODO</html:mark>), mais ils diffèrent par le coût des différentes opérations que l'on peut faire dessus. La remarque suivante <html:mark>TODO</html:mark> donne une comparaison détaillée entre les tableaux et les listes.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors>
@@ -260,9 +260,9 @@
                         "left-trim": true,
                         "right-trim": true,
                 });</html:script>
-        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[  int[9] monTableau;]]>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[  int monTableau[9];]]>
 </html:code></html:pre>
-Bien sur, on peut adapter cet exemple, en changeant le type <html:code>int</html:code> en un autre primitif, et en changeant la taille et le nom du tableau. On peut également initialiser un tableau en même qu'on le déclare. Par exemple, le code suivant déclare le tableau <html:code>monTableau</html:code>, et initialise sa valeur à <fr:tex display="inline"><![CDATA[
+Bien sur, on peut adapter cet exemple, en changeant le type <html:code>int</html:code> en un autre primitif, et en changeant la taille et le nom du tableau. On peut également initialiser un tableau en même temps qu'on le déclare. Par exemple, le code suivant déclare le tableau <html:code>monTableau</html:code>, et initialise sa valeur à <fr:tex display="inline"><![CDATA[
 \begin {array}{|c|c|c|c|c|c|c|c|c|}
 \hline 
 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1\\
@@ -289,7 +289,7 @@ Bien sur, on peut adapter cet exemple, en changeant le type <html:code>int</html
                         "left-trim": true,
                         "right-trim": true,
                 });</html:script>
-        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[   int[9] monTableau = {9,8,7,6,5,4,3,2,1};]]></html:code></html:pre></html:p>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[   int monTableau[9] = {9,8,7,6,5,4,3,2,1};]]></html:code></html:pre></html:p>
                   </fr:mainmatter>
                 </fr:tree>
                 <fr:tree show-metadata="false">
@@ -409,7 +409,7 @@ On pourra aussi modifier la valeur de la position <fr:tex display="inline"><![CD
                         <fr:taxon>Remarque</fr:taxon>
                       </fr:frontmatter>
                       <fr:mainmatter>
-                        <html:p>Si l'on a déclaré un tableau <html:code>monTableau</html:code> de taille <fr:tex display="inline"><![CDATA[24]]></fr:tex>, l'on pourra accéder et affecter sans problème toutes les positions de <fr:tex display="inline"><![CDATA[0]]></fr:tex> à <fr:tex display="inline"><![CDATA[23]]></fr:tex> dans ce tableau. En revanche, on considerera qu'essayer d'accéder u d'affecter toute position supérieure ou égale à <fr:tex display="inline"><![CDATA[24]]></fr:tex> est une erreur (même si parfois le programme ne détecte pas cette erreur).</html:p>
+                        <html:p>Si l'on a déclaré un tableau <html:code>monTableau</html:code> de taille <fr:tex display="inline"><![CDATA[24]]></fr:tex>, l'on pourra accéder et affecter sans problème toutes les positions de <fr:tex display="inline"><![CDATA[0]]></fr:tex> à <fr:tex display="inline"><![CDATA[23]]></fr:tex> dans ce tableau. En revanche, on considerera qu'essayer d'accéder ou d'affecter toute position supérieure ou égale à <fr:tex display="inline"><![CDATA[24]]></fr:tex> est une erreur (même si parfois le programme ne détecte pas cette erreur).</html:p>
                       </fr:mainmatter>
                     </fr:tree>
                     <fr:tree show-metadata="false">
@@ -830,7 +830,7 @@ int maximum (int n, int tableau[]){
 ]]></fr:resource-source></fr:resource></html:p>
                   </fr:mainmatter>
                 </fr:tree>
-                <html:p>Au moment de la déclaration, le système réserve une zone de la bonne taille, constitué de cases contigues en mémoire. Cela permet de rapidement accéder à n'importe laquelle des cases du tableau. En effet, connaissant la valeur de <html:code>a</html:code>, pointant vers l'adresse mémoire correspondant au début du tableau, accéder à une autre positioin dans le tableau se fait grâce à un simple décalage, une opération arithmétique. Cela justifie que les tableaux ont un accès en <fr:link href="/cours-polytech-peip2-algo/001J/" title="Constant" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/001J/" display-uri="001J" type="local">temps constant</fr:link>.</html:p>
+                <html:p>Au moment de la déclaration, le système réserve une zone de la bonne taille, constitué de cases contigues en mémoire. Cela permet de rapidement accéder à n'importe laquelle des cases du tableau. En effet, connaissant la valeur de <html:code>a</html:code>, pointant vers l'adresse mémoire correspondant au début du tableau, accéder à une autre position dans le tableau se fait grâce à un simple décalage, une opération arithmétique. Cela justifie que les tableaux ont un accès en <fr:link href="/cours-polytech-peip2-algo/001J/" title="Constant" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/001J/" display-uri="001J" type="local">temps constant</fr:link>.</html:p>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors>
@@ -869,7 +869,7 @@ int maximum (int n, int tableau[]){
                         <fr:taxon>Exemple</fr:taxon>
                       </fr:frontmatter>
                       <fr:mainmatter>
-                        <html:p>Une conséquence de la <fr:link href="/cours-polytech-peip2-algo/003F/" title="Représentation en mémoire des tableaux" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/003F/" display-uri="003F" type="local">représentation en mémoire des tableaux</fr:link> est que si une fonction effectue une modification sur un tableau via un accès à la zonne mémoire contenant les données, cette modification sera visible à l'extérieure de la fonction également.</html:p>
+                        <html:p>Une conséquence de la <fr:link href="/cours-polytech-peip2-algo/003F/" title="Représentation en mémoire des tableaux" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/003F/" display-uri="003F" type="local">représentation en mémoire des tableaux</fr:link> est que si une fonction effectue une modification sur un tableau via un accès à la zone mémoire contenant les données, cette modification sera visible à l'extérieure de la fonction également.</html:p>
                         <fr:tree show-metadata="false">
                           <fr:frontmatter>
                             <fr:authors>
@@ -1178,7 +1178,7 @@ int main (){
             <fr:title text="Tableaux">Tableaux</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>Les tableaux sont un <fr:link href="/cours-polytech-peip2-algo/000F/" title="Les types de données composés" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/000F/" display-uri="000F" type="local">type de données composé</fr:link> permettant de représenter des ensembles ordonnées d'éléments, tous de même type. D'un point de vue des données représentées, ils ressemblent aux listes (<html:mark>TODO</html:mark>), mais ils diffèrent par le coût de des différentes opérations que l'on peut faire dessus. La remarque suivante <html:mark>TODO</html:mark> donne une comparaison détaillée entre les tableaux et les listes.</html:p>
+            <html:p>Les tableaux sont un <fr:link href="/cours-polytech-peip2-algo/000F/" title="Les types de données composés" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/000F/" display-uri="000F" type="local">type de données composé</fr:link> permettant de représenter des ensembles ordonnées d'éléments, tous de même type. D'un point de vue des données représentées, ils ressemblent aux listes (<html:mark>TODO</html:mark>), mais ils diffèrent par le coût des différentes opérations que l'on peut faire dessus. La remarque suivante <html:mark>TODO</html:mark> donne une comparaison détaillée entre les tableaux et les listes.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors>
@@ -1286,9 +1286,9 @@ int main (){
                         "left-trim": true,
                         "right-trim": true,
                 });</html:script>
-        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[  int[9] monTableau;]]>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[  int monTableau[9];]]>
 </html:code></html:pre>
-Bien sur, on peut adapter cet exemple, en changeant le type <html:code>int</html:code> en un autre primitif, et en changeant la taille et le nom du tableau. On peut également initialiser un tableau en même qu'on le déclare. Par exemple, le code suivant déclare le tableau <html:code>monTableau</html:code>, et initialise sa valeur à <fr:tex display="inline"><![CDATA[
+Bien sur, on peut adapter cet exemple, en changeant le type <html:code>int</html:code> en un autre primitif, et en changeant la taille et le nom du tableau. On peut également initialiser un tableau en même temps qu'on le déclare. Par exemple, le code suivant déclare le tableau <html:code>monTableau</html:code>, et initialise sa valeur à <fr:tex display="inline"><![CDATA[
 \begin {array}{|c|c|c|c|c|c|c|c|c|}
 \hline 
 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1\\
@@ -1315,7 +1315,7 @@ Bien sur, on peut adapter cet exemple, en changeant le type <html:code>int</html
                         "left-trim": true,
                         "right-trim": true,
                 });</html:script>
-        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[   int[9] monTableau = {9,8,7,6,5,4,3,2,1};]]></html:code></html:pre></html:p>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[   int monTableau[9] = {9,8,7,6,5,4,3,2,1};]]></html:code></html:pre></html:p>
                   </fr:mainmatter>
                 </fr:tree>
                 <fr:tree show-metadata="false">
@@ -1435,7 +1435,7 @@ On pourra aussi modifier la valeur de la position <fr:tex display="inline"><![CD
                         <fr:taxon>Remarque</fr:taxon>
                       </fr:frontmatter>
                       <fr:mainmatter>
-                        <html:p>Si l'on a déclaré un tableau <html:code>monTableau</html:code> de taille <fr:tex display="inline"><![CDATA[24]]></fr:tex>, l'on pourra accéder et affecter sans problème toutes les positions de <fr:tex display="inline"><![CDATA[0]]></fr:tex> à <fr:tex display="inline"><![CDATA[23]]></fr:tex> dans ce tableau. En revanche, on considerera qu'essayer d'accéder u d'affecter toute position supérieure ou égale à <fr:tex display="inline"><![CDATA[24]]></fr:tex> est une erreur (même si parfois le programme ne détecte pas cette erreur).</html:p>
+                        <html:p>Si l'on a déclaré un tableau <html:code>monTableau</html:code> de taille <fr:tex display="inline"><![CDATA[24]]></fr:tex>, l'on pourra accéder et affecter sans problème toutes les positions de <fr:tex display="inline"><![CDATA[0]]></fr:tex> à <fr:tex display="inline"><![CDATA[23]]></fr:tex> dans ce tableau. En revanche, on considerera qu'essayer d'accéder ou d'affecter toute position supérieure ou égale à <fr:tex display="inline"><![CDATA[24]]></fr:tex> est une erreur (même si parfois le programme ne détecte pas cette erreur).</html:p>
                       </fr:mainmatter>
                     </fr:tree>
                     <fr:tree show-metadata="false">
@@ -1856,7 +1856,7 @@ int maximum (int n, int tableau[]){
 ]]></fr:resource-source></fr:resource></html:p>
                   </fr:mainmatter>
                 </fr:tree>
-                <html:p>Au moment de la déclaration, le système réserve une zone de la bonne taille, constitué de cases contigues en mémoire. Cela permet de rapidement accéder à n'importe laquelle des cases du tableau. En effet, connaissant la valeur de <html:code>a</html:code>, pointant vers l'adresse mémoire correspondant au début du tableau, accéder à une autre positioin dans le tableau se fait grâce à un simple décalage, une opération arithmétique. Cela justifie que les tableaux ont un accès en <fr:link href="/cours-polytech-peip2-algo/001J/" title="Constant" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/001J/" display-uri="001J" type="local">temps constant</fr:link>.</html:p>
+                <html:p>Au moment de la déclaration, le système réserve une zone de la bonne taille, constitué de cases contigues en mémoire. Cela permet de rapidement accéder à n'importe laquelle des cases du tableau. En effet, connaissant la valeur de <html:code>a</html:code>, pointant vers l'adresse mémoire correspondant au début du tableau, accéder à une autre position dans le tableau se fait grâce à un simple décalage, une opération arithmétique. Cela justifie que les tableaux ont un accès en <fr:link href="/cours-polytech-peip2-algo/001J/" title="Constant" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/001J/" display-uri="001J" type="local">temps constant</fr:link>.</html:p>
                 <fr:tree show-metadata="false">
                   <fr:frontmatter>
                     <fr:authors>
@@ -1895,7 +1895,7 @@ int maximum (int n, int tableau[]){
                         <fr:taxon>Exemple</fr:taxon>
                       </fr:frontmatter>
                       <fr:mainmatter>
-                        <html:p>Une conséquence de la <fr:link href="/cours-polytech-peip2-algo/003F/" title="Représentation en mémoire des tableaux" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/003F/" display-uri="003F" type="local">représentation en mémoire des tableaux</fr:link> est que si une fonction effectue une modification sur un tableau via un accès à la zonne mémoire contenant les données, cette modification sera visible à l'extérieure de la fonction également.</html:p>
+                        <html:p>Une conséquence de la <fr:link href="/cours-polytech-peip2-algo/003F/" title="Représentation en mémoire des tableaux" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/003F/" display-uri="003F" type="local">représentation en mémoire des tableaux</fr:link> est que si une fonction effectue une modification sur un tableau via un accès à la zone mémoire contenant les données, cette modification sera visible à l'extérieure de la fonction également.</html:p>
                         <fr:tree show-metadata="false">
                           <fr:frontmatter>
                             <fr:authors>

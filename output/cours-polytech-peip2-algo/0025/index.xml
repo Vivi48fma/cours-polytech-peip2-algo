@@ -39,9 +39,9 @@
                         "left-trim": true,
                         "right-trim": true,
                 });</html:script>
-        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[  int[9] monTableau;]]>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[  int monTableau[9];]]>
 </html:code></html:pre>
-Bien sur, on peut adapter cet exemple, en changeant le type <html:code>int</html:code> en un autre primitif, et en changeant la taille et le nom du tableau. On peut également initialiser un tableau en même qu'on le déclare. Par exemple, le code suivant déclare le tableau <html:code>monTableau</html:code>, et initialise sa valeur à <fr:tex display="inline"><![CDATA[
+Bien sur, on peut adapter cet exemple, en changeant le type <html:code>int</html:code> en un autre primitif, et en changeant la taille et le nom du tableau. On peut également initialiser un tableau en même temps qu'on le déclare. Par exemple, le code suivant déclare le tableau <html:code>monTableau</html:code>, et initialise sa valeur à <fr:tex display="inline"><![CDATA[
 \begin {array}{|c|c|c|c|c|c|c|c|c|}
 \hline 
 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1\\
@@ -68,7 +68,7 @@ Bien sur, on peut adapter cet exemple, en changeant le type <html:code>int</html
                         "left-trim": true,
                         "right-trim": true,
                 });</html:script>
-        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[   int[9] monTableau = {9,8,7,6,5,4,3,2,1};]]></html:code></html:pre></html:p>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[   int monTableau[9] = {9,8,7,6,5,4,3,2,1};]]></html:code></html:pre></html:p>
   </fr:mainmatter>
   <fr:backmatter>
     <fr:tree show-metadata="false" hidden-when-empty="true">
@@ -142,9 +142,9 @@ Bien sur, on peut adapter cet exemple, en changeant le type <html:code>int</html
                         "left-trim": true,
                         "right-trim": true,
                 });</html:script>
-        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[  int[9] monTableau;]]>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[  int monTableau[9];]]>
 </html:code></html:pre>
-Bien sur, on peut adapter cet exemple, en changeant le type <html:code>int</html:code> en un autre primitif, et en changeant la taille et le nom du tableau. On peut également initialiser un tableau en même qu'on le déclare. Par exemple, le code suivant déclare le tableau <html:code>monTableau</html:code>, et initialise sa valeur à <fr:tex display="inline"><![CDATA[
+Bien sur, on peut adapter cet exemple, en changeant le type <html:code>int</html:code> en un autre primitif, et en changeant la taille et le nom du tableau. On peut également initialiser un tableau en même temps qu'on le déclare. Par exemple, le code suivant déclare le tableau <html:code>monTableau</html:code>, et initialise sa valeur à <fr:tex display="inline"><![CDATA[
 \begin {array}{|c|c|c|c|c|c|c|c|c|}
 \hline 
 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1\\
@@ -171,7 +171,7 @@ Bien sur, on peut adapter cet exemple, en changeant le type <html:code>int</html
                         "left-trim": true,
                         "right-trim": true,
                 });</html:script>
-        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[   int[9] monTableau = {9,8,7,6,5,4,3,2,1};]]></html:code></html:pre></html:p>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[   int monTableau[9] = {9,8,7,6,5,4,3,2,1};]]></html:code></html:pre></html:p>
               </fr:mainmatter>
             </fr:tree>
             <fr:tree show-metadata="false">
@@ -291,7 +291,7 @@ On pourra aussi modifier la valeur de la position <fr:tex display="inline"><![CD
                     <fr:taxon>Remarque</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:p>Si l'on a déclaré un tableau <html:code>monTableau</html:code> de taille <fr:tex display="inline"><![CDATA[24]]></fr:tex>, l'on pourra accéder et affecter sans problème toutes les positions de <fr:tex display="inline"><![CDATA[0]]></fr:tex> à <fr:tex display="inline"><![CDATA[23]]></fr:tex> dans ce tableau. En revanche, on considerera qu'essayer d'accéder u d'affecter toute position supérieure ou égale à <fr:tex display="inline"><![CDATA[24]]></fr:tex> est une erreur (même si parfois le programme ne détecte pas cette erreur).</html:p>
+                    <html:p>Si l'on a déclaré un tableau <html:code>monTableau</html:code> de taille <fr:tex display="inline"><![CDATA[24]]></fr:tex>, l'on pourra accéder et affecter sans problème toutes les positions de <fr:tex display="inline"><![CDATA[0]]></fr:tex> à <fr:tex display="inline"><![CDATA[23]]></fr:tex> dans ce tableau. En revanche, on considerera qu'essayer d'accéder ou d'affecter toute position supérieure ou égale à <fr:tex display="inline"><![CDATA[24]]></fr:tex> est une erreur (même si parfois le programme ne détecte pas cette erreur).</html:p>
                   </fr:mainmatter>
                 </fr:tree>
                 <fr:tree show-metadata="false">

@@ -362,7 +362,7 @@ int main (){
                     <fr:taxon>Exemple</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:p>Une conséquence de la <fr:link href="/cours-polytech-peip2-algo/003F/" title="Représentation en mémoire des tableaux" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/003F/" display-uri="003F" type="local">représentation en mémoire des tableaux</fr:link> est que si une fonction effectue une modification sur un tableau via un accès à la zonne mémoire contenant les données, cette modification sera visible à l'extérieure de la fonction également.</html:p>
+                    <html:p>Une conséquence de la <fr:link href="/cours-polytech-peip2-algo/003F/" title="Représentation en mémoire des tableaux" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/003F/" display-uri="003F" type="local">représentation en mémoire des tableaux</fr:link> est que si une fonction effectue une modification sur un tableau via un accès à la zone mémoire contenant les données, cette modification sera visible à l'extérieure de la fonction également.</html:p>
                     <fr:tree show-metadata="false">
                       <fr:frontmatter>
                         <fr:authors>
@@ -658,7 +658,7 @@ int main (){
                     <fr:taxon>Attention</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:p>Attention à ne pas confondre passage par valeur d'un pointeur et passage par référence! Il est possible de simuler un passage par référence à l'aide d'un passage par valeur de pointeur, mais ce sont deux concepts différents. L'exemple suivant illustre la différence:</html:p>
+                    <html:p>Attention à ne pas confondre passage par valeur d'un pointeur et passage par référence! Il est possible de simuler un passage par référence à l'aide d'un passage par valeur de pointeur, mais ce sont deux concepts différents.</html:p>
                   </fr:mainmatter>
                 </fr:tree>
               </fr:mainmatter>
@@ -945,7 +945,7 @@ int main (){
                     <fr:taxon>Exemple</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:p>Une conséquence de la <fr:link href="/cours-polytech-peip2-algo/003F/" title="Représentation en mémoire des tableaux" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/003F/" display-uri="003F" type="local">représentation en mémoire des tableaux</fr:link> est que si une fonction effectue une modification sur un tableau via un accès à la zonne mémoire contenant les données, cette modification sera visible à l'extérieure de la fonction également.</html:p>
+                    <html:p>Une conséquence de la <fr:link href="/cours-polytech-peip2-algo/003F/" title="Représentation en mémoire des tableaux" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/003F/" display-uri="003F" type="local">représentation en mémoire des tableaux</fr:link> est que si une fonction effectue une modification sur un tableau via un accès à la zone mémoire contenant les données, cette modification sera visible à l'extérieure de la fonction également.</html:p>
                     <fr:tree show-metadata="false">
                       <fr:frontmatter>
                         <fr:authors>
@@ -1241,7 +1241,7 @@ int main (){
                     <fr:taxon>Attention</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:p>Attention à ne pas confondre passage par valeur d'un pointeur et passage par référence! Il est possible de simuler un passage par référence à l'aide d'un passage par valeur de pointeur, mais ce sont deux concepts différents. L'exemple suivant illustre la différence:</html:p>
+                    <html:p>Attention à ne pas confondre passage par valeur d'un pointeur et passage par référence! Il est possible de simuler un passage par référence à l'aide d'un passage par valeur de pointeur, mais ce sont deux concepts différents.</html:p>
                   </fr:mainmatter>
                 </fr:tree>
               </fr:mainmatter>

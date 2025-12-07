@@ -202,7 +202,7 @@
 ]]></fr:resource-source></fr:resource></html:p>
               </fr:mainmatter>
             </fr:tree>
-            <html:p>Au moment de la déclaration, le système réserve une zone de la bonne taille, constitué de cases contigues en mémoire. Cela permet de rapidement accéder à n'importe laquelle des cases du tableau. En effet, connaissant la valeur de <html:code>a</html:code>, pointant vers l'adresse mémoire correspondant au début du tableau, accéder à une autre positioin dans le tableau se fait grâce à un simple décalage, une opération arithmétique. Cela justifie que les tableaux ont un accès en <fr:link href="/cours-polytech-peip2-algo/001J/" title="Constant" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/001J/" display-uri="001J" type="local">temps constant</fr:link>.</html:p>
+            <html:p>Au moment de la déclaration, le système réserve une zone de la bonne taille, constitué de cases contigues en mémoire. Cela permet de rapidement accéder à n'importe laquelle des cases du tableau. En effet, connaissant la valeur de <html:code>a</html:code>, pointant vers l'adresse mémoire correspondant au début du tableau, accéder à une autre position dans le tableau se fait grâce à un simple décalage, une opération arithmétique. Cela justifie que les tableaux ont un accès en <fr:link href="/cours-polytech-peip2-algo/001J/" title="Constant" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/001J/" display-uri="001J" type="local">temps constant</fr:link>.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors>
@@ -241,7 +241,7 @@
                     <fr:taxon>Exemple</fr:taxon>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:p>Une conséquence de la <fr:link href="/cours-polytech-peip2-algo/003F/" title="Représentation en mémoire des tableaux" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/003F/" display-uri="003F" type="local">représentation en mémoire des tableaux</fr:link> est que si une fonction effectue une modification sur un tableau via un accès à la zonne mémoire contenant les données, cette modification sera visible à l'extérieure de la fonction également.</html:p>
+                    <html:p>Une conséquence de la <fr:link href="/cours-polytech-peip2-algo/003F/" title="Représentation en mémoire des tableaux" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/003F/" display-uri="003F" type="local">représentation en mémoire des tableaux</fr:link> est que si une fonction effectue une modification sur un tableau via un accès à la zone mémoire contenant les données, cette modification sera visible à l'extérieure de la fonction également.</html:p>
                     <fr:tree show-metadata="false">
                       <fr:frontmatter>
                         <fr:authors>

@@ -335,7 +335,7 @@ On vient de prouver la correction partielle de cet algorithme.
             <fr:title text="Rappels d'algorithmique et bases de la programmation">Rappels d'algorithmique et bases de la programmation</fr:title>
           </fr:frontmatter>
           <fr:mainmatter>
-            <html:p>Ce chapitre joue rôle multible. Tout d'abord il a pour but de rappeler les notions d'algorithmique vues dans les cours précédents et de faire un panorama global des sujets auxquels un cours d'algorithmique s'intéresse. Ensuite, il sert à établir les objectifs de ce cours, et exposer les "règles du jeu" en établissant les limites que nous étudierons dans ce cours.</html:p>
+            <html:p>Ce chapitre joue rôle multiple. Tout d'abord il a pour but de rappeler les notions d'algorithmique vues dans les cours précédents et de faire un panorama global des sujets auxquels un cours d'algorithmique s'intéresse. Ensuite, il sert à établir les objectifs de ce cours, et exposer les "règles du jeu" en établissant les limites que nous étudierons dans ce cours.</html:p>
             <fr:tree show-metadata="false">
               <fr:frontmatter>
                 <fr:authors>
@@ -565,7 +565,7 @@ On dit alors que le tableau est une <html:em>entrée</html:em> de l'algorithme.
                     <fr:title text="Limites à la notion de complexité">Limites à la notion de complexité</fr:title>
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <html:p>Dans la réalité, toutes les opérations élémentaires ne prennent pas nécessairement le même temps exactement. Avec un peu d'habitude, vous verrez qu'il est souvent plus pertinent de définir quelles vous être les opérations coûteuses et limitantes, et de se concentrer à compter ces opérations, plutôt que de compter absolument toutes les opérations. Cela va de paire avec le fait que l'on ne s'intéresse pas en général au compte exact des opérations, mais on souhaite en avoir un <fr:link href="/cours-polytech-peip2-algo/000U/" title="Un peu de mathématiques: Les ordres de grandeurs" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/000U/" display-uri="000U" type="local">ordre de grandeur</fr:link></html:p>
+                    <html:p>Dans la réalité, toutes les opérations élémentaires ne prennent pas nécessairement le même temps exactement. Avec un peu d'habitude, vous verrez qu'il est souvent plus pertinent de définir quelles vont être les opérations coûteuses et limitantes, et de se concentrer à compter ces opérations, plutôt que de compter absolument toutes les opérations. Cela va de paire avec le fait que l'on ne s'intéresse pas en général au compte exact des opérations, mais on souhaite en avoir un <fr:link href="/cours-polytech-peip2-algo/000U/" title="Un peu de mathématiques: Les ordres de grandeurs" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/000U/" display-uri="000U" type="local">ordre de grandeur</fr:link></html:p>
                   </fr:mainmatter>
                 </fr:tree>
               </fr:mainmatter>

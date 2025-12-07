@@ -160,7 +160,7 @@
                 <fr:title text="Limites à la notion de complexité">Limites à la notion de complexité</fr:title>
               </fr:frontmatter>
               <fr:mainmatter>
-                <html:p>Dans la réalité, toutes les opérations élémentaires ne prennent pas nécessairement le même temps exactement. Avec un peu d'habitude, vous verrez qu'il est souvent plus pertinent de définir quelles vous être les opérations coûteuses et limitantes, et de se concentrer à compter ces opérations, plutôt que de compter absolument toutes les opérations. Cela va de paire avec le fait que l'on ne s'intéresse pas en général au compte exact des opérations, mais on souhaite en avoir un <fr:link href="/cours-polytech-peip2-algo/000U/" title="Un peu de mathématiques: Les ordres de grandeurs" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/000U/" display-uri="000U" type="local">ordre de grandeur</fr:link></html:p>
+                <html:p>Dans la réalité, toutes les opérations élémentaires ne prennent pas nécessairement le même temps exactement. Avec un peu d'habitude, vous verrez qu'il est souvent plus pertinent de définir quelles vont être les opérations coûteuses et limitantes, et de se concentrer à compter ces opérations, plutôt que de compter absolument toutes les opérations. Cela va de paire avec le fait que l'on ne s'intéresse pas en général au compte exact des opérations, mais on souhaite en avoir un <fr:link href="/cours-polytech-peip2-algo/000U/" title="Un peu de mathématiques: Les ordres de grandeurs" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/000U/" display-uri="000U" type="local">ordre de grandeur</fr:link></html:p>
               </fr:mainmatter>
             </fr:tree>
           </fr:mainmatter>

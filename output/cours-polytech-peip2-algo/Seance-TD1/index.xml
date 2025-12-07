@@ -366,7 +366,7 @@ Remarquez qu'il est beaucoup plus difficile de comprendre un algorithme lorsqu'o
       </fr:frontmatter>
       <fr:mainmatter>
         <html:p>
-          <html:ol><html:li>Ecrire un algorithme qui prend en entrée deux nombres entiers <fr:tex display="inline"><![CDATA[b,n]]></fr:tex> avec <fr:tex display="inline"><![CDATA[n > 1]]></fr:tex> et qui retourne la partie entière de <fr:tex display="inline"><![CDATA[\log _b(x)]]></fr:tex> à l'aide d'une boucle.</html:li>
+          <html:ol><html:li>Ecrire un algorithme qui prend en entrée deux nombres entiers <fr:tex display="inline"><![CDATA[b,n]]></fr:tex> avec <fr:tex display="inline"><![CDATA[n > 1]]></fr:tex> et qui retourne la partie entière de <fr:tex display="inline"><![CDATA[\log _b(n)]]></fr:tex> à l'aide d'une boucle.</html:li>
 <html:strong>Indice:</html:strong> On rappelle que c'est le plus grand entier <fr:tex display="inline"><![CDATA[q]]></fr:tex> tel que <fr:tex display="inline"><![CDATA[b ^ q \leq  n]]></fr:tex>.
 <html:li>Quelle est la complexité de cet algorithme?</html:li></html:ol>
         </html:p>
