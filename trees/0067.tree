@@ -1,0 +1,7 @@
+\title{Terminaison et complexité}
+\author{abdounourmisbah}
+\author{thibautbenjamin}
+\taxon{Remarque}
+\date{2025-12-07T14:31:18Z}
+
+\p{La terminaison d'un algorithme ne prend pas en compte la complexité. L'important est de savoir si l'algorithme s'arrêtera, peu importe le temps qu'il met pour cela.}

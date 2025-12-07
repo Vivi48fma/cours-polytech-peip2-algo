@@ -1,0 +1,7 @@
+\title{Terminaison des fonctions récursives}
+\author{thibautbenjamin}
+\author{abdounourmisbah}
+\date{2025-12-07T13:21:25Z}
+\import{basemacros}
+
+\p{Pour s'assurer de la terminaison des fonctions récursives, on peut utiliser une méthode similaire à celle du variant. Un variant pour une fonction récursive est une quantité entière positive qui décroit à chaque appel de la fonction récursive.}

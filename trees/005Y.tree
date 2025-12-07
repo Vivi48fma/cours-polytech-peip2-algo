@@ -1,0 +1,24 @@
+\title{Boucle while avec incrémentation}
+\author{abdounourmisbah}
+\author{thibautbenjamin}
+\taxon{Programme}
+\date{2025-12-07T13:21:25Z}
+\import{basemacros}
+
+\p{\cppdisplay{
+\startverb
+#include <iostream>
+using namespace std;
+
+int main(){
+    // Affiche tous les entiers de 0 à 10
+    int i=0;
+    while(i<=10){
+        cout << i << endl;
+        i++;
+    }
+    return 0;
+}
+\stopverb
+}
+}

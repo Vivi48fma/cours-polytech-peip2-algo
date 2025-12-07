@@ -1,0 +1,7 @@
+\title{Correction totale}
+\author{abdounourmisbah}
+\author{thibautbenjamin}
+\import{basemacros}
+\date{2025-12-07T15:25:02Z}
+
+\p{La \em{correction totale} d'un algorithme est sa terminaison plus sa correction partielle. On a présenté ici les deux comme séparées, mais en pratique, il est courant que pour prouver la terminaison, on ait besoin d'une partie de la correction partielle et vice et versa, ce sont deux choses que l'on étudie souvent conjointement.}

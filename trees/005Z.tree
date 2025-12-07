@@ -1,0 +1,9 @@
+\title{Boucle while avec décrémentation}
+\author{abdounourmisbah}
+\author{thibautbenjamin}
+\taxon{Exemple}
+\date{2025-12-07T13:21:25Z}
+\import{basemacros}
+
+\transclude{0060}
+\p{Dans cet exemple, il faut s'assurer que la boucle \code{while} s'arrête, c'est-à-dire que la condition \code{i<=10} devient fausse. Ici, i est initialisé à \code{0}. À chaque itération, on décrémente sa valeur de \code{1} (c'est-à-dire: on fait \code{-1} à chaque tour de boucle). Donc, \code{i} devient de plus en plus petit : il ne dépassera jamais \code{10}. Le programme va donc tourner indéfiniment.}

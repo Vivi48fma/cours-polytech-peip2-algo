@@ -1,0 +1,24 @@
+\title{Une boucle for mal construite}
+\author{abdounourmisbah}
+\author{thibautbenjamin}
+\taxon{Exemple}
+\date{2025-12-07T13:21:25Z}
+\import{basemacros}
+
+\p{
+Théoriquement, il est possible d'écrire des boucles \code{for} qui ne s'arrête jamais.
+\cppdisplay{\startverb
+#include <iostream>
+using namespace std;
+
+int main(){
+    // Ceci est une mauvaise boucle for
+    for(int i=0;i<=10;i++){
+            cout << "Bonjour !" << endl;
+            i=0;
+   }
+   return 0;
+}
+\stopverb}
+Ici, la valeur de \code{i} est remise à zéro à chaque itération. Par conséquent, \code{i} ne dépasse jamais \code{2}, donc n'atteint jamais la valeur limite de \code{10}.
+}

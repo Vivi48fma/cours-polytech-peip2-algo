@@ -1,0 +1,20 @@
+\title{Terminaison}
+\author{abdounourmisbah}
+\author{thibautbenjamin}
+\taxon{Exemple}
+\date{2025-12-07T13:21:25Z}
+\import{basemacros}
+
+\p{\cppdisplay{\startverb
+#include <iostream>
+using namespace std;
+
+int main(){
+  int x = 5;
+  x = x+2;
+  cout << x << endl;
+  return 0;
+}
+\stopverb}
+Il est facile de vérifier que l'algorithme se termine. On ne fait qu'un nombre fini d'opérations (affectation, addition, affichage). La terminaison est donc validée.
+}

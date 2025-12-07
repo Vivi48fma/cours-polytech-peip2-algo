@@ -3,4 +3,9 @@
 \date{2025-10-08T08:59:58Z}
 \import{basemacros}
 
-\p{\<html:img>[src]{https://imgs.xkcd.com/comics/random_number.png}{}\mark{TODO}}
+\p{\<html:img>[src]{https://imgs.xkcd.com/comics/random_number.png}{}}
+\p{
+Il existe trois notions fondamentales en algorithmique : [la terminaison](005R), la [correction partielle](0068) et la [complexité](0006).
+}
+\transclude{005R}
+\transclude{0068}

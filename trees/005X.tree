@@ -1,0 +1,9 @@
+\title{Boucle while avec incrémentation}
+\author{abdounourmisbah}
+\author{thibautbenjamin}
+\taxon{Exemple}
+\date{2025-12-07T13:21:25Z}
+\import{basemacros}
+
+\transclude{005Y}
+\p{Dans cet exemple, il y a une boucle \code{while}. Il faut s'assurer que la boucle va s'arrêter, autrement dit que la condition devient fausse au bout d'un certain temps. Ici, la condition est \code{i<=0}. Or, \code{i} vaut \code{0} et à chaque itération, sa valeur est augmentée de \code{1}. On est donc assuré que \code{i} sera plus grand que \code{10} après un certain nombre d'itérations.}

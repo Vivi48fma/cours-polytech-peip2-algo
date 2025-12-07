@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/cours-polytech-peip2-algo/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/cours-polytech-peip2-algo/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+      </fr:author>
+      <fr:author>
+        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2025</fr:year>
+      <fr:month>12</fr:month>
+      <fr:day>7</fr:day>
+    </fr:date>
+    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/006H/</fr:uri>
+    <fr:display-uri>006H</fr:display-uri>
+    <fr:route>/cours-polytech-peip2-algo/006H/</fr:route>
+    <fr:title text="Terminaison">Terminaison</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>La <html:em>terminaison</html:em> d'un algorithme, c'est s'assurer qu'un algorithme se terminera un jour (indépendamment du temps mis). Autrement dit, on doit vérifier que l'algorithme effectue un nombre fini d'opérations.</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+              </fr:author>
+              <fr:author>
+                <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>12</fr:month>
+              <fr:day>7</fr:day>
+            </fr:date>
+            <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/006G/</fr:uri>
+            <fr:display-uri>006G</fr:display-uri>
+            <fr:route>/cours-polytech-peip2-algo/006G/</fr:route>
+            <fr:title text="La terminaison d'un algorithme">La terminaison d'un algorithme</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Imaginons que vous êtes chez vous en train de jouer au tout nouveau Super Mario Bros. Vous êtes le meilleur du jeu : vous récupérez tous les power-ups, vous tuez tous vos ennemis, vous trouvez tous les secrets. Bref, un nouveau super facile pour vous. Et malgré votre talent, vous êtes toujours au premier niveau car vous n'avez pas encore atteint le drapeau final. Vous commencez alors à vous demander si ce niveau a réellement une fin...</html:p>
+            <html:p>La notion de <html:em>terminaison</html:em> traduit exactement cette idée.</html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                  </fr:author>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>12</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0067/</fr:uri>
+                <fr:display-uri>0067</fr:display-uri>
+                <fr:route>/cours-polytech-peip2-algo/0067/</fr:route>
+                <fr:title text="Terminaison et complexité">Terminaison et complexité</fr:title>
+                <fr:taxon>Remarque</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>La terminaison d'un algorithme ne prend pas en compte la complexité. L'important est de savoir si l'algorithme s'arrêtera, peu importe le temps qu'il met pour cela.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                  </fr:author>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>12</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/006H/</fr:uri>
+                <fr:display-uri>006H</fr:display-uri>
+                <fr:route>/cours-polytech-peip2-algo/006H/</fr:route>
+                <fr:title text="Terminaison">Terminaison</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>La <html:em>terminaison</html:em> d'un algorithme, c'est s'assurer qu'un algorithme se terminera un jour (indépendamment du temps mis). Autrement dit, on doit vérifier que l'algorithme effectue un nombre fini d'opérations.</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                  </fr:author>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>12</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/006I/</fr:uri>
+                <fr:display-uri>006I</fr:display-uri>
+                <fr:route>/cours-polytech-peip2-algo/006I/</fr:route>
+                <fr:title text="Terminaison">Terminaison</fr:title>
+                <fr:taxon>Exemple</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p><html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+        <html:script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                        "remove-trailing": true,
+                        "remove-indent": true,
+                        "left-trim": true,
+                        "right-trim": true,
+                });</html:script>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[#include <iostream>
+using namespace std;
+
+int main(){
+  int x = 5;
+  x = x+2;
+  cout << x << endl;
+  return 0;
+}]]></html:code></html:pre>
+Il est facile de vérifier que l'algorithme se termine. On ne fait qu'un nombre fini d'opérations (affectation, addition, affichage). La terminaison est donc validée.
+</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                  </fr:author>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>12</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005U/</fr:uri>
+                <fr:display-uri>005U</fr:display-uri>
+                <fr:route>/cours-polytech-peip2-algo/005U/</fr:route>
+                <fr:title text="Terminaison des boucles for">Terminaison des boucles for</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p><html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+        <html:script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                        "remove-trailing": true,
+                        "remove-indent": true,
+                        "left-trim": true,
+                        "right-trim": true,
+                });</html:script>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[#include <iostream>
+using namespace std;
+
+int main(){
+    // Affiche tous les nombres de 0 à 10
+    for(int i=0;i<=10;i++){
+            cout << i << endl;
+    }
+    return 0;
+}]]></html:code></html:pre>
+On a affaire à une boucle <html:code>for</html:code> : on doit donc vérifier que la boucle va s'arrêter. Comme la boucle est bien construite, la variable <html:code>i</html:code> comptant les itérations passe de <html:code>0</html:code> à <html:code>10</html:code>. La boucle se termine ensuite.</html:p>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                      </fr:author>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>12</fr:month>
+                      <fr:day>7</fr:day>
+                    </fr:date>
+                    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005V/</fr:uri>
+                    <fr:display-uri>005V</fr:display-uri>
+                    <fr:route>/cours-polytech-peip2-algo/005V/</fr:route>
+                    <fr:title text="Une boucle for mal construite">Une boucle for mal construite</fr:title>
+                    <fr:taxon>Exemple</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>
+Théoriquement, il est possible d'écrire des boucles <html:code>for</html:code> qui ne s'arrête jamais.
+
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+        <html:script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                        "remove-trailing": true,
+                        "remove-indent": true,
+                        "left-trim": true,
+                        "right-trim": true,
+                });</html:script>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié"><![CDATA[#include <iostream>
+using namespace std;
+
+int main(){
+    // Ceci est une mauvaise boucle for
+    for(int i=0;i<=10;i++){
+            cout << "Bonjour !" << endl;
+            i=0;
+   }
+   return 0;
+}]]></html:code></html:pre>
+Ici, la valeur de <html:code>i</html:code> est remise à zéro à chaque itération. Par conséquent, <html:code>i</html:code> ne dépasse jamais <html:code>2</html:code>, donc n'atteint jamais la valeur limite de <html:code>10</html:code>.
+</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                  </fr:author>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>12</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005W/</fr:uri>
+                <fr:display-uri>005W</fr:display-uri>
+                <fr:route>/cours-polytech-peip2-algo/005W/</fr:route>
+                <fr:title text="Terminaison des boucles while">Terminaison des boucles while</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                      </fr:author>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>12</fr:month>
+                      <fr:day>7</fr:day>
+                    </fr:date>
+                    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005X/</fr:uri>
+                    <fr:display-uri>005X</fr:display-uri>
+                    <fr:route>/cours-polytech-peip2-algo/005X/</fr:route>
+                    <fr:title text="Boucle while avec incrémentation">Boucle while avec incrémentation</fr:title>
+                    <fr:taxon>Exemple</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                          </fr:author>
+                          <fr:author>
+                            <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2025</fr:year>
+                          <fr:month>12</fr:month>
+                          <fr:day>7</fr:day>
+                        </fr:date>
+                        <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005Y/</fr:uri>
+                        <fr:display-uri>005Y</fr:display-uri>
+                        <fr:route>/cours-polytech-peip2-algo/005Y/</fr:route>
+                        <fr:title text="Boucle while avec incrémentation">Boucle while avec incrémentation</fr:title>
+                        <fr:taxon>Programme</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p><html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+        <html:script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                        "remove-trailing": true,
+                        "remove-indent": true,
+                        "left-trim": true,
+                        "right-trim": true,
+                });</html:script>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié">
+<![CDATA[#include <iostream>
+using namespace std;
+
+int main(){
+    // Affiche tous les entiers de 0 à 10
+    int i=0;
+    while(i<=10){
+        cout << i << endl;
+        i++;
+    }
+    return 0;
+}]]>
+</html:code></html:pre></html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <html:p>Dans cet exemple, il y a une boucle <html:code>while</html:code>. Il faut s'assurer que la boucle va s'arrêter, autrement dit que la condition devient fausse au bout d'un certain temps. Ici, la condition est <html:code>i&lt;=0</html:code>. Or, <html:code>i</html:code> vaut <html:code>0</html:code> et à chaque itération, sa valeur est augmentée de <html:code>1</html:code>. On est donc assuré que <html:code>i</html:code> sera plus grand que <html:code>10</html:code> après un certain nombre d'itérations.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                      </fr:author>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>12</fr:month>
+                      <fr:day>7</fr:day>
+                    </fr:date>
+                    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005Z/</fr:uri>
+                    <fr:display-uri>005Z</fr:display-uri>
+                    <fr:route>/cours-polytech-peip2-algo/005Z/</fr:route>
+                    <fr:title text="Boucle while avec décrémentation">Boucle while avec décrémentation</fr:title>
+                    <fr:taxon>Exemple</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                          </fr:author>
+                          <fr:author>
+                            <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2025</fr:year>
+                          <fr:month>12</fr:month>
+                          <fr:day>7</fr:day>
+                        </fr:date>
+                        <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0060/</fr:uri>
+                        <fr:display-uri>0060</fr:display-uri>
+                        <fr:route>/cours-polytech-peip2-algo/0060/</fr:route>
+                        <fr:title text="Boucle while avec incrémentation">Boucle while avec incrémentation</fr:title>
+                        <fr:taxon>Programme</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p><html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+        <html:script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                        "remove-trailing": true,
+                        "remove-indent": true,
+                        "left-trim": true,
+                        "right-trim": true,
+                });</html:script>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié">
+<![CDATA[#include <iostream>
+using namespace std;
+
+int main(){
+// Affiche beaucoup de nombres, à l'infini !
+   int i=0;
+   while(i<=10){
+        cout << i << endl;
+        i--;
+   }
+   return 0;
+}]]>
+</html:code></html:pre></html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <html:p>Dans cet exemple, il faut s'assurer que la boucle <html:code>while</html:code> s'arrête, c'est-à-dire que la condition <html:code>i&lt;=10</html:code> devient fausse. Ici, i est initialisé à <html:code>0</html:code>. À chaque itération, on décrémente sa valeur de <html:code>1</html:code> (c'est-à-dire: on fait <html:code>-1</html:code> à chaque tour de boucle). Donc, <html:code>i</html:code> devient de plus en plus petit : il ne dépassera jamais <html:code>10</html:code>. Le programme va donc tourner indéfiniment.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                  </fr:author>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>12</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0061/</fr:uri>
+                <fr:display-uri>0061</fr:display-uri>
+                <fr:route>/cours-polytech-peip2-algo/0061/</fr:route>
+                <fr:title text="Variant de boucle">Variant de boucle</fr:title>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                      </fr:author>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>12</fr:month>
+                      <fr:day>7</fr:day>
+                    </fr:date>
+                    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0062/</fr:uri>
+                    <fr:display-uri>0062</fr:display-uri>
+                    <fr:route>/cours-polytech-peip2-algo/0062/</fr:route>
+                    <fr:title text="Variant de boucle">Variant de boucle</fr:title>
+                    <fr:taxon>Définition</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>Un variant de boucle est un nombre positif dont la valeur change à chaque itération d'une boucle. Si le nombre devient négatif (ou nul), cela signifie que la boucle s'arrête.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                      </fr:author>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>12</fr:month>
+                      <fr:day>7</fr:day>
+                    </fr:date>
+                    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0063/</fr:uri>
+                    <fr:display-uri>0063</fr:display-uri>
+                    <fr:route>/cours-polytech-peip2-algo/0063/</fr:route>
+                    <fr:title text="Variant de boucle">Variant de boucle</fr:title>
+                    <fr:taxon>Remarque</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>Souvent, le variant de boucle est une variable du programme.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                      </fr:author>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>12</fr:month>
+                      <fr:day>7</fr:day>
+                    </fr:date>
+                    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0064/</fr:uri>
+                    <fr:display-uri>0064</fr:display-uri>
+                    <fr:route>/cours-polytech-peip2-algo/0064/</fr:route>
+                    <fr:title text="Applciation de la méthode du variant de boucle">Applciation de la méthode du variant de boucle</fr:title>
+                    <fr:taxon>Exemple</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                          </fr:author>
+                          <fr:author>
+                            <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2025</fr:year>
+                          <fr:month>12</fr:month>
+                          <fr:day>7</fr:day>
+                        </fr:date>
+                        <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/005Y/</fr:uri>
+                        <fr:display-uri>005Y</fr:display-uri>
+                        <fr:route>/cours-polytech-peip2-algo/005Y/</fr:route>
+                        <fr:title text="Boucle while avec incrémentation">Boucle while avec incrémentation</fr:title>
+                        <fr:taxon>Programme</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p><html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+        <html:script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                        "remove-trailing": true,
+                        "remove-indent": true,
+                        "left-trim": true,
+                        "right-trim": true,
+                });</html:script>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié">
+<![CDATA[#include <iostream>
+using namespace std;
+
+int main(){
+    // Affiche tous les entiers de 0 à 10
+    int i=0;
+    while(i<=10){
+        cout << i << endl;
+        i++;
+    }
+    return 0;
+}]]>
+</html:code></html:pre></html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <html:p>
+On a affaire à une boucle <html:code>while</html:code> : on doit trouver un variant de boucle. On peut prendre le variant <html:code>10-i</html:code> et on suit son évolution au cours de la boucle :
+<html:ul><html:li>À la première itération, on a <html:code>i=0</html:code> donc notre variant vaut <fr:tex display="inline"><![CDATA[10−0=10]]></fr:tex></html:li>
+<html:li>À la deuxième itération, on a <html:code>i=1</html:code> donc notre variant vaut <fr:tex display="inline"><![CDATA[10−1=9]]></fr:tex></html:li>
+<html:li>À la troisième itération, on a <html:code>i=2</html:code> donc notre variant vaut <fr:tex display="inline"><![CDATA[10−2=8]]></fr:tex></html:li>
+<html:li>...</html:li></html:ul>
+A chaque passage dans la boucle, le variant décroit, et la condition <html:code>i&lt;=10</html:code> dans la boucle <html:code>for</html:code> assure que le variant reste toujours positif. On vient de prouver la terminaison de notre algorithme.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                      </fr:author>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>12</fr:month>
+                      <fr:day>7</fr:day>
+                    </fr:date>
+                    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0065/</fr:uri>
+                    <fr:display-uri>0065</fr:display-uri>
+                    <fr:route>/cours-polytech-peip2-algo/0065/</fr:route>
+                    <fr:title text="Applciation de la méthode du variant de boucle">Applciation de la méthode du variant de boucle</fr:title>
+                    <fr:taxon>Exemple</fr:taxon>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:tree show-metadata="false">
+                      <fr:frontmatter>
+                        <fr:authors>
+                          <fr:author>
+                            <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                          </fr:author>
+                          <fr:author>
+                            <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                          </fr:author>
+                        </fr:authors>
+                        <fr:date>
+                          <fr:year>2025</fr:year>
+                          <fr:month>12</fr:month>
+                          <fr:day>7</fr:day>
+                        </fr:date>
+                        <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0060/</fr:uri>
+                        <fr:display-uri>0060</fr:display-uri>
+                        <fr:route>/cours-polytech-peip2-algo/0060/</fr:route>
+                        <fr:title text="Boucle while avec incrémentation">Boucle while avec incrémentation</fr:title>
+                        <fr:taxon>Programme</fr:taxon>
+                      </fr:frontmatter>
+                      <fr:mainmatter>
+                        <html:p><html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css" />
+        <html:link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/normalize-whitespace/prism-normalize-whitespace.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/show-language/prism-show-language.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/match-braces/prism-match-braces.min.js" />
+        <html:script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js" />
+        <html:script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                        "remove-trailing": true,
+                        "remove-indent": true,
+                        "left-trim": true,
+                        "right-trim": true,
+                });</html:script>
+        <html:pre><html:code class="language-cpp rainbow-braces line-numbers" data-prismjs-copy="Copier" data-prismjs-copy-error="Erreur" data-prismjs-copy-success="Copié">
+<![CDATA[#include <iostream>
+using namespace std;
+
+int main(){
+// Affiche beaucoup de nombres, à l'infini !
+   int i=0;
+   while(i<=10){
+        cout << i << endl;
+        i--;
+   }
+   return 0;
+}]]>
+</html:code></html:pre></html:p>
+                      </fr:mainmatter>
+                    </fr:tree>
+                    <html:p>
+On a affaire à une boucle <html:code>while</html:code> : on doit trouver un variant de boucle. On peut prendre le variant <html:code>10-i</html:code> et on suit son évolution au cours de la boucle :
+<html:ul><html:li>À la première itération, on a <html:code>i=0</html:code> donc notre variant vaut <fr:tex display="inline"><![CDATA[10−0=10]]></fr:tex></html:li>
+<html:li>À la deuxième itération, on a <html:code>i=1</html:code> donc notre variant vaut <fr:tex display="inline"><![CDATA[10−(-1)=11]]></fr:tex></html:li>
+<html:li>À la troisième itération, on a <html:code>i=2</html:code> donc notre variant vaut <fr:tex display="inline"><![CDATA[10−(-2)=12]]></fr:tex></html:li>
+<html:li>...</html:li></html:ul>
+Le variant choisi ne décroît pas à chaque passage e la boucle, ce n'est donc pas un variant valide pour prouver la terminaison du programme. Comme en fait ce programme ne termine pas, il n'existe pas de variant valide.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+                <fr:tree show-metadata="false">
+                  <fr:frontmatter>
+                    <fr:authors>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                      </fr:author>
+                      <fr:author>
+                        <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                      </fr:author>
+                    </fr:authors>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>12</fr:month>
+                      <fr:day>7</fr:day>
+                    </fr:date>
+                    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0066/</fr:uri>
+                    <fr:display-uri>0066</fr:display-uri>
+                    <fr:route>/cours-polytech-peip2-algo/0066/</fr:route>
+                    <fr:title text="Terminaison des fonctions récursives">Terminaison des fonctions récursives</fr:title>
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <html:p>Pour s'assurer de la terminaison des fonctions récursives, on peut utiliser une méthode similaire à celle du variant. Un variant pour une fonction récursive est une quantité entière positive qui décroit à chaque appel de la fonction récursive.</html:p>
+                  </fr:mainmatter>
+                </fr:tree>
+              </fr:mainmatter>
+            </fr:tree>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

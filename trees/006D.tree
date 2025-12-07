@@ -1,0 +1,13 @@
+\title{Les invariants de boucle en pratique}
+\author{abdounourmisbah}
+\author{thibautbenjamin}
+\import{basemacros}
+\date{2025-12-07T14:49:00Z}
+
+\p{Trouver un invariant de boucle #{P} permet de prouver la correction partielle d'un programme avec un procédé proche du raisonnement par récurrence en mathématiques:
+\ul{
+\li{\strong{Initialisation} : on vérifie que la propriété #{P} est vraie avant d'entrer dans la boucle}
+\li{\strong{Hérédité} : on suppose que la propriété #{P} est vraie à l'issue de la i-ème opération et on vérifie qu'elle reste vraie à la (i+1)-ème itération.}
+\li{\strong{Conclusion} :  la propriété #{P} est donc vraie en sortant de la boucle}
+}
+En pratique, lorsque l'on dit que #{P} est un invariant pour la boucle, cela veut dire qu'il satisfait l'initialisation et l'hérédité, et on en déduit donc immédiatement la conclusion.}

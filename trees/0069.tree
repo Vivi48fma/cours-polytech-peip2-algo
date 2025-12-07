@@ -1,0 +1,14 @@
+\title{Immersion dans le concept de correction partielle}
+\author{abdounourmisbah}
+\author{thibautbenjamin}
+\import{basemacros}
+\date{2025-12-07T14:36:36Z}
+
+
+\p{Imaginons que vous êtes un grand paresseux, tellement paresseux que vous avez la flemme de faire une addition ! Votre ami sympa vous donne une calculatrice pour faire les additions à votre place. Bien sûr, vous êtes tout content. Vous commencez alors : vous tapez #{2+2} et la calculatrice vous répond #{−48}. Qu'en pensez-vous ? Est-ce une calculatrice fiable ?}
+
+\p{Lorsque l'on écrit un algorithme, il faut s'assurer que celui-ci fasse exactement ce qu'on veut. Par exemple, qu'un aspirateur aspire la poussière (mais pas qu'il sèche le linge !). C'est tout le principe de la \em{correction partielle}}
+
+\transclude{006A}
+
+\p{Cette définition est imprécise. Pour la rendre complète, il faudrait être capable de définir exactement ce qu'un algorithme est censé faire ("le bon résultat"). C'est l'objet d'un champ d'étude appelé spécification des logiciels.}

@@ -1,0 +1,38 @@
+\title{Invariant de boucle}
+\author{abdounourmisbah}
+\author{thibautbenjamin}
+\taxon{Exemple}
+\import{basemacros}
+\date{2025-12-07T14:56:19Z}
+
+\p{On considère le programme suivant:
+\cppdisplay{
+\startverb
+#include <iostream>
+using namespace std;
+
+// Renvoie le minimum d'un tableau de taille n
+int minimum(int tab[],int n){
+    //On suppose que tab est de taille n
+    int mini = tab[0];
+    for(int i=1;i<n;i++){
+            if(tab[i]<mini){
+                mini = tab[i];
+            }
+    }
+    return mini;
+}
+\stopverb
+}
+\ol{
+\li{On choisit la propriété #{P} suivante:
+       \<html:div>{#{P} = \code{mini} contient le minimum parmi les #{i} première entrées du tableau}}
+
+\li{Au début du premier passage dans la boucle (lorsque \code{i=1}), la propriété #{P} est vérifiée, car \code{mini = tab[0]}, qui est le minimum parmi la première entrée du tableau.}
+
+\li{Supposons que #{P} est vraie pour au début de l'entrée dans la #{k^e} itération de la boucle. A ce moment, la variable \code{i} vaut #{k}. L'affectation assure que \code{mini} qu'à la fin de la #{k^e} itération \code{mini} contient le minimum entre la valeur de \code{mini} et \code{tab[k]}, ce qui est le minimum parmi les #{k+1}. On remarque également que la variable \code{i} vaut maintenant #{k+1}, et on a bien toujours #{P}}
+
+\li{On en conclut que #{P} est vraie à la sortie de la boucle. En sortie de la boucle, \code{i=n}, et donc on vient de prouver qu'en sortie de boucle on a #{P} "\code{mini} contient le minimum parmi les #{n} première entrée du tableau". Comme le tableau est de taille #{n}, il s'agit bien du minimum de tout le tableau.}
+}
+On vient de prouver la correction partielle de cet algorithme.
+}

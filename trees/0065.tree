@@ -1,0 +1,17 @@
+\title{Applciation de la méthode du variant de boucle}
+\author{abdounourmisbah}
+\author{thibautbenjamin}
+\taxon{Exemple}
+\date{2025-12-07T13:21:25Z}
+\import{basemacros}
+
+\transclude{0060}
+\p{
+On a affaire à une boucle \code{while} : on doit trouver un variant de boucle. On peut prendre le variant \code{10-i} et on suit son évolution au cours de la boucle :
+\ul{
+\li{À la première itération, on a \code{i=0} donc notre variant vaut #{10−0=10}}
+\li{À la deuxième itération, on a \code{i=1} donc notre variant vaut #{10−(-1)=11}}
+\li{À la troisième itération, on a \code{i=2} donc notre variant vaut #{10−(-2)=12}}
+\li{...}
+}
+Le variant choisi ne décroît pas à chaque passage e la boucle, ce n'est donc pas un variant valide pour prouver la terminaison du programme. Comme en fait ce programme ne termine pas, il n'existe pas de variant valide.}

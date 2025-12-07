@@ -1,0 +1,7 @@
+\title{Correction partielle}
+\author{abdounourmisbah}
+\author{thibautbenjamin}
+\taxon{Définition informelle}
+\date{2025-12-07T14:38:45Z}
+
+\p{Prouver la correction partielle d'un algorithme, c'est affirmer que l'algorithme renvoie toujours le bon résultat (autrement dit, la bonne réponse).}

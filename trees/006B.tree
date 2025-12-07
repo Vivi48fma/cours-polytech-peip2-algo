@@ -1,0 +1,11 @@
+\title{Les invariants de boucle pour la correction partielle}
+\author{abdounourmisbah}
+\author{thibautbenjamin}
+\import{basemacros}
+\date{2025-12-07T14:42:38Z}
+
+\p{Prouver la correction des algorithmes est un sujet très vaste et complexe, qui constitue un champ d'étude à lui tout seul. On ne va donner ici qu'un tout petit exemple de méthode pour aider à prouver la correction partielle d'un algorithme: les invariants de boucles. Il s'agit d'une méthode qui comme son nom l'indique est particulièrement utile en présence de boucles.}
+
+\transclude{006C}
+\transclude{006D}
+\transclude{006E}

@@ -1,0 +1,22 @@
+\title{Terminaison des boucles for}
+\author{abdounourmisbah}
+\author{thibautbenjamin}
+\date{2025-12-07T13:21:25Z}
+\import{basemacros}
+
+\p{
+\cppdisplay{\startverb
+#include <iostream>
+using namespace std;
+
+int main(){
+    // Affiche tous les nombres de 0 à 10
+    for(int i=0;i<=10;i++){
+            cout << i << endl;
+    }
+    return 0;
+}
+\stopverb}
+On a affaire à une boucle \code{for} : on doit donc vérifier que la boucle va s'arrêter. Comme la boucle est bien construite, la variable \code{i} comptant les itérations passe de \code{0} à \code{10}. La boucle se termine ensuite.}
+
+\transclude{005V}

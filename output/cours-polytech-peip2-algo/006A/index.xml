@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/cours-polytech-peip2-algo/default.xsl"?>
+<fr:tree xmlns:fr="http://www.forester-notes.org" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" root="false" base-url="/cours-polytech-peip2-algo/">
+  <fr:frontmatter>
+    <fr:authors>
+      <fr:author>
+        <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+      </fr:author>
+      <fr:author>
+        <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:date>
+      <fr:year>2025</fr:year>
+      <fr:month>12</fr:month>
+      <fr:day>7</fr:day>
+    </fr:date>
+    <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/006A/</fr:uri>
+    <fr:display-uri>006A</fr:display-uri>
+    <fr:route>/cours-polytech-peip2-algo/006A/</fr:route>
+    <fr:title text="Correction partielle">Correction partielle</fr:title>
+    <fr:taxon>Définition informelle</fr:taxon>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <html:p>Prouver la correction partielle d'un algorithme, c'est affirmer que l'algorithme renvoie toujours le bon résultat (autrement dit, la bonne réponse).</html:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="References">References</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Context">Context</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree show-metadata="true" expanded="false" toc="false" numbered="false">
+          <fr:frontmatter>
+            <fr:authors>
+              <fr:author>
+                <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+              </fr:author>
+              <fr:author>
+                <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>12</fr:month>
+              <fr:day>7</fr:day>
+            </fr:date>
+            <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/0069/</fr:uri>
+            <fr:display-uri>0069</fr:display-uri>
+            <fr:route>/cours-polytech-peip2-algo/0069/</fr:route>
+            <fr:title text="Immersion dans le concept de correction partielle">Immersion dans le concept de correction partielle</fr:title>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <html:p>Imaginons que vous êtes un grand paresseux, tellement paresseux que vous avez la flemme de faire une addition ! Votre ami sympa vous donne une calculatrice pour faire les additions à votre place. Bien sûr, vous êtes tout content. Vous commencez alors : vous tapez <fr:tex display="inline"><![CDATA[2+2]]></fr:tex> et la calculatrice vous répond <fr:tex display="inline"><![CDATA[−48]]></fr:tex>. Qu'en pensez-vous ? Est-ce une calculatrice fiable ?</html:p>
+            <html:p>Lorsque l'on écrit un algorithme, il faut s'assurer que celui-ci fasse exactement ce qu'on veut. Par exemple, qu'un aspirateur aspire la poussière (mais pas qu'il sèche le linge !). C'est tout le principe de la <html:em>correction partielle</html:em></html:p>
+            <fr:tree show-metadata="false">
+              <fr:frontmatter>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/abdounourmisbah/" title="Abdounour Misbah" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/abdounourmisbah/" display-uri="abdounourmisbah" type="local">Abdounour Misbah</fr:link>
+                  </fr:author>
+                  <fr:author>
+                    <fr:link href="/cours-polytech-peip2-algo/thibautbenjamin/" title="Thibaut Benjamin" uri="http://thibautbenjamin.github.io/cours-polytech-peip2-algo/thibautbenjamin/" display-uri="thibautbenjamin" type="local">Thibaut Benjamin</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>12</fr:month>
+                  <fr:day>7</fr:day>
+                </fr:date>
+                <fr:uri>http://thibautbenjamin.github.io/cours-polytech-peip2-algo/006A/</fr:uri>
+                <fr:display-uri>006A</fr:display-uri>
+                <fr:route>/cours-polytech-peip2-algo/006A/</fr:route>
+                <fr:title text="Correction partielle">Correction partielle</fr:title>
+                <fr:taxon>Définition informelle</fr:taxon>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <html:p>Prouver la correction partielle d'un algorithme, c'est affirmer que l'algorithme renvoie toujours le bon résultat (autrement dit, la bonne réponse).</html:p>
+              </fr:mainmatter>
+            </fr:tree>
+            <html:p>Cette définition est imprécise. Pour la rendre complète, il faudrait être capable de définir exactement ce qu'un algorithme est censé faire ("le bon résultat"). C'est l'objet d'un champ d'étude appelé spécification des logiciels.</html:p>
+          </fr:mainmatter>
+        </fr:tree>
+      </fr:mainmatter>
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Backlinks">Backlinks</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Related">Related</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+    <fr:tree show-metadata="false" hidden-when-empty="true">
+      <fr:frontmatter>
+        <fr:authors />
+        <fr:title text="Contributions">Contributions</fr:title>
+      </fr:frontmatter>
+      <fr:mainmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

@@ -1,0 +1,7 @@
+\title{Terminaison}
+\author{abdounourmisbah}
+\author{thibautbenjamin}
+\taxon{Definition}
+\date{2025-12-07T13:21:25Z}
+
+\p{La \em{terminaison} d'un algorithme, c'est s'assurer qu'un algorithme se terminera un jour (indépendamment du temps mis). Autrement dit, on doit vérifier que l'algorithme effectue un nombre fini d'opérations.}

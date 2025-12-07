@@ -1,0 +1,16 @@
+\title{La terminaison d'un algorithme}
+\author{abdounourmisbah}
+\author{thibautbenjamin}
+
+\date{2025-12-07T13:21:25Z}
+
+\p{Imaginons que vous êtes chez vous en train de jouer au tout nouveau Super Mario Bros. Vous êtes le meilleur du jeu : vous récupérez tous les power-ups, vous tuez tous vos ennemis, vous trouvez tous les secrets. Bref, un nouveau super facile pour vous. Et malgré votre talent, vous êtes toujours au premier niveau car vous n'avez pas encore atteint le drapeau final. Vous commencez alors à vous demander si ce niveau a réellement une fin...}
+
+\p{La notion de \em{terminaison} traduit exactement cette idée.}
+
+\transclude{0067}
+\transclude{006H}
+\transclude{006I}
+\transclude{005U}
+\transclude{005W}
+\transclude{0061}
